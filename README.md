@@ -31,6 +31,10 @@ This theme was based in the HubSpot CMS Boilerplate's recommended best practices
 
 This theme version aims to have Style Fields, global modules, 31 modules, trending modules and style HubL variables referenced globally from fields.json and all style.css.
 
+## Version  2.0
+
+The theme is now polished, optimized and ready to be used daily. Various bug fixes and images optimized, as well lazy load has been added to all modules.
+
 ## Contributing
 
 If you’re interested in contributing to the Remotish Theme, please read enter in contact our access the GitHub Repository.
