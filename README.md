@@ -1,8 +1,15 @@
 # Theme Pages Template Link
 
+Remotish Theme is ready for the B2B companies looking for data-driven, high converting and high quality promo services with a great simple clean design
+
+<img src="https://github.com/DreamDevourer/remotish-theme/blob/main/images/Demo/Cover.jpg?raw=true"></img>
+<br>
+<img src="https://github.com/DreamDevourer/remotish-theme/blob/main/images/Demo/Thumbnail%20Homepage.jpg?raw=true"></img>
+<br>
+
 All templates can be found [here](https://www.remotish.agency/remotish-theme)
 
-As well individual pages:
+## As well individual pages:
 
 - [Homepage](https://app.hubspot.com/content/3428648/edit/48485866790/content)
     
