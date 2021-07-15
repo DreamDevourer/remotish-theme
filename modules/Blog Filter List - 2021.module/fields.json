@@ -1,0 +1,31 @@
+[ {
+  "id" : "6c2459d7-2be9-dd20-2834-e42c47980fc8",
+  "name" : "field_group",
+  "label" : "Field group",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 50,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "f33e6c46-17d1-4f49-3831-ed2ac2e7eb94",
+    "name" : "tag_name",
+    "label" : "Tag Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Media Mentions"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "tag_name" : "Media Mentions"
+  } ]
+} ]

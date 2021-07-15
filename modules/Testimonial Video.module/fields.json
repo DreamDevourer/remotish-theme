@@ -1,0 +1,113 @@
+[ {
+  "id" : "4f22f904-8206-ef1e-3864-37c229e40b43",
+  "name" : "testimonial_title",
+  "label" : "Testimonial Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Happily Clients"
+}, {
+  "id" : "8cc892bc-1116-3f6f-0c99-2347b4bc2895",
+  "name" : "testimonial_sub_title",
+  "label" : "Testimonial Sub Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Work is a complement of your life."
+}, {
+  "id" : "207f3ec0-ce9d-4d12-f76a-3fce5a95d04e",
+  "name" : "star_image",
+  "label" : "Star Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Stars-1.png",
+    "alt" : "Stars-1",
+    "loading" : "disabled",
+    "width" : 196,
+    "height" : 31,
+    "max_width" : 196,
+    "max_height" : 31
+  }
+}, {
+  "id" : "dbfeebd2-ced0-0a3d-da9e-46f912c24341",
+  "name" : "testimonial_content",
+  "label" : "Testimonial Content",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>“A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video.”</p>"
+}, {
+  "id" : "704eebc3-2e70-ae7d-5948-3afaddcb17c5",
+  "name" : "testimonial_last_title",
+  "label" : "Testimonial last Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "NAME, COMPANY"
+}, {
+  "id" : "925fd0eb-0fae-6096-a946-f76fb4b4129d",
+  "name" : "video_image",
+  "label" : "Video Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Hero%20Sample.png",
+    "alt" : "Hero Sample",
+    "loading" : "lazy",
+    "width" : 529,
+    "height" : 567,
+    "max_width" : 529,
+    "max_height" : 567
+  }
+}, {
+  "id" : "63035866-e519-c406-5e38-7864a6a490e4",
+  "name" : "video_url",
+  "label" : "Video URL",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.youtube.com/watch?v=ScMzIvxBSi4&t=3s"
+}, {
+  "id" : "c2a99784-29f7-a6d3-0be8-0aeb9a46075f",
+  "name" : "background_image",
+  "label" : "Background Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Bacl%20(1).svg",
+    "alt" : "Bacl (1)",
+    "loading" : "disabled",
+    "width" : 78,
+    "height" : 60,
+    "max_width" : 78,
+    "max_height" : 60
+  }
+} ]

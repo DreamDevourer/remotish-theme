@@ -1,0 +1,60 @@
+[ {
+  "id" : "120a075b-353a-e6c8-57f1-21f069573f84",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What Makes Us the Best"
+}, {
+  "id" : "ac879d39-bfc2-0f74-2dd7-a77f06ce0a8c",
+  "name" : "sub_text",
+  "label" : "Sub text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We have the complete OPS that you need"
+}, {
+  "id" : "440b8545-182d-9b8a-9f06-3f6de4f7c888",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>\"Design is the intermediary between information and understanding.\"</span></p>"
+}, {
+  "id" : "d05d2ed0-2960-2d5c-e10e-3de3f315a513",
+  "name" : "profile_name",
+  "label" : "Profile Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Hans Hoffman <br> Teacher"
+}, {
+  "id" : "f7b37045-7f56-491f-3a22-a8013b9f12d0",
+  "name" : "image_field",
+  "label" : "Icon Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://www.remotish.agency/hubfs/Base.svg",
+    "alt" : "Base",
+    "loading" : "lazy",
+    "width" : 392,
+    "height" : 376
+  }
+} ]

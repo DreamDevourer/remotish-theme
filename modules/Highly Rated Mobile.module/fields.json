@@ -1,0 +1,61 @@
+[ {
+  "id" : "c9a8dda3-1172-239f-3a5e-d8062f70039e",
+  "name" : "video_image",
+  "label" : "Video Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.remotish.agency/hubfs/Hero%20Sample.png",
+    "alt" : "Hero Sample",
+    "width" : 529,
+    "height" : 567,
+    "loading" : "lazy",
+    "max_width" : 529,
+    "max_height" : 567
+  }
+}, {
+  "id" : "a8078b73-eb5e-2449-8ba0-89d28a03459c",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We are Highly Rated"
+}, {
+  "id" : "cbc2bb0f-6400-e8da-5bf8-063352d696eb",
+  "name" : "sub_text",
+  "label" : "Sub text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Work is a complement of your life."
+}, {
+  "id" : "9a879e8a-7f4e-1c22-b2db-a2a43636398b",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>“The Remotish team is a rare breed of mavericks pushing HubSpot to levels most other agencies would consider ludicrous. I wouldn't trust anyone else except Remotish to architect, deploy, and optimize our technical RevOps engine.”</p>"
+}, {
+  "id" : "f2d68e47-688d-3256-5483-91f7398723e0",
+  "name" : "vide_name",
+  "label" : "Video Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "JAGER FORNAL, CHIEF REVENUE OFFICER, GOSITE"
+} ]

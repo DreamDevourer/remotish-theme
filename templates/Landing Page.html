@@ -1,0 +1,215 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Remotish - Landing Page
+  screenshotPath: ../images/Thumbnails/Thumbnail Landing Page.jpg
+-->
+{% extends "./layouts/baseLanding.html" %}
+
+{% block body %}
+<main>
+  {% dnd_area "dnd_area_main_banner" label='Main Content' %}
+    
+  
+  
+  
+       {% dnd_section
+       padding={
+        'top': 0,
+        'bottom': 0,
+        'left' : 0,
+        'right' : 0
+    }
+     
+      %}
+             {% dnd_module
+                    path='../modules/Space Module', 
+                    flexbox_positioning="TOP_CENTER"
+                    desktop_horizontal_space = "285",
+                    tablet_horizontal_space = "120"
+                    mobile_desktop_space = "70"
+   
+
+                  %}
+            {% end_dnd_module %}
+
+      {% end_dnd_section %}
+  
+  
+  {% dnd_section
+           padding={
+            'top': 0,
+            'bottom': 0,
+            'left' : 0,
+            'right' : 0
+        },
+         full_width = true
+
+          %}
+                {% dnd_module
+                                  path='../modules/Form Module - Consultant Form', 
+                                  flexbox_positioning="TOP_CENTER",
+                                  title = "Discover HubSpot"
+                                  sub_text = "IS HUBSPOT THE RIGHT TOOL FOR YOUR BUSINESS?"
+                                 richtext_field = "<p>Talk with one of our HubSpot Experts and see if this platform is right for you!</p>
+                                    <ul>
+                                      <li> Perhaps your marketing, sales and service teams need to optimize their time and improve efficiency? </li>
+                                      <li> Maybe you need more organization and insight into your data and communications with prospects and customers? </li> 
+                                      <li> Have you ever thought it could be valuable to have total visibility on all your marketing, sales, service and website activities? </li>
+                                      <li>Do you need to help your small team be mightly with automation? </li> 
+                                   </ul>
+                                 
+                                 "
+
+
+                                %}
+                {% end_dnd_module %}
+
+
+      {% end_dnd_section %}
+  
+  
+  
+  
+   
+       {% dnd_section
+       padding={
+        'top': 0,
+        'bottom': 0,
+        'left' : 0,
+        'right' : 0
+    }
+     
+      %}
+             {% dnd_module
+                    path='../modules/Space Module', 
+                    flexbox_positioning="TOP_CENTER"
+                    desktop_horizontal_space = "285",
+                    tablet_horizontal_space = "120"
+                    mobile_desktop_space = "70"
+   
+
+                  %}
+            {% end_dnd_module %}
+
+      {% end_dnd_section %}
+  
+  
+  
+  {% dnd_section
+       padding={
+        'top': 0,
+        'bottom': 0,
+        'left' : 0,
+        'right' : 0
+    },
+     full_width = true
+     
+      %}
+             {% dnd_module
+                    path='../modules/Landing Page Testimonials', 
+                    flexbox_positioning="TOP_CENTER",
+                    custom_class = "nospace",
+                    bg_shap_ = false,
+                    title = "Welcome to the Landing page!"
+                    sub_text = "This is how the landing page should look like"
+                    
+                  %}
+  
+                 
+        
+            {% end_dnd_module %}
+
+      {% end_dnd_section %}
+  
+  
+  
+  
+  
+   {% dnd_section
+       padding={
+        'top': 0,
+        'bottom': 0,
+        'left' : 0,
+        'right' : 0
+    }
+     
+      %}
+             {% dnd_module
+                    path='../modules/Space Module', 
+                    flexbox_positioning="TOP_CENTER"
+                    desktop_horizontal_space = "270",
+                    tablet_horizontal_space = "100"
+                    mobile_desktop_space = "75"
+   
+
+                  %}
+            {% end_dnd_module %}
+
+      {% end_dnd_section %}
+  
+  
+  
+  
+    
+  {% dnd_section
+       padding={
+        'top': 0,
+        'bottom': 0,
+        'left' : 0,
+        'right' : 0
+    },
+     full_width = true
+     
+      %}
+             {% dnd_module
+                    path='../modules/Platform Landing page', 
+                    flexbox_positioning="TOP_CENTER",
+                   
+                  %}
+  
+                 
+        
+            {% end_dnd_module %}
+
+      {% end_dnd_section %}
+  
+  
+  
+  
+  
+    {% dnd_section
+       padding={
+        'top': 0,
+        'bottom': 0,
+        'left' : 0,
+        'right' : 0
+    }
+     
+      %}
+             {% dnd_module
+                    path='../modules/Space Module', 
+                    flexbox_positioning="TOP_CENTER"
+                    desktop_horizontal_space = "250",
+                    tablet_horizontal_space = "70"
+                    mobile_desktop_space = "75"
+   
+
+                  %}
+            {% end_dnd_module %}
+
+      {% end_dnd_section %}
+  
+  
+
+  {% end_dnd_area %}
+</main>
+
+      
+{% endblock body %}
+
+<style>
+.case-studiesrow.grid{
+      flex-direction: row;
+  }
+</style>

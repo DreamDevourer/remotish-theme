@@ -1,0 +1,212 @@
+[ {
+  "id" : "6c13a98e-fb82-1acf-3455-f17bc38028f2",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "About"
+}, {
+  "id" : "e8647d95-3bb2-9ec8-41c7-e632bd0b8e63",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We made HubSpot Awesome!"
+}, {
+  "id" : "ae29b871-ab34-7413-8b2c-34eaff2d6f9c",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read More"
+}, {
+  "id" : "8e3763a5-8e5e-5414-b0c7-dc929fa05590",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "2526f276-93b0-3fe3-ed3c-d371fcb37403",
+  "name" : "right_top_text",
+  "label" : "Right Top Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>STRATEGY + IMPLEMENTATION + TRAINING : Remotish is hyper-focused on servicing companies that plan to use or currently have HubSpot. We have been keeping up on our HubSpot skills since 2013.</p>"
+}, {
+  "id" : "76e55171-6520-1e0e-251a-cf4934476977",
+  "name" : "image_one",
+  "label" : "Image One",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Group%201347%20(1).png",
+    "alt" : "Group 1347 (1)",
+    "width" : 1596,
+    "height" : 1208,
+    "max_width" : 1596,
+    "max_height" : 1208,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "7381da9d-5e1a-7390-932d-0008a1e493aa",
+  "name" : "image_two",
+  "label" : "Image Two",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "src" : "https://www.remotish.agency/hubfs/Imported%20images/dog%20(1).png",
+    "alt" : "dog (1)",
+    "width" : 685,
+    "height" : 968,
+    "max_width" : 685,
+    "max_height" : 968,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "22b7a0cc-6547-ae42-447c-b27bbee8dddc",
+  "name" : "image_three",
+  "label" : "Image Three",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Rectangle%20344.jpg",
+    "alt" : "Rectangle 344",
+    "loading" : "lazy",
+    "width" : 764,
+    "height" : 574,
+    "max_width" : 764,
+    "max_height" : 574
+  }
+}, {
+  "id" : "7b9c2547-cc89-cbf4-5273-0397c71c9e19",
+  "name" : "about_group",
+  "label" : "About group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "b2416f31-8130-2177-6b91-565191cddd04",
+    "name" : "image_field",
+    "label" : "Image Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035.svg",
+      "alt" : "Group 35",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 71,
+      "max_width" : 77,
+      "max_height" : 71
+    }
+  }, {
+    "id" : "a623f8cf-4cff-d22e-c1ff-35322c147a6c",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "The Team"
+  }, {
+    "id" : "45ba0c33-21c4-9064-4a74-2f00e36ad608",
+    "name" : "richtext_field",
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>You know how to market, sell, and service your customers; We know how to optimize HubSpot to make you even better at what you do!</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035.svg",
+      "alt" : "Group 35",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 71,
+      "max_width" : 77,
+      "max_height" : 71
+    },
+    "title" : "The Team",
+    "richtext_field" : "<p>You know how to market, sell, and service your customers; We know how to optimize HubSpot to make you even better at what you do!</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035.svg",
+      "alt" : "Group 35",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 71,
+      "max_width" : 77,
+      "max_height" : 71
+    },
+    "title" : "The Team",
+    "richtext_field" : "<p>You know how to market, sell, and service your customers; We know how to optimize HubSpot to make you even better at what you do!</p>"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035.svg",
+      "alt" : "Group 35",
+      "loading" : "lazy",
+      "width" : 77,
+      "height" : 71,
+      "max_width" : 77,
+      "max_height" : 71
+    },
+    "title" : "The Team",
+    "richtext_field" : "<p>You know how to market, sell, and service your customers; We know how to optimize HubSpot to make you even better at what you do!</p>"
+  } ]
+} ]

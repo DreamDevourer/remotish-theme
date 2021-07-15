@@ -1,0 +1,62 @@
+[ {
+  "id" : "87e76555-7287-5fd0-9115-d1607eddfb7c",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "FAQ"
+}, {
+  "id" : "dbd97846-78c0-9c04-f252-83fd979330ba",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Here you have all your answers"
+}, {
+  "id" : "2f7d105d-df63-e8a6-b21d-768f515ba0ad",
+  "name" : "faq_group",
+  "label" : "FAQs",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "df5f0f70-c6a5-7d3d-218b-e4b43d24f4b6",
+    "name" : "faq_question",
+    "label" : "FAQ Question",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem Ipsum Disagae?"
+  }, {
+    "id" : "775e756a-23e8-9fba-035b-1068fc5a7e3e",
+    "name" : "faq_answer",
+    "label" : "FAQ Answer",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "faq_question" : "Lorem Ipsum Disagae?",
+    "faq_answer" : "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>"
+  } ]
+} ]

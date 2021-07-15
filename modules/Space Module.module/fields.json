@@ -1,0 +1,37 @@
+[ {
+  "id" : "5b52ddec-fbcf-250e-3e35-6f53bd6afdf7",
+  "name" : "desktop_horizontal_space",
+  "label" : "Desktop Horizontal  Space",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 1,
+  "max" : 350,
+  "step" : 1,
+  "type" : "number",
+  "default" : 100
+}, {
+  "id" : "5fecf2a9-073d-cc24-b4a9-47db7b4f6c79",
+  "name" : "tablet_horizontal_space",
+  "label" : "Tablet Horizontal  Space",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 1,
+  "max" : 350,
+  "step" : 1,
+  "type" : "number",
+  "default" : 100
+}, {
+  "id" : "122a0400-de10-a4ed-82d7-11f493c502ea",
+  "name" : "mobile_desktop_space",
+  "label" : "Mobile Horizontal  Space",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 1,
+  "max" : 350,
+  "step" : 1,
+  "type" : "number",
+  "default" : 100
+} ]

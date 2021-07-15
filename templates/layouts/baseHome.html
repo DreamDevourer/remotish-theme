@@ -1,0 +1,49 @@
+<!--
+  templateType: "none"
+  isAvailableForNewContent: false
+-->
+<!doctype html>
+<!-- this is the base for Home page or Main pages -->
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    {% if page_meta.html_title %}<title>{{ page_meta.html_title }}</title>{% endif %}
+    {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    {{ require_css(get_public_template_url("../../css/main.css")) }}
+    {{ require_css(get_asset_url("../../css/theme-overrides.css")) }}
+
+
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8JWNNW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="body-wrapper {{ builtin_body_classes }}">
+      {% block header %}
+          {% module "global_header" path='../../modules/Header', label="Global Header" %}  
+      {% endblock header %}
+
+      {% block body %}
+      {% endblock body %}
+
+      {% block footer %}
+        {% module "global_footer" path='../../modules/Footer', label="Global Footer" %} 
+      {% endblock footer %}
+    </div>
+    {{ standard_footer_includes }}
+  </body>
+  <footer>
+        
+    {{ require_css(get_asset_url('../../css/Style - Home.css')) }}
+    {% if not site_settings.include_jquery %}
+     {{ require_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js") }}
+    {% endif %} 
+    {{ require_js(get_asset_url("../../js/Script.js")) }}
+  </footer>
+</html>

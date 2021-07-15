@@ -1,0 +1,44 @@
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+.dnd-section {
+  padding: 0px 0px;
+}
+
+.dnd-section > .row-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.dnd-section .widget-type-cell {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+.flex {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-col {
+    flex-direction: column;
+  }
+
+  .dnd-section .widget-type-cell {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

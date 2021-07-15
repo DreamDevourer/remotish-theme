@@ -1,0 +1,34 @@
+.we_value_being .slick-active h4{     -webkit-animation-name: fadeInRight;  animation-name: fadeInRight; }
+.we_value_being .slick-active .size-sub{  -webkit-animation-name: fadeInRight;  animation-name: fadeInRight; }
+.we_value_being .slick-active .we_vbeing_text{  -webkit-animation-name: fadeInRight;  animation-name: fadeInRight; }
+.we_value_being .slick-active .we_vbeing_left  img{ /* /-webkit-animation-name: bounceIn2;  animation-name: bounceIn2; */ }
+.we_vbeing_text {   padding-top: 20px; }
+
+
+
+@-webkit-keyframes bounceIn2 { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: scale(.3); 
+    } 
+
+   
+
+    100% { 
+         -webkit-transform: scale(1); 
+    } 
+} 
+
+@keyframes bounceIn2 { 
+    0% { 
+        opacity: 0; 
+        transform: scale(.3); 
+    } 
+
+   
+
+    100% { 
+        transform: scale(1); 
+    } 
+} 
+

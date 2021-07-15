@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Grinning%20Face%20With%20Big%20Eyes:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 47340022350,
+  "label" : "Landing Page Testimonial",
+  "is_available_for_new_content" : true
+}

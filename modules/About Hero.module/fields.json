@@ -1,0 +1,29 @@
+[ {
+  "id" : "d6667e85-1c46-01b7-f90a-e5f6ea49d3e9",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>About Us</h1>\n<p><span>We are capable of being the best</span></p>\n<p>Remotish is hyper-focused on servicing companies that plan to use or currently have HubSpot. We have been keeping up on our HubSpot skills since 2013.</p>\n<p>This means you are always going to work with a HubSpot Expert who is invested in being the most efficient and strategic HubSpot resource for your business.</p>\n<h3>STRATEGY + IMPLEMENTATION + TRAINING</h3>\n<p>If you have invested in the HubSpot platform and feel that you can get more from it, then we are the team for you.</p>\n<p>More leads, more sales, more efficiency...more results!</p>"
+}, {
+  "id" : "869c6e33-15a9-07bc-4d7f-9a3499d2a98b",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Blob%20(1).png",
+    "alt" : "Blob (1)",
+    "loading" : "disabled",
+    "width" : 1704,
+    "height" : 1473,
+    "max_width" : 1704,
+    "max_height" : 1473
+  }
+} ]

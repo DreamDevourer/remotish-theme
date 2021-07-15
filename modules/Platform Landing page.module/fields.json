@@ -1,0 +1,49 @@
+[ {
+  "id" : "95428077-0252-aef4-532d-bf866f7eed81",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Introduce yourself into HubSpot Ecosystem"
+}, {
+  "id" : "05d74c61-69ab-ac3c-9a35-217853d4f50e",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "default" : 40637777712
+}, {
+  "id" : "0bd453b4-1278-cb5e-7f97-a0e04c0fce67",
+  "name" : "number_of_post",
+  "label" : "Number Of Post",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 4
+}, {
+  "id" : "39d55244-cdb9-6a07-b93c-1db54e0fa10d",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Do it All With Just 1 Platform"
+}, {
+  "id" : "aa70a1b4-db63-8d3a-faae-26110aa64118",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>he HubSpot all-in-one platform includes every tool you'll ever need to manage your relationships with prospects and customers, assist your marketing, sales and service teams, plus award-winning support and resources to help your company grow.</p>"
+} ]

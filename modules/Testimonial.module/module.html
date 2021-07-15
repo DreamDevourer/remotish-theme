@@ -1,0 +1,44 @@
+<section class="testimonial-sort">
+  <div class="container">
+      <div class="title-h2">
+          <h2>
+            {{ module.title }}
+        </h2>
+        <span class="subtext2"> 
+          {{ module.sub_text }}
+        </span>
+        
+     </div>
+      <div class="testimonial-sort-row">
+         <div class="testimonial-left">
+            {{ module.richtext_field }}
+           <span class="testimonial-name"> {{ module.profile_name }} </span>
+        </div>
+        <div class="testimoniale-right">
+          {% if module.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+          {% if module.image_field.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.image_field.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_field.max_width }}px; max-height: {{ module.image_field.max_height }}px"' %}
+          {% endif %}
+          {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+          <img loading="lazy" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+    </div>
+    
+  </div>
+</section>
+
+<footer>
+{% require_js %}
+    <script defer>
+      $(document).ready(function(){
+      if (window.matchMedia('(max-width: 767px)').matches){
+          $(".testimonial-left").insertAfter(".testimoniale-right");
+      } 
+      });  
+    </script>
+  {% end_require_js %}
+</footer>

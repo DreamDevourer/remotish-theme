@@ -1,0 +1,142 @@
+<!--
+  templateType: blog
+  isAvailableForNewContent: true
+  label: Remotish - Blog Article
+  screenshotPath: ../images/Thumbnails/Thumbnail Blog Post.jpg
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+
+<!-- blog post header -->
+<div class="blog_post_header">
+  <div class="container">
+       <div class="blog_post_roheader">
+          <div class="blog_postheader_left">
+          <div class="blog_post_title">
+                <h1>{{ content.name }}</h1>
+          </div>  
+          <div class="blog_postauthor_row">
+              <span class="blog_postauthor_image">
+               {% set loadingAvatar = content.blog_post_author.avatar.loading != 'lazy' ? 'loading="{{ content.blog_post_author.avatar.loading }}"' : '' %}
+               <img loading="lazy" src="{{ content.blog_post_author.avatar }}" alt="Picture of {{ content.blog_post_author.display_name }}" {{ loadingAvatar }}>
+              </span>
+              <div class="blog_postauthor_text">
+                  <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
+                    {{ content.blog_post_author.display_name }}
+                  </a> 
+               
+               
+                  <span class="headdate-min">
+                    <span class="headdate-date">{{ content.publishDate|datetimeformat('%b %e, %Y') }} </span>
+                   <span class="headdate-read"> {% set initialPostWords = content.post_body|wordcount %}
+                    {% set calculatedPostWords = (initialPostWords/100) * 100 %}
+                    {% set finishedPostWords = calculatedPostWords|divide(130)|round(2) %}
+                    {% set number = finishedPostWords|round %}
+                    {% if number < 1 %}
+                    {% else %}
+                    {{ finishedPostWords|round }} Min Read
+                    {% endif %}</span>
+                 </span>
+                  
+             </div>
+          </div>
+        </div>
+        <div class="blog_postheader_right">
+            {% set loadingThumb = content.post_list_summary_featured_image.loading != 'lazy' ? 'loading="{{ content.post_list_summary_featured_image.loading }}"' : '' %}
+            <img loading="lazy" src="{{ content.post_list_summary_featured_image }}" {{ loadingThumb }}>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="blog_post_body">
+  <div class="container">
+      <div class="blog_post_text">
+         {{ content.post_body }}
+      </div>
+  </div>
+</div>
+
+
+
+<div class="blog_post_chatrow">
+    <div class="container">
+       <div class="blog_post_chatrow1 button-deaign">
+          {% cta "my_cta" label='Select a CTA', guid='8970ab76-2b86-4241-93a1-9a53590f6254' %}
+
+      </div>
+      <div class="sociale-postshare">
+        <div class="socialepost-cap">
+           Share this post!
+        </div>
+        <div class="footer-social">
+          <ul>
+            
+            <li> <a href="https://twitter.com/intent/tweet?text=I+found+this+interesting+blog+post&url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Remotish%20Theme/Social/Twitter.svg" alt="">  </a> </li>
+       
+            <li> <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Remotish%20Theme/Social/LinkedInn.png" alt="">  </a> </li>
+            
+            <li> <a href="http://reddit.com/submit?url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Group%201389.png" alt="">  </a> </li>
+            
+            <li> <a href="https://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Group%201387.png" alt="">  </a> </li>
+            
+            <li> <a href="https://pinterest.com/pin/create/button/?url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Group%201390.png" alt="">  </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sociale_postshare_tag">
+        {% if content.topic_list %}
+         <p id="hubspot-topic_data" >
+            Tags: {% for topic in content.topic_list %}
+              <a class="topic-link" href="{{ blog_tag_url(group.id, topic.slug) }}">{{ topic.name }}</a>{% if not loop.last %},{% endif %}
+            {% endfor %}
+         </p>
+         {% endif %}
+      </div>
+      <div class="socialepos_bottom_bottom">
+         <span class="spboauthortext-image"><img loading="lazy" src="{{ content.blog_post_author.avatar }}" alt="Picture of {{ content.blog_post_author.display_name }}" {{ loadingAvatar }} ></span>
+         <span class="spboauthortext-author">  <a href="https://www.remotish.agency/hubspot-revops-agency/about-us/{{ content.blog_post_author.slug }}"><strong>{{ content.blog_author.display_name }}</strong></a> <br>  {{ content.blog_post_author.bio }} </span>
+      </div>
+      
+   
+      
+      
+  </div>
+</div>
+
+
+    {% if group.allow_comments %}
+    <section class="blog-post__comments-listing">
+      <div class="container">
+         <div class="comment_header">
+           <h2>
+             Comments
+           </h2>
+           <span class="size-sub"> Share a thought or two on this post </span>
+        </div>
+         <div class="comment_header_main">
+            {% module 'blog_comments' path='@hubspot/blog_comments' %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+
+{% module "module_16108070048227" path="../modules/Check Other Awesome Blogs", label="Check Other Awesome Blogs" %}
+
+
+
+
+
+
+
+
+{% endblock body %}
+
+
+<style>
+.blog_postheader_right{
+  border-radius: 0px !important ;
+  }
+</style>

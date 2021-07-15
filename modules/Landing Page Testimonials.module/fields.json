@@ -1,0 +1,89 @@
+[ {
+  "id" : "e874547b-1d9e-4f0c-e29a-aeb7d23446f6",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What looks like being a Program Manager?"
+}, {
+  "id" : "8d869f10-5b17-f36d-464d-e0cd49296b82",
+  "name" : "sub_text",
+  "label" : "Sub text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nicole have a quote for it"
+}, {
+  "id" : "df2e8bf1-5eab-c931-6928-25d3a1e3d4f1",
+  "name" : "field_group",
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6acafa2d-7c22-9a75-70d7-30f8eaef1d0c",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "\"\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.\""
+  }, {
+    "id" : "aaf5a2bf-03b6-9070-ae5a-35375fbfa755",
+    "name" : "testimoniale_name",
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "NAME <br> POSITION"
+  }, {
+    "id" : "43a44ea5-c300-7381-976b-6119f26fd641",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Quote.svg",
+      "alt" : "Quote",
+      "loading" : "lazy",
+      "width" : 379,
+      "height" : 389,
+      "max_width" : 379,
+      "max_height" : 389
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "\"\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.\"",
+    "testimoniale_name" : "NAME <br> POSITION",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Quote.svg",
+      "alt" : "Quote",
+      "loading" : "lazy",
+      "width" : 379,
+      "height" : 389,
+      "max_width" : 379,
+      "max_height" : 389
+    }
+  }
+} ]

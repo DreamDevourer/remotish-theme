@@ -1,0 +1,108 @@
+<section class="case_studies">
+     <div class="container">
+        <div class="title-row">
+           <div class="title-left">
+             <div class="title-h2">
+               <h2>
+                 {{ module.title }}
+               </h2>
+               <span class="subtext2"> 
+                 {{ module.sub_text }}
+               </span>
+
+             </div>
+
+          </div>
+          <div class="title-right">
+             <div class="button-deaign">
+               {% set href = module.button_link.url.href %}
+               {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+               {% set href = "mailto:" + href %}
+               {% endif %}
+               {% set rel = [] %}
+               {% if module.button_link.no_follow %}
+               {% do rel.append("nofollow") %}
+               {% endif %}
+               {% if module.button_link.open_in_new_tab %}
+               {% do rel.append("noopener") %}
+               {% endif %}
+               <a href="{{ href }}"
+                  {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                  {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                  >
+                    {{ module.button_text }}
+               </a>
+            </div>
+          </div>
+       </div>
+    </div>   
+       <div class="case-studies-row">
+         {% for item in module.logo_group %}
+          {% set href = item.link_field.url.href %}
+                 {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                 {% set href = "mailto:" + href %}
+                 {% endif %}
+                 {% set rel = [] %}
+                 {% if item.link_field.no_follow %}
+                 {% do rel.append("nofollow") %}
+                 {% endif %}
+                 {% if item.link_field.open_in_new_tab %}
+                 {% do rel.append("noopener") %}
+                 {% endif %}
+                	{% if item.add_link %}  <a href="{{ href }}" {% endif %}
+                    {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                    >
+             <div class="case-study-column">
+               <div class="case-study-inner">
+                
+                {% if item.logo_image.src %}
+                {% set sizeAttrs = 'width="{{ item.logo_image.width }}" height="{{ item.logo_image.height }}"' %}
+                {% if item.logo_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.logo_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.logo_image.max_width }}px; max-height: {{ item.logo_image.max_height }}px"' %}
+                {% endif %}
+                {% set loadingAttr = item.logo_image.loading != 'disabled' ? 'loading="{{ item.logo_image.loading }}"' : '' %}
+                <img loading="lazy" src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                   
+       
+                 
+               </div>
+           </div>
+               {% if item.add_link %} </a> {% endif %}
+         {% endfor %}
+        
+       </div>
+   
+</section>
+
+{{ require_js("https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", "footer") }}
+ 
+ {% require_js %}
+    <script defer>  
+      
+      $(document).ready(function(){
+        
+          if (window.matchMedia('(max-width: 767px)').matches){
+             $(".case_studies .subtext2").insertAfter(".case_studies .title-row");
+          } 
+        
+          $('.case-studies-row').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+             centerMode: true,
+             variableWidth: true,
+             dots: true,
+             arrows: false
+      
+          });
+        });
+
+     
+    </script>
+  {% end_require_js %}
+
+

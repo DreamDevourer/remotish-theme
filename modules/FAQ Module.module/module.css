@@ -1,0 +1,123 @@
+.accordion {}
+.accordion_group {
+    margin-bottom: 2px;
+}
+
+#title {
+    text-align: center;
+    padding-bottom: 90px !important;
+}
+
+.textcontainer{
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.accordion_header {
+    border: 2px solid #eee;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 16px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+  
+    font-family: 'Quicksand', sans-serif; margin:0; font-size:24px; line-height:30px;
+}
+
+.expanded, .back-red, .TITLEon, .TITLE:hover, .accordion_header:hover { color: #eee; background-color: #ED8074; }
+
+.TITLEon, .TITLE:hover { color: #eee; } 
+
+.accordion_icon{
+    padding-right: 0px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+.accordion_content { 
+    padding: 10px 15px;
+    display: none;
+}
+.expanded .accordion_content {		
+    display: block; 		
+}
+.accordion_group .accordion_icon {
+    pointer-events: none; 
+    position: relative;
+    flex: auto;
+}
+
+.accordion_group .accordion_icon::before,
+.accordion_group .accordion_icon::after {
+    content: '^';
+    font-size: 36px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    width: 10px;
+    height: 2px;
+    margin-top: -1px;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    flex: auto;
+}
+.accordion_icon::after{
+    content: '^';
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+}
+
+.accordion_group.expanded .accordion_icon::before {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 0;
+    margin-top: -10px;
+}
+.accordion_group .accordion_icon::before {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0;
+    margin-top: 10px;
+}
+.accordion_group .accordion_icon::after {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    margin-top: -10px;
+}
+.accordion_group.expanded .accordion_icon::after {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-top: 5px;
+}
+
+
+
+
+/* .textcontainer { margin-left: 18px; margin-right: 18px; } */
+
+
+@import "compass/css3";
+
+.accordionIndividual {
+   margin: 50px;   
+}
+
+.textAnswer { margin-inline-start: 0px; display: none; background: #fff; font-size: 18px; }

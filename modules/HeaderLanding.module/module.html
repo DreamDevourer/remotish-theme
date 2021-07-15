@@ -1,0 +1,56 @@
+<header class="main-header" id="mainHeader">
+    <div class="container">
+       <div class="main-header-row">
+         <div class="header-logo">
+             <a rel="dns-prefetch" href="/">
+               {% set loadingAttr = module.logo.loading != 'lazy' ? 'loading="{{ module.logo.loading }}"' : '' %}
+               <img loading="lazy" class="mainLogoSite" src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" {{ loadingAttr }}>
+             </a>
+         </div>
+         <div class="menu-main">
+            <nav>
+               {% menu id="{{ module.menu_field }}" %}
+            </nav>
+         </div>
+         <div class="header-cta">
+             <div class="button-deaign">
+                 {% set href = module.button_link.url.href %}
+                 {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                 {% set href = "mailto:" + href %}
+                 {% endif %}
+                 {% set rel = [] %}
+                 {% if module.button_link.no_follow %}
+                 {% do rel.append("nofollow") %}
+                 {% endif %}
+                 {% if module.button_link.open_in_new_tab %}
+                 {% do rel.append("noopener") %}
+                 {% endif %}
+                 <a href="{{ href }}"
+                    {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                    >
+                   {{ module.button_text }}
+                 </a>
+           </div>
+         </div>
+       </div>
+    </div>
+</header>
+
+{% require_js %}
+<script defer>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("mainHeader");
+var sticky = header.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+{% end_require_js %}

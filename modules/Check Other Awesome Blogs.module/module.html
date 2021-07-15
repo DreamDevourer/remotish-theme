@@ -1,0 +1,150 @@
+<section class="keep_studies related-post-inner">
+     <div class="container">
+        <div class="title-row">
+           <div class="title-left">
+             <div class="title-h2">
+               <h2>
+                 {{ module.title }}
+               </h2>
+               <span class="subtext2"> 
+                 {{ module.sub_text }}
+               </span>
+
+             </div>
+
+          </div>
+          <div class="title-right">
+             <div class="button-deaign">
+              
+                {% set my_blog = blog_by_id(module.blog_field) %}
+                <a href="{{my_blog.absolute_url}}"  >
+                  {{ module.button_text }}
+                </a>
+            </div>
+          </div>
+       </div>
+    </div>   
+  
+
+{% if content.topic_list %}
+ 
+    {% set max_posts = module.display_no_of_post %} <!-- Set the max number of related posts to be output to the page here -->
+    {% set count = 0 %}
+    {% for topic in content.topic_list %}
+        {% if loop.index  == 1 %}
+            {% set topic_one = blog_recent_topic_posts(module.blog_field, topic.slug, max_posts + 1 ) %}
+            {% if topic_one|length == 1 %}
+       
+           <!-- author post -->
+      
+        <div class="keep-studies-row"> 
+              {% set author_posts = blog_recent_author_posts(module.blog_field, content.blog_post_author.slug, 6) %}
+              {% for author_post in author_posts %}
+                 
+                     <a href="{{ author_post.absolute_url }}">
+                       <div class="keep-study-column">
+                         <div class="keep-study-inner">
+                           <div class="keep-study-image" >
+                             
+                             <img loading="lazy" src="{{ author_post.featured_image }}" alt="" >
+
+                           </div>
+                           <div class="keep-study-text">
+                             <h3>
+                               {{ author_post.name|truncate(50) }}
+                             </h3>
+                           </div>
+                         </div>
+                       </div>
+
+                     </a> 
+             
+              {% endfor %}   
+       </div>
+           <!-- author post -->    
+  
+  
+            {% endif %}
+        {% elif loop.index == 2 %}
+            {% set topic_two = blog_recent_topic_posts(module.blog_field, topic.slug, max_posts + 1 ) %}
+        {% elif loop.index == 3 %}
+            {% set topic_three = blog_recent_topic_posts(module.blog_field, topic.slug, max_posts + 1 ) %}
+        {% endif %}
+        {% if loop.length >= 3 and loop.index == 3 %}
+            {% set related_posts = (topic_one + topic_two + topic_three)|sort(true, false, 'publish_date')|unique('name') %}
+            {% set loop_count = 3 %}
+        {% elif loop.length == 2 and loop.index == 2 %}
+            {% set related_posts = (topic_one + topic_two)|sort(true, false, 'publish_date')|unique('name') %}
+            {% set loop_count = 2 %}
+        {% elif loop.length == 1 and loop.index == 1 %}
+            {% set related_posts = topic_one %}
+            {% set loop_count = 1 %}
+        {% endif %}
+       <div class="keep-studies-row"> 
+        {% if loop.index == loop_count %}
+        {% for post in related_posts %}
+         {% if content.absolute_url != post.absolute_url and count < max_posts %}
+           
+         <a href="{{ post.absolute_url }}">
+             <div class="keep-study-column">
+               <div class="keep-study-inner">
+                  <div class="keep-study-image" >
+                   <img loading="lazy" src="{{ post.featured_image }}" alt="" >
+
+                  </div>
+                 <div class="keep-study-text">
+                      <h3>
+                         {{ post.name|truncate(50) }}
+                      </h3>
+                  </div>
+               </div>
+           </div>
+           
+             </a>  
+         
+         
+                    {% set count = count + 1 %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+          </div>
+    {% endfor %}
+{% endif %} 
+       
+        
+      
+   
+</section>
+
+{{ require_js("https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", "footer") }}
+ 
+ {% require_js %}
+    <script defer>  
+      $(document).ready(function(){
+        
+          $('.keep-studies-row').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+             centerMode: true,
+             variableWidth: true,
+             dots: true,
+             arrows: false
+      
+          });
+          
+       
+        });
+        
+
+     
+    </script>
+  {% end_require_js %}
+
+{% require_css %}
+<style>.slick-slide{     display: flex !important;   justify-content: center; }
+</style>
+{% end_require_css %}
+
+
+

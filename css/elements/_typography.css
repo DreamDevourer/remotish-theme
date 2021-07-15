@@ -1,0 +1,93 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Lato, serif;
+  overflow-x: hidden;
+  word-break: break-word;
+}
+
+html[lang^='ja'] body,
+html[lang^='zh'] body,
+html[lang^='ko'] body {
+  line-break: strict;
+  word-break: break-all;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: #051f46;
+  font-family: Teko, sans-serif;
+  margin: 10px 0;
+}
+
+h5,
+h6 {
+  color: #051f46;
+  font-family: Teko, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  color: #9ea1a6;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+a {
+  color: #ff5e14;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+blockquote {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.625rem;
+  margin: 10px 0;
+}
+
+ul,
+ol {
+  color: #051f46;
+  font-weight: 300;
+}
+
+li {
+  margin: 35px 0;
+}

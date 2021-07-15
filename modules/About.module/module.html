@@ -1,0 +1,94 @@
+<section class="about-home">
+    <div class="container">
+       <div class="abouthome-title">
+         <div class="title-h2">
+           <h2>
+             {{ module.title }}
+           </h2>
+           <span class="subtext2"> 
+             {{ module.sub_text }}
+           </span>
+
+          </div>
+         <div class="title-right">
+           <div class="button-deaign">
+             {% set href = module.button_link.url.href %}
+             {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+             {% set href = "mailto:" + href %}
+             {% endif %}
+             {% set rel = [] %}
+             {% if module.button_link.no_follow %}
+             {% do rel.append("nofollow") %}
+             {% endif %}
+             {% if module.button_link.open_in_new_tab %}
+             {% do rel.append("noopener") %}
+             {% endif %}
+             <a href="{{ href }}"
+                {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                >
+                 {{ module.button_text }}
+             </a>
+           </div>
+          </div>
+      </div>
+      
+      <div class="abouthomeimahge-row">  
+         {% set loadingOne = module.image_one.loading != 'lazy' ? 'loading="{{ module.image_one.loading }}"' : '' %}
+         {% set loadingTwo = module.image_two.loading != 'lazy' ? 'loading="{{ module.image_two.loading }}"' : '' %}
+         {% set loadingThree = module.image_three.loading != 'lazy' ? 'loading="{{ module.image_three.loading }}"' : '' %}
+        
+         <div class="abouthomeimahge_one">
+             <img loading="lazy" src="{{ module.image_one.src }}" {{ loadingOne }}>
+        </div>
+        <div class="abouthomeimahge-right">
+           <div class="abouthomeimahge_two">
+           <img loading="lazy" src="{{ module.image_two.src }}" {{ loadingTwo }}>
+        </div> 
+        <div class="abouthomeimahge_three">
+           <img loading="lazy" class="makeItRightIMG" src="{{ module.image_three.src }}" {{ loadingThree }}>
+        </div>
+        </div>
+      </div>
+       <div class="abouthome-row">
+         {% for item in module.about_group %}
+          <div class="abouthome-column">
+            
+              <div class="abouthome-icontitle">
+                <span class="abouthome-icon">
+                 {% if item.image_field.src %}
+                  {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                  {% if item.image_field.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                  {% elif item.image_field.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.image_field.loading != 'lazy' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                  <img loading="lazy" src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </span>
+                <h3>
+                  {{ item.title }}
+               </h3>
+            </div>
+            <div class="abouthome-text">
+                 {{ item.richtext_field }}
+            </div>
+          
+          </div>
+         {% endfor %}
+         
+      </div>
+    </div>
+</section>
+
+{% require_js %}
+<script defer>
+  $(document).ready(function(){
+  if (window.matchMedia('(max-width: 767px)').matches){
+	   $(".abouthome-title .subtext2").insertAfter('.abouthome-title');
+  } 
+  });  
+</script>
+{% end_require_js %}
+

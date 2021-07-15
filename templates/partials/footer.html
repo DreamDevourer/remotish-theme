@@ -1,0 +1,116 @@
+<!--
+  templateType: global_partial
+  label: Footer
+-->
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__row">
+      <div class="footer__info">
+        <div class="footer__info__logo">
+          {% module 'footer_logo'
+            path='@hubspot/logo',
+            label='Logo',
+            img={
+              'src': get_asset_url('../../images/logo.svg'),
+              'alt': 'Barricade Logo',
+              'width': '196',
+              'height': '42'
+            }
+          %}
+        </div>
+        <div class="footer__info__address">
+            {% module_block module 'footer_address'
+              label='Company address',
+              path='@hubspot/rich_text'
+            %}
+              {% module_attribute 'html' %}
+                <div>197A Quintal Square</div>
+                <div>Waverly, MA 04982</div>
+              {% end_module_attribute %}
+            {% end_module_block %}
+        </div>
+      </div>
+
+      <div class="footer__site-map">
+
+        {# Footer Nav Column 1 #}
+        <div class="footer__site-map__section">
+          {% module "footer_menu_header_one" path="@hubspot/header" header_tag='h4', overrideable=True, value='About', label='Menu Title Column 1' %}
+          {% module_block module "footer_menu_one" path="@hubspot/simple_menu" overrideable=True, orientation='vertical', label='Menu Column 1'  %}
+            {% module_attribute "menu_tree" is_json=True %}[{"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item One", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}, {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Two", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}, {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Three", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}]{% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+
+        {# Footer Nav Column 2 #}
+        <div class="footer__site-map__section">
+          {% module "footer_menu_header_two" path="@hubspot/header", header_tag='h4', overrideable=True, value='Services', label='Menu Title Column 2' %}
+          {% module_block module "footer_menu_two" path="@hubspot/simple_menu" overrideable=True, orientation='vertical', label='Menu Column 2'  %}
+            {% module_attribute "menu_tree" is_json=True %}[{"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item One", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}, {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Two", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}, {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Three", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}]{% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+
+        {# Footer Nav Column 3 #}
+        <div class="footer__site-map__section">
+          {% module "footer_menu_header_three" path="@hubspot/header", header_tag='h4', overrideable=True, value='News', label='Menu Title Column 3' %}
+          {% module_block module "footer_menu_three" path="@hubspot/simple_menu" overrideable=True, orientation='vertical', label='Menu Column 3'  %}
+            {% module_attribute "menu_tree" is_json=True %}[{"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item One", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}, {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Two", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}, {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Three", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}]{% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+      </div>
+    </div>
+    
+    {# Footer copyright #}
+    <div class="footer__row footer__row--info">
+      <div class="footer__copyright">
+        {% module_block module 'footer_copyright'
+          label='Copyright'
+          path='@hubspot/rich_text'
+        %}
+          {% module_attribute 'html' %}
+            All Rights Reserved. © {{ year }} Barricade 
+          {% end_module_attribute %}
+        {% end_module_block %}
+      </div>
+      <div class="footer__info__social">
+      
+        {# Social Follow #}
+        <div class="footer__follow-me">
+          {% module_block module 'footer_social'
+            path='../../modules/social-follow',
+            override_default_style=false,
+            social_links=[
+              {
+                'social_account': 'facebook-f',
+                'accessibility': {
+                  'title': 'Follow us on Facebook'
+                }
+              },
+              {
+                'social_account': 'linkedin-in',
+                'accessibility': {
+                  'title': 'Follow us on LinkedIn'
+                }
+              },
+              {
+                'social_account': 'twitter',
+                'accessibility': {
+                  'title': 'Follow us on Twitter'
+                }
+              },
+              {
+                'social_account': 'instagram',
+                'accessibility': {
+                  'title': 'Follow us on Instagram'
+                }
+              }
+            ]
+          %}
+          {% end_module_block %}
+          
+      </div>
+    </div>
+
+    </div>
+    
+  </div>
+</footer>

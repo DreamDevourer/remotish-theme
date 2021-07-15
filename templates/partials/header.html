@@ -1,0 +1,56 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+
+<header class="header">
+  
+  {# Main Header Section #}
+  <div class="header__container">
+    <div class="header__logo">
+      {% module 'header_logo'
+        path='@hubspot/logo',
+        label='Logo',
+        img={
+          'src': get_asset_url('../../images/logo.svg'),
+          'alt': 'Barricade Logo',
+          'width': '196',
+          'height': '42'
+        }
+      %}
+    </div>
+
+    {# Main Navigation #}
+    <div class="header__menu">
+        <input type="checkbox" id="nav-toggle">
+        <label class="header__navigation-toggle" for="nav-toggle">
+          <span class="header__mobile-menu-icon"></span>
+        </label>
+        <div class="header__navigation">
+          {% module 'header_navigation_primary'
+            label='Primary navigation',
+            path='../../modules/menu-section'
+          %}            
+        </div>
+    </div>
+    {# End Main Navigation #}
+
+    {# Language Toggle #}
+    {% if content.translated_content|length || group.translations %}
+      <div class="header__language-switcher">
+        <div class="header__language-switcher-label">
+          {% module 'language-switcher'
+            label='Language switcher',
+            path='@hubspot/language_switcher',
+            display_mode='localized'
+          %}
+          <div class="header__language-switcher-label-current"> {{ locale_name(locale) }}</div>
+        </div>
+      </div>
+    {% endif %}
+    {# End Language Toggle #}
+
+  </div>
+  {# End Main Header Section #}
+
+</header>

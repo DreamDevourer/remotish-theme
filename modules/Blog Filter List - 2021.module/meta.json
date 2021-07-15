@@ -1,0 +1,9 @@
+{
+  "global" : true,
+  "smart_type" : "NOT_SMART",
+  "icon" : "fontawesome-5.14.0:Alternate%20Sort%20Amount%20Up:SOLID",
+  "host_template_types" : [ "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 47327610783,
+  "label" : "Blog Tag Filter",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,78 @@
+<section class="the-team">
+   <div class="container">
+      <div class="section-title">
+         <h2>
+           {{ module.title }}
+        </h2>
+        <span class="size-sub">{{ module.sub_text }} </span>
+     </div>
+     <div class="theteam-row">
+       {% for item in module.team_group %}
+        <div class="theteam-column">
+         
+      {% set href = item.box_link.url.href %}
+      {% if item.box_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+      {% set rel = [] %}
+      {% if item.box_link.no_follow %}
+        {% do rel.append("nofollow") %}
+      {% endif %}
+      {% if item.box_link.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+      {% endif %}
+          {% if item.enable_a_link %}
+      <a href="{{ href }}"
+        {% if item.box_link.open_in_new_tab %}target="_blank"{% endif %}
+        {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+        > 
+        {% endif %}
+           <div class="theteam-image">
+                <div class="teamimg">
+                 {% if item.image_field.src %}
+                 {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                 {% if item.image_field.size_type == 'auto' %}
+                 {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                 {% elif item.image_field.size_type == 'auto_custom_max' %}
+                 {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+                 {% endif %}
+                 {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                 <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                 {% endif %}
+                  </div>
+                  <div class="bobs">
+                    {% if item.bg_shap.src %}
+                    {% set sizeAttrs = 'width="{{ item.bg_shap.width }}" height="{{ item.bg_shap.height }}"' %}
+                    {% if item.bg_shap.size_type == 'auto' %}
+                    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                    {% elif item.bg_shap.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.bg_shap.max_width }}px; max-height: {{ item.bg_shap.max_height }}px"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.bg_shap.loading != 'disabled' ? 'loading="{{ item.bg_shap.loading }}"' : '' %}
+                    <img src="{{ item.bg_shap.src }}" alt="{{ item.bg_shap.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                 </div>
+            
+          </div>
+          <div class="theteam-text">
+            <div class="team-title">
+               <h3>
+               {{ item.title }}
+            </h3>
+            <span class="team-post"> {{ item.sub_text }} </span>
+            </div>
+            <div class="team-details">
+               {{ item.details }}
+            </div>
+          </div>
+          
+          
+          {% if item.enable_a_link %}
+          </a> 
+          {% endif %}
+       </div>
+       {% endfor %}
+       
+     </div>
+  </div>
+</section>

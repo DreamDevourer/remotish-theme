@@ -1,0 +1,19 @@
+  <div class="blog-filter">
+      <div class="container">
+      <div class="filters filter-button-group">
+        <ul class="blog-filtterp-list">
+          <li class="button-deaign active"  data-filter="*"><a>All</a></li>
+          
+         {% for item in module.field_group %}
+            <li class="button-deaign" data-filter=".{{  item.tag_name|lower|replace(' ', '-')}}" > <a>{{ item.tag_name }}</a> </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+  </div>
+      <style>
+        .filter-button-group .button-deaign a.active{     color: #fff; }  
+        .filter-button-group .button-deaign a.active:before {   -webkit-transform: scaleX(1);   transform: scaleX(1); }
+
+      </style>
+  </div>

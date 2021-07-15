@@ -1,0 +1,30 @@
+{# Accoordion Layout #}
+<div class="accordion">
+   <div class="section-title" id="title">
+        <h2>
+         {{ module.title }}
+        </h2>
+        <span class="size-sub">{{ module.sub_text }} </span>
+    </div>
+  {% for item in module.faq_group %}
+  
+  
+  <div class="accordionIndividual {% if module.expanded %}expanded{% endif %}" id="isExpanded" class="accordion_group">
+      <div class="accordion_header" id="containerTitle">{{ item.faq_question }}<span class="accordion_icon"></span></div>
+      <div class="textAnswer"> 
+        <div class="textcontainer"> {{ item.faq_answer }} </div> 
+    </div>
+  </div>
+  
+  {#
+    <div class="accordion_group {% if module.expanded %}expanded{% endif %}">
+        <div class="accordion_header" id="containerTitle">  <h3 class="TITLE" id="titleIdle">{{ module.faq_question }}</h3> <span class="accordion_icon"></span> </div>
+		<div class="accordion_content">
+			<p>
+        {{ module.faq_answer }}
+      </p>
+		</div>
+	</div>
+  #}
+  {% endfor %}
+</div>

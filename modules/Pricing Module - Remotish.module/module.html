@@ -1,0 +1,308 @@
+{% if module.choice_style == "style2" %}
+
+
+<div class="pricing-tablemain">
+    <div class="container">
+      {% if module.section_header_ %}
+      <div class="pricing-header">
+        {{ module.header }}
+      </div>
+      {% endif %}
+      
+  
+      <div class="pricing-tableptrow deskstop-price" >
+          <div class="pricingtable-left">
+              {{ module.pricing_table.left_title }}
+          </div>
+        
+          <div class="pricingtable-right">
+            {% for item in module.pricing_table.price_column %}
+               <div class="pricingtable-column   {% if item.active_column %} avtivetable-price {% endif %}"   {% if item.active_column %} style="background-color: rgba({{ item.active_color.color|convert_rgb }},{{item.active_color.opacity / 100 }});{% endif %} ">
+                 <div class="pricingtable-row">
+                   <div class="plabe-pt">
+                        {{ item.plane }}
+                   </div>
+                   <div class="plane-pricept">
+                       <h2>
+                          ${{ item.price }}
+                      </h2>
+                   </div>
+                   <div class="plane-tpmont">
+                       {{ item.month }}
+                   </div>
+                 </div>
+                 <div class="plabe-buttontp cta-design">
+                    {% set href = item.button_link.url.href %}
+                       {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                       {% set href = "mailto:" + href %}
+                       {% endif %}
+                       {% set rel = [] %}
+                       {% if module.link_field.no_follow %}
+                       {% do rel.append("nofollow") %}
+                       {% endif %}
+                       {% if module.link_field.open_in_new_tab %}
+                       {% do rel.append("noopener") %}
+                       {% endif %}
+                       <a {% if item.active_column %} style="color:rgba({{ item.active_color.color|convert_rgb }},{{item.active_color.opacity / 100 }});" {% endif %} href="{{ href }}"
+                          {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                          {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                          >
+                         {{ item.button_text }}
+                       </a>
+                 </div>
+              </div>
+           {% endfor %}  
+            
+          </div>
+        
+      </div>
+    
+      <!--  mobile -->
+      
+      <div class="pricing-tableptrow mobile-price" >
+          <div class="pricingtable-left">
+              {{ module.pricing_table.left_title }}
+          </div>
+        
+          <div class="pricingtable-right">
+            {% for item in module.pricing_table.price_column %}
+               <div class="pricingtable-column   {% if item.active_column %} avtivetable-price {% endif %}"   {% if item.active_column %} style="background-color: rgba({{ item.active_color.color|convert_rgb }},{{item.active_color.opacity / 100 }});{% endif %} ">
+                 <div class="pricingtable-row">
+                   <div class="plabe-pt">
+                        {{ item.plane }}
+                   </div>
+                   <div class="plane-pricept">
+                       <h2>
+                          ${{ item.price }}
+                      </h2>
+                   </div>
+                   <div class="plane-tpmont">
+                       {{ item.month }}
+                   </div>
+                 </div>
+                 
+                 <div class="pricemore-row">
+                  
+                   {% if loop.index == 1 %}
+                   {% for item in module.pricing_table.table_rows %}
+                      
+                        <div class="pricerow-column">
+
+                        <div class="price-check-col"> 
+                          
+                          <div class="price-check"> 
+                             {% if item.column_one_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} 
+                           </div>
+                           {{ item.title_row }}
+                         </div>
+                          
+                       </div>
+   
+                   {% endfor %}
+                 
+                   {% endif %}
+                   
+                   
+                   {% if loop.index == 2 %}
+                   {% for item in module.pricing_table.table_rows %}
+                      
+                        <div class="pricerow-column">
+
+                        <div class="price-check-col"> 
+                          
+                          <div class="price-check"> 
+                             {% if item.column_two_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} 
+                           </div>
+                           {{ item.title_row }}
+                         </div>
+                          
+                       </div>
+   
+                   {% endfor %}
+                 
+                   {% endif %}
+                   
+                   {% if loop.index == 3 %}
+                   {% for item in module.pricing_table.table_rows %}
+                      
+                        <div class="pricerow-column">
+
+                        <div class="price-check-col"> 
+                          
+                          <div class="price-check"> 
+                             {% if item.column_three_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} 
+                           </div>
+                           {{ item.title_row }}
+                         </div>
+                          
+                       </div>
+   
+                   {% endfor %}
+                 
+                   {% endif %}
+                 
+                 </div>
+                 
+                 <div class="plabe-buttontp cta-design">
+                    {% set href = item.button_link.url.href %}
+                       {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                       {% set href = "mailto:" + href %}
+                       {% endif %}
+                       {% set rel = [] %}
+                       {% if module.link_field.no_follow %}
+                       {% do rel.append("nofollow") %}
+                       {% endif %}
+                       {% if module.link_field.open_in_new_tab %}
+                       {% do rel.append("noopener") %}
+                       {% endif %}
+                       <a {% if item.active_column %} style="color:rgba({{ item.active_color.color|convert_rgb }},{{item.active_color.opacity / 100 }});" {% endif %} href="{{ href }}"
+                          {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                          {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                          >
+                         {{ item.button_text }}
+                       </a>
+                 </div>
+              </div>
+           {% endfor %}  
+            
+          </div>
+        
+      </div>
+      
+      
+      <!-- end mobile -->
+      
+      
+      
+      
+      
+      {% if module.pricing_table.active_the_flags %}
+      
+        <div class="pricemore-row deskstop-price">
+          <div class="pricerow-column pricemore-name" style="background-color:#fff;">
+            <span>  </span>
+            <span>  </span>
+            <span> {{ module.pricing_table.flag_title_1 }} </span>
+            <span> {{ module.pricing_table.flag_title_2 }} </span>
+          </div>
+          {% for item in module.pricing_table.table_rows %}
+          <div class="pricerow-column">
+            <span> {{ item.title_row }} </span>
+            <span> {% if item.column_one_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} </span>
+            <span> {% if item.column_two_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} </span>
+            <span> {% if item.column_three_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} </span>
+          </div>
+          {% endfor %}
+          <div class="pricerow-column pricemore-bottom" style="background-color:#fff;">
+            <span>  </span>
+            <span>  </span>
+            <span class="cta-design border-button">
+               
+              {% set href = module.pricing_table.flag_buttons.button_1_link.url.href %}
+{% if module.pricing_table.flag_buttons.button_1_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+{% set rel = [] %}
+{% if module.link_field.no_follow %}
+	{% do rel.append("nofollow") %}
+{% endif %}
+{% if module.link_field.open_in_new_tab %}
+	{% do rel.append("noopener") %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.pricing_table.flag_buttons.button_1_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+	>
+   {{ module.pricing_table.flag_buttons.button_1_text }}
+</a>
+              
+            </span>
+            <span class="cta-design plane-btn">
+            
+            
+{% set href = module.pricing_table.flag_buttons.button_2_link.url.href %}
+{% if module.pricing_table.flag_buttons.button_2_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+{% set rel = [] %}
+{% if module.link_field.no_follow %}
+	{% do rel.append("nofollow") %}
+{% endif %}
+{% if module.link_field.open_in_new_tab %}
+	{% do rel.append("noopener") %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.pricing_table.flag_buttons.button_2_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+	>
+	{{ module.pricing_table.flag_buttons.button_2_text }}
+</a>
+            </span>
+          </div>
+          
+        </div>
+      
+      {% else %}
+      
+      <div class="pricemore-row deskstop-price">
+        {% for item in module.pricing_table.table_rows %}
+          <div class="pricerow-column">
+              <span> {{ item.title_row }} </span>
+              <span> {% if item.column_one_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} </span>
+              <span> {% if item.column_two_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} </span>
+              <span> {% if item.column_three_check_ %} <i style="color: rgba({{module.pricing_table.check_mark_color.color|convert_rgb }},{{ module.pricing_table.check_mark_color.opacity / 100 }});" class="fa fa-check-circle" aria-hidden="true"></i> {% endif %} </span>
+          </div>
+        {% endfor %}
+      </div>
+      
+      {% endif %}
+    
+      
+      
+      
+    </div>
+</div>
+
+
+{% require_css %}
+    <style>
+        #hs_cos_wrapper_{{name}} .plabe-buttontp.cta-design a{  min-width: 168px; min-height: 52px;  }
+        #hs_cos_wrapper_{{name}} .plabe-buttontp.cta-design a:hover,#hs_cos_wrapper_{{name}} .border-button a:hover{     background: rgba({{ module.pricing_table.button_color.color|convert_rgb }},{{ module.pricing_table.button_color.opacity / 100 }}); color:#fff; }
+       
+       {% if module.pricing_table.button_style_button %}
+            #hs_cos_wrapper_{{name}} .plabe-buttontp.cta-design a, #hs_cos_wrapper_{{name}} .border-button a {  border: 2px solid rgba({{ module.pricing_table.button_color.color|convert_rgb }},{{ module.pricing_table.button_color.opacity / 100 }});  background: transparent;   color: rgba({{ module.pricing_table.button_color.color|convert_rgb }},{{ module.pricing_table.button_color.opacity / 100 }});    }
+        {% endif %}
+      
+      #hs_cos_wrapper_{{name}}  .plane-btn a { background: rgba({{ module.pricing_table.button_color.color|convert_rgb }},{{ module.pricing_table.button_color.opacity / 100 }}); }
+     
+      
+      
+      
+      
+      @media(min-width:768px){ 
+        
+        #hs_cos_wrapper_{{name}} .avtivetable-price { color: #fff;  }
+        #hs_cos_wrapper_{{name}} .avtivetable-price .plabe-buttontp.cta-design a { background: #fff;     transform: scale(1.15);
+          border-color: transparent;   margin-top: 18px; }
+      
+        
+        
+        }
+      
+        @media(max-width:768px){ 
+          .pricingtable-column.avtivetable-price{ background-color:transparent !important; }
+          .pricingtable-column.avtivetable-price .plabe-buttontp {    margin-top: 51px; }
+          {% for item in module.pricing_table.price_column %}
+          .pricingtable-column.avtivetable-price  .pricingtable-row{      margin-top: 30px;   padding-bottom: 45px;  background-color:rgba({{ item.active_color.color|convert_rgb }},{{item.active_color.opacity / 100 }}) }
+            
+          {% endfor %}
+          
+        }
+        
+    </style>
+{% end_require_css %}
+
+{% endif %}
+
+
+

@@ -1,0 +1,157 @@
+[ {
+  "id" : "14390c9a-32dc-f678-d771-7894ce4f0d80",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We Value Being"
+}, {
+  "id" : "3ab80529-ee7f-a75b-1aee-28323d828436",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We are capable of being the best"
+}, {
+  "id" : "87840f93-c351-6105-914f-d7e1aec651c4",
+  "name" : "field_group",
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 20,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "5e0744eb-a97b-d86a-5c04-e42fd54cfa54",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "A Valuable Resource"
+  }, {
+    "id" : "23c609d0-fa1b-e861-182b-5334f00fe47a",
+    "name" : "sub_text",
+    "label" : "Sub Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "We have resourceful knowleadge"
+  }, {
+    "id" : "0914d55f-9894-3ac7-fa9a-d7eb5dff29ba",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035%20(1).png",
+      "alt" : "Group 35 (1)",
+      "loading" : "lazy",
+      "width" : 1201,
+      "height" : 1190,
+      "max_width" : 1201,
+      "max_height" : 1190
+    }
+  }, {
+    "id" : "1cb1a5f1-e7d0-ef4a-630d-807f5904a1cc",
+    "name" : "richtext_field",
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>“A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video.”</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "A Valuable Resource",
+    "sub_text" : "We have resourceful knowleadge",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035%20(1).png",
+      "alt" : "Group 35 (1)",
+      "loading" : "lazy",
+      "width" : 1201,
+      "height" : 1190,
+      "max_width" : 1201,
+      "max_height" : 1190
+    },
+    "richtext_field" : "<p>“A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video.”</p>"
+  }, {
+    "title" : "A Valuable Resource",
+    "sub_text" : "We have resourceful knowleadge",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035%20(1).png",
+      "alt" : "Group 35 (1)",
+      "loading" : "lazy",
+      "width" : 1201,
+      "height" : 1190,
+      "max_width" : 1201,
+      "max_height" : 1190
+    },
+    "richtext_field" : "<p>“A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video.”</p>"
+  }, {
+    "title" : "A Valuable Resource",
+    "sub_text" : "We have resourceful knowleadge",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035%20(1).png",
+      "alt" : "Group 35 (1)",
+      "loading" : "lazy",
+      "width" : 1201,
+      "height" : 1190,
+      "max_width" : 1201,
+      "max_height" : 1190
+    },
+    "richtext_field" : "<p>“A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video.”</p>"
+  }, {
+    "title" : "A Valuable Resource",
+    "sub_text" : "We have resourceful knowleadge",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Group%2035%20(1).png",
+      "alt" : "Group 35 (1)",
+      "loading" : "lazy",
+      "width" : 1201,
+      "height" : 1190,
+      "max_width" : 1201,
+      "max_height" : 1190
+    },
+    "richtext_field" : "<p>“A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video. A glowing customer testimonial, perhaps quoted from the adjacent video.”</p>"
+  } ]
+}, {
+  "id" : "5f43452b-2b65-e12b-6fab-2eddaa75f8e4",
+  "name" : "section_id",
+  "label" : "Section Id",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "scroll4"
+} ]

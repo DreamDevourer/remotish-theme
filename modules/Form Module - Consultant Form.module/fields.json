@@ -1,0 +1,67 @@
+[ {
+  "id" : "845ea210-04e2-74cc-5e85-53695f1f12fb",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "TALK WITH US"
+}, {
+  "id" : "d2e444a7-2409-30d0-3af5-7ce3f6b0d8e0",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book a call with us and get the best"
+}, {
+  "id" : "6092fc03-ce05-5d0f-05e3-9901b7b5e2fa",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span></p>\n<ul>\n<li>Lorem Ipsum</li>\n<li>Lorem Ipsum</li>\n<li>Lorem Ipsum</li>\n<li>Lorem Ipsum</li>\n</ul>"
+}, {
+  "id" : "142f1a8f-c6f7-951a-b780-b3ed5fce1250",
+  "name" : "form_title",
+  "label" : "Form Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book a Call Now!"
+}, {
+  "id" : "9517fb4a-32ab-77e5-ef6e-997ca08e6da4",
+  "name" : "caption_of_form",
+  "label" : "Caption of Form",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Fields marked with an<span>&nbsp;</span><span class=\"ninja-forms-req-symbol\" style=\"color: #ff0000;\">*</span><span>&nbsp;</span>are required"
+}, {
+  "id" : "32fd3bb9-b51a-98eb-cc4f-a79f793441a1",
+  "name" : "form_field",
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "f839923e-fef7-44c8-85df-1f20de44ddf2",
+    "response_type" : "inline",
+    "message" : "<p>Thank you so much for contacting us. If you are looking to have an introductory call with us go ahead and schedule a time <a href=\"https://app.hubspot.com/meetings/nicole-turner\" rel=\" noopener\">here</a>.</p>",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

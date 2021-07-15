@@ -1,0 +1,29 @@
+<section class="career-testimoniale">
+   <div class="container">
+     <div class="section-title">
+       <h2>
+         {{ module.title }}
+       </h2>
+       <span class="size-sub">{{ module.sub_text }} </span>
+     </div>
+    
+     <div class="careertesti_row">
+        <div class="areertesti-left">
+           <span class="ctmulti">{{ module.field_group.title }}</span>
+           <span class="cttext">{{ module.field_group.testimoniale_name }}</span>
+       </div>
+        <div class="areertesti-right">
+          {% if module.field_group.icon.src %}
+          {% set sizeAttrs = 'width="{{ module.field_group.icon.width }}" height="{{ module.field_group.icon.height }}"' %}
+          {% if module.field_group.icon.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif module.field_group.icon.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.field_group.icon.max_width }}px; max-height: {{ module.field_group.icon.max_height }}px"' %}
+          {% endif %}
+          {% set loadingAttr = module.field_group.icon.loading != 'disabled' ? 'loading="{{ module.field_group.icon.loading }}"' : '' %}
+          <img src="{{ module.field_group.icon.src }}" alt="{{ module.field_group.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+       </div>
+     </div>
+  </div>
+</section>

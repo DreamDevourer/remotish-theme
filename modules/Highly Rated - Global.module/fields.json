@@ -1,0 +1,82 @@
+[ {
+  "id" : "b71157eb-d407-369a-b417-539ec83eb8a7",
+  "name" : "video_popup_",
+  "label" : "Video Popup?",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "f6f35130-cf10-e520-0ea7-06b73834719f",
+  "name" : "video_image",
+  "label" : "Video Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Hero%20Sample.png",
+    "alt" : "Hero Sample",
+    "loading" : "lazy",
+    "width" : 529,
+    "height" : 567,
+    "max_width" : 529,
+    "max_height" : 567
+  }
+}, {
+  "id" : "1de425ce-1a52-0661-605d-612ece368074",
+  "name" : "video_link",
+  "label" : "Video Link",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Video link"
+}, {
+  "id" : "52c9cc23-3ce5-f5cb-b264-2c7c9073fa6c",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We are Highly Rated"
+}, {
+  "id" : "2429c767-5097-296c-e7cd-77d58e8fac8e",
+  "name" : "sub_text",
+  "label" : "Sub text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Work is a complement of your life."
+}, {
+  "id" : "b62d3130-1ec2-a342-13ef-1d7b740a5858",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "<p>“The Remotish team is a rare breed of mavericks pushing HubSpot to levels most other agencies would consider ludicrous. I wouldn't trust anyone else except Remotish to architect, deploy, and optimize our technical RevOps engine.”</p>"
+}, {
+  "id" : "5f505dac-1291-bc6a-f096-be72101c2864",
+  "name" : "video_name",
+  "label" : "Video Name",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "JAGER FORNAL, CHIEF REVENUE OFFICER, GOSITE"
+} ]

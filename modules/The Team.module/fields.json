@@ -1,0 +1,238 @@
+[ {
+  "id" : "bb4b335d-f439-922d-98e6-916ee7188d62",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The Team"
+}, {
+  "id" : "24ddb329-0948-e617-a47f-b311bd50b257",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your HubSpot RevOps Team"
+}, {
+  "id" : "70323885-b66b-3332-f000-830b1360485a",
+  "name" : "team_group",
+  "label" : "Team Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 30,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "3b264fbd-496c-91ed-893f-86bea15f17b6",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/nick4FIXED_Square_Transp%201%20(1)%20(1).png",
+      "alt" : "nick4FIXED_Square_Transp 1 (1) (1)",
+      "loading" : "disabled",
+      "width" : 858,
+      "height" : 1132,
+      "max_width" : 858,
+      "max_height" : 1132
+    }
+  }, {
+    "id" : "fc06e5c6-ef3f-6d3c-7fa0-8f666f3ca87c",
+    "name" : "title",
+    "label" : "Team Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "HUMAN NAME"
+  }, {
+    "id" : "8436124b-3258-f979-c1f9-a0ebcba7fb44",
+    "name" : "sub_text",
+    "label" : "Team Post",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Position/Role"
+  }, {
+    "id" : "c3817cba-6a76-6b56-c30b-1883009c61b6",
+    "name" : "details",
+    "label" : "Details",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Recent MBA Grad - Midwest Native - Ex-Creative Director - Emojician</p>"
+  }, {
+    "id" : "c5aca92f-b3a3-3bb7-3084-9a5e55857e13",
+    "name" : "bg_shap",
+    "label" : "BG Shap",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Blob%20(1).svg",
+      "alt" : "Blob (1)",
+      "loading" : "disabled",
+      "width" : 425,
+      "height" : 397,
+      "max_width" : 425,
+      "max_height" : 397
+    }
+  }, {
+    "id" : "dc9e3e87-895b-9ba2-ceae-0ed1124ea6fa",
+    "name" : "enable_a_link",
+    "label" : "Enable a link?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "664f5ba7-11ea-b26b-4f7c-b8d232d59f78",
+    "name" : "box_link",
+    "label" : "Box Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/nick4FIXED_Square_Transp%201%20(1)%20(1).png",
+      "alt" : "nick4FIXED_Square_Transp 1 (1) (1)",
+      "loading" : "disabled",
+      "width" : 858,
+      "height" : 1132,
+      "max_width" : 858,
+      "max_height" : 1132
+    },
+    "title" : "HUMAN NAME",
+    "sub_text" : "Position/Role",
+    "details" : "<p>Recent MBA Grad - Midwest Native - Ex-Creative Director - Emojician</p>",
+    "bg_shap" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Blob%20(1).svg",
+      "alt" : "Blob (1)",
+      "loading" : "disabled",
+      "width" : 425,
+      "height" : 397,
+      "max_width" : 425,
+      "max_height" : 397
+    },
+    "enable_a_link" : false,
+    "box_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/nick4FIXED_Square_Transp%201%20(1)%20(1).png",
+      "alt" : "nick4FIXED_Square_Transp 1 (1) (1)",
+      "loading" : "disabled",
+      "width" : 858,
+      "height" : 1132,
+      "max_width" : 858,
+      "max_height" : 1132
+    },
+    "title" : "HUMAN NAME",
+    "sub_text" : "Position/Role",
+    "details" : "<p>Recent MBA Grad - Midwest Native - Ex-Creative Director - Emojician</p>",
+    "bg_shap" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Blob%20(1).svg",
+      "alt" : "Blob (1)",
+      "loading" : "disabled",
+      "width" : 425,
+      "height" : 397,
+      "max_width" : 425,
+      "max_height" : 397
+    },
+    "enable_a_link" : false,
+    "box_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/nick4FIXED_Square_Transp%201%20(1)%20(1).png",
+      "alt" : "nick4FIXED_Square_Transp 1 (1) (1)",
+      "loading" : "disabled",
+      "width" : 858,
+      "height" : 1132,
+      "max_width" : 858,
+      "max_height" : 1132
+    },
+    "title" : "HUMAN NAME",
+    "sub_text" : "Position/Role",
+    "details" : "<p>Recent MBA Grad - Midwest Native - Ex-Creative Director - Emojician</p>",
+    "bg_shap" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Blob%20(1).svg",
+      "alt" : "Blob (1)",
+      "loading" : "disabled",
+      "width" : 425,
+      "height" : 397,
+      "max_width" : 425,
+      "max_height" : 397
+    },
+    "enable_a_link" : false,
+    "box_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

@@ -1,0 +1,285 @@
+[ {
+  "id" : "2413cde4-6cab-8b28-6138-0ba0b029e65a",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "REMOTISH THEME HOME"
+}, {
+  "id" : "eda84b6c-4b26-1c15-620a-bcd3e932023a",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><span>The powerful&nbsp; theme for every website with an easy-to-edit website designed to attract and convert visitors without needing a developer for maintenance.</span></p>"
+}, {
+  "id" : "38100a9c-db98-57a4-eae2-2cbdbbcf784d",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "LET’S TALK HUBSPOT!"
+}, {
+  "id" : "8df390c0-257d-7b3b-72d3-29114787fded",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "6bbd1abd-2320-0639-f6ba-8494d247de7f",
+  "name" : "image_group",
+  "label" : "image Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "7017fd31-9993-b03d-c5d4-4a30a5d8254e",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Rec-1.png",
+      "alt" : "Rec-1",
+      "loading" : "lazy",
+      "width" : 1356,
+      "height" : 1584,
+      "max_width" : 1356,
+      "max_height" : 1584
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Rec-1.png",
+      "alt" : "Rec-1",
+      "loading" : "lazy",
+      "width" : 1356,
+      "height" : 1584,
+      "max_width" : 1356,
+      "max_height" : 1584
+    }
+  } ]
+}, {
+  "id" : "01a55e09-1b03-c834-065c-8502c137ddd6",
+  "name" : "services_group",
+  "label" : "Services Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "7411ca07-94ab-0bc8-a75f-3e53571b3a3a",
+    "name" : "icon_image",
+    "label" : "Icon Image(Color)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
+      "alt" : "Icon Speak",
+      "loading" : "lazy",
+      "width" : 90,
+      "height" : 88,
+      "max_width" : 90,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "80e824b6-8242-90a5-95d9-c7c14cc3fe64",
+    "name" : "image_icon_white_",
+    "label" : "Hover  Icon (Hover White)",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/CMO%20Homepage%20Desktop.svg",
+      "alt" : "CMO Homepage Desktop",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 88,
+      "max_width" : 89,
+      "max_height" : 88
+    }
+  }, {
+    "id" : "31146c84-ac9b-015b-8228-5c817d57badf",
+    "name" : "richtext_field",
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>"
+  }, {
+    "id" : "ad25bf7b-bfe2-cdf1-533c-8d4c1baf602d",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Read More"
+  }, {
+    "id" : "730f7761-60cf-14d2-00c6-4cffc9f60b68",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "icon_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
+      "alt" : "Icon Speak",
+      "loading" : "lazy",
+      "width" : 90,
+      "height" : 88,
+      "max_width" : 90,
+      "max_height" : 88
+    },
+    "image_icon_white_" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/CMO%20Homepage%20Desktop.svg",
+      "alt" : "CMO Homepage Desktop",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 88,
+      "max_width" : 89,
+      "max_height" : 88
+    },
+    "richtext_field" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>",
+    "button_text" : "Read More",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "icon_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
+      "alt" : "Icon Speak",
+      "loading" : "lazy",
+      "width" : 90,
+      "height" : 88,
+      "max_width" : 90,
+      "max_height" : 88
+    },
+    "image_icon_white_" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/CMO%20Homepage%20Desktop.svg",
+      "alt" : "CMO Homepage Desktop",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 88,
+      "max_width" : 89,
+      "max_height" : 88
+    },
+    "richtext_field" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>",
+    "button_text" : "Read More",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "icon_image" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
+      "alt" : "Icon Speak",
+      "loading" : "lazy",
+      "width" : 90,
+      "height" : 88,
+      "max_width" : 90,
+      "max_height" : 88
+    },
+    "image_icon_white_" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/Imported%20images/CMO%20Homepage%20Desktop.svg",
+      "alt" : "CMO Homepage Desktop",
+      "loading" : "lazy",
+      "width" : 89,
+      "height" : 88,
+      "max_width" : 89,
+      "max_height" : 88
+    },
+    "richtext_field" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>",
+    "button_text" : "Read More",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

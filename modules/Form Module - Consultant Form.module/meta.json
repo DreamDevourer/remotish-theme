@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:WPForms",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 47341555225,
+  "label" : "Consultant Form",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,92 @@
+<footer class="mainfooter">
+   <div class="container">
+      <div class="footer-title">
+         <h2>
+           {{ module.title }}
+         </h2>
+        
+      </div>
+     <div class="footer-social">
+       <ul>
+         <li> <a rel="dns-prefetch" href="{{ module.toutube }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Youtube.jpg" alt="">  </a> </li>
+         <li> <a rel="dns-prefetch" href="{{ module.twitter }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Twitter.jpg" alt="">  </a> </li>
+         <li> <a rel="dns-prefetch" href="{{ module.instagram }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Instagram.jpg" alt="">  </a> </li>
+         <li> <a rel="dns-prefetch" href="{{ module.linked_in }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/LinkedIn.jpg" alt="">  </a> </li>
+       </ul>
+     </div>
+     
+     {% if module.enable_logo %}
+     <div class="logos_footer_logo">
+       {% for item in module.logo_group %}
+        <div class="logos_footer_column">
+          {% if item.logo_image.src %}
+          {% set sizeAttrs = 'width="{{ item.logo_image.width }}" height="{{ item.logo_image.height }}"' %}
+          {% if item.logo_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif item.logo_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.logo_image.max_width }}px; max-height: {{ item.logo_image.max_height }}px"' %}
+          {% endif %}
+          {% set loadingAttr = item.logo_image.loading != 'lazy' ? 'loading="{{ item.logo_image.loading }}"' : '' %}
+          <a rel="dns-prefetch" href="{{  item.link_field_desktop.url.href }}"><img loading="lazy" src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}></a>
+          {% endif %}
+       </div>
+       {% endfor %}
+     </div>
+     {% endif %}
+     
+    
+   </div>
+  
+  <div class="mobile-footer-logo" style="display:none;">
+    {% for item in module.logo_group %}
+      <div class="logos_footer_columnmobile">
+          {% if item.logo_image.src %}
+          {% set sizeAttrs = 'width="{{ item.logo_image.width }}" height="{{ item.logo_image.height }}"' %}
+          {% if item.logo_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif item.logo_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.logo_image.max_width }}px; max-height: {{ item.logo_image.max_height }}px"' %}
+          {% endif %}
+          {% set loadingAttr = item.logo_image.loading != 'disabled' ? 'loading="{{ item.logo_image.loading }}"' : '' %}
+        <a rel="dns-prefetch" href="{{  item.link_field_desktop.url.href }}"><img loading="lazy" src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}></a>
+          {% endif %}
+       </div>
+    {% endfor %}
+  </div>
+  
+    <div class="logos_footer_row2section">
+      <div class="container">
+      <div class="logos_footer-row2">
+
+        <div class="logos_r2left">
+          <span class="f-copyright">©{{year}} REMOTISH AGENCY</span>
+          <span> {{ module.address }} </span>
+        </div>
+        <div class="privacy-policy">
+          {% set href = module.link_field.url.href %}
+          {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if module.link_field.no_follow %}
+          {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if module.link_field.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+          {% endif %}
+          <a rel="dns-prefetch" href="{{ href }}"
+             {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+            Privacy Policy
+          </a>
+
+        </div>   
+      </div>
+  </div>
+      <div class="footer-caption">
+       {{ module.caption }}
+      </div>
+  </div>
+  
+</footer>

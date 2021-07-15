@@ -1,0 +1,99 @@
+<section class="the-team">
+     <div class="container">
+        <div class="section-title">
+           <div class="title-left">
+             <div class="title-h2">
+               
+               <h2>
+                 {{ module.title }}
+               </h2>
+               <span class="subtext2"> 
+                 {{ module.sub_text }}
+               </span>
+
+             </div>
+       </div>
+    </div>  
+  </div>
+  
+  <div class="case-studies-row">
+         {% for item in module.team_group %}
+ 
+             <div class="teamPetimg img">
+               <div class="teamimg">
+                 {% if item.image_field.src %}
+                 {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                 {% if item.image_field.size_type == 'auto' %}
+                 {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                 {% elif item.image_field.size_type == 'auto_custom_max' %}
+                 {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+                 {% endif %}
+                 {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                 <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                 {% endif %}
+                  </div>
+               <div class="bobs">
+                    {% if item.bg_shap.src %}
+                    {% set sizeAttrs = 'width="{{ item.bg_shap.width }}" height="{{ item.bg_shap.height }}"' %}
+                    {% if item.bg_shap.size_type == 'auto' %}
+                    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                    {% elif item.bg_shap.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.bg_shap.max_width }}px; max-height: {{ item.bg_shap.max_height }}px"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.bg_shap.loading != 'disabled' ? 'loading="{{ item.bg_shap.loading }}"' : '' %}
+                    <img src="{{ item.bg_shap.src }}" alt="{{ item.bg_shap.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                 </div>
+               
+        <div class="theteam-text">
+         <div class="team-title">
+             
+            <h3>
+               {{ item.pet_name }}
+            </h3>
+             
+            <span class="team-post"> {{ item.effect }} </span>
+             
+           </div>
+         </div>
+               
+           </div>
+
+
+         
+         {% endfor %}
+         
+        
+       </div>
+   
+</section>
+
+{{ require_js("https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", "footer") }}
+ 
+ {% require_js %}
+    <script defer>  
+      
+      
+      $(document).ready(function(){
+        
+          if (window.matchMedia('(max-width: 767px)').matches){
+             $(".case_studies .subtext2").insertAfter(".case_studies .title-row");
+          } 
+        
+          $('.case-studies-row').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+             centerMode: true,
+             variableWidth: true,
+             dots: true,
+             arrows: false
+      
+          });
+        });
+
+     
+    </script>
+  {% end_require_js %}
+
+

@@ -1,0 +1,36 @@
+<section>
+
+<div class="testimonial_area" style="background-image:url('{{ module.background_image.src }}');">
+  <div class="container">
+
+    <div class="testimonial_left">
+      <span class="testimonial_rightimg">
+        <a class="testimonial_img" data-fancybox="" data-src="{{ module.video_url }}" href="javascript:void(0)">
+         <img src="https://www.remotish.agency/hubfs/Polygon%202.png">
+        </a>
+        {% if module.video_image.src %}
+        <img src="{{ module.video_image.src }}" alt="{{ module.video_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </span>
+    </div>
+    
+    <div class="testimonial_left">
+      <h2>{{ module.testimonial_title }}</h2>
+      <span class="titlesubtitile">{{ module.testimonial_sub_title }}</span>
+      <div class="testimonial_istarimg">
+        {% if module.star_image.src %}
+        <img src="{{ module.star_image.src }}" alt="{{ module.star_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="testimonial_content">{{ module.testimonial_content }}</div>
+      <span class="testimonial_btntitle">{{ module.testimonial_last_title }}</span>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+{{ require_css("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css") }}
+{{ require_js("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js", "footer") }}

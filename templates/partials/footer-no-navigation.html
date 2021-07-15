@@ -1,0 +1,83 @@
+<!--
+  templateType: global_partial
+  label: Footer no navigation
+-->
+<footer class="footer footer__no-navigation">
+  <div class="footer__container">
+
+        {# Footer copyright #}
+    <div class="footer__row footer__row--info">
+      <div class="footer__copyright">
+        {% module_block module 'footer_copyright'
+          label='Copyright'
+          path='@hubspot/rich_text'
+        %}
+          {% module_attribute 'html' %}
+            All Rights Reserved. © {{ year }} Barricade
+          {% end_module_attribute %}
+        {% end_module_block %}
+      </div>
+      <div class="footer__info__social">
+
+        {# Social Follow #}
+        <div class="footer__follow-me">
+          {% module_block module 'footer_social'
+            path='../../modules/social-follow',
+            override_default_style=true,
+            social_links=[
+              {
+                'social_account': 'facebook-f',
+                'accessibility': {
+                  'title': 'Follow us on Facebook'
+                }
+              },
+              {
+                'social_account': 'linkedin-in',
+                'accessibility': {
+                  'title': 'Follow us on LinkedIn'
+                }
+              },
+              {
+                'social_account': 'twitter',
+                'accessibility': {
+                  'title': 'Follow us on Twitter'
+                }
+              },
+              {
+                'social_account': 'instagram',
+                'accessibility': {
+                  'title': 'Follow us on Instagram'
+                }
+              }
+            ]
+          %}
+            {% module_attribute 'style' is_json=True %}
+              {
+                "color": {
+                  "color": "#FF5E14",
+                  "opacity": 100
+                },
+                "bg_color": {
+                  "color": "#FFFFFF",
+                  "opacity": 100
+                },
+                "hover": {
+                  "color": {
+                    "color": "#FFFFFF",
+                    "opacity": 100
+                  },
+                  "bg_color": {
+                    "color": "#FF5E14",
+                    "opacity": 100
+                  }
+                }
+              }
+            {% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>

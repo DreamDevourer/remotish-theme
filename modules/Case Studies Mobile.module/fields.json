@@ -1,0 +1,184 @@
+[ {
+  "id" : "e2eba622-705d-d917-3d58-c4b0d70806d0",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Businesses that we made happily"
+}, {
+  "id" : "c9a26d54-0449-908d-5720-f93139b98ca7",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Case Studies"
+}, {
+  "id" : "7167c32d-35e5-1434-a990-54f562fbe387",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read More"
+}, {
+  "id" : "78634675-ab52-32e0-a77f-d6df483cd4ed",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "24f597ce-b860-e815-b548-bb271060fe10",
+  "name" : "logo_group",
+  "label" : "Logo group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "4744de73-6cf9-9beb-2444-cae3e73efe02",
+    "name" : "logo_image",
+    "label" : "Logo Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : true,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Remotish%20logo1.png",
+      "alt" : "Remotish logo1",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 120,
+      "max_width" : 624,
+      "max_height" : 422
+    }
+  }, {
+    "id" : "664aedc0-4e21-e0e6-182a-01ca6e751e35",
+    "name" : "add_link",
+    "label" : "Add Link",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "c6516d71-83fb-26d4-eb15-fa4250447ef1",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "664aedc0-4e21-e0e6-182a-01ca6e751e35",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "logo_image" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Remotish%20logo1.png",
+      "alt" : "Remotish logo1",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 120,
+      "max_width" : 624,
+      "max_height" : 422
+    },
+    "add_link" : true,
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo_image" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Remotish%20logo1.png",
+      "alt" : "Remotish logo1",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 120,
+      "max_width" : 624,
+      "max_height" : 422
+    },
+    "add_link" : true,
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "logo_image" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/Remotish%20Theme/Remotish%20logo1.png",
+      "alt" : "Remotish logo1",
+      "loading" : "lazy",
+      "width" : 177,
+      "height" : 120,
+      "max_width" : 624,
+      "max_height" : 422
+    },
+    "add_link" : true,
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

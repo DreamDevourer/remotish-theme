@@ -1,0 +1,55 @@
+<section class="high-rated">
+   <div class="container">
+       <div class="high-rated-row">
+          <div class="high-rated-left">
+             <a href="{{ module.video_link }}"   {% if module.video_popup_ %} data-fancybox {% endif %} >
+               {% if module.video_image.src %}
+               {% set sizeAttrs = 'width="{{ module.video_image.width }}" height="{{ module.video_image.height }}"' %}
+               {% if module.video_image.size_type == 'auto' %}
+               {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+               {% elif module.video_image.size_type == 'auto_custom_max' %}
+               {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.video_image.max_width }}px; max-height: {{ module.video_image.max_height }}px"' %}
+               {% endif %}
+               {% set loadingAttr = module.video_image.loading != 'disabled' ? 'loading="{{ module.video_image.loading }}"' : '' %}
+               <img loading="lazy" src="{{ module.video_image.src }}" alt="{{ module.video_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+               {% endif %}
+             </a>
+         </div>
+         <div class="high-rated-right">
+           <div class="title-h2">
+             <h2>
+               {{ module.title }}
+             </h2>
+             <span class="subtext2"> 
+               {{ module.sub_text }}
+             </span>
+
+           </div>
+           <div class="video-text">
+               <span class="video-multittext"> 
+                  {{ module.richtext_field }}
+               </span>
+               <span class="video-name">
+                 {{ module.vide_name }}
+               </span>
+           </div>
+         </div>
+         
+      </div>
+   </div>
+</section>
+ 
+<footer>
+{{ require_css("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css") }}
+{{ require_js("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js", "footer") }}
+
+{% require_js %}
+<script defer>
+  $(document).ready(function(){
+  if (window.matchMedia('(max-width: 767px)').matches){
+	  $(".high-rated-right .title-h2").insertBefore(".high-rated-left");
+  } 
+  });  
+</script>
+{% end_require_js %}
+</footer>

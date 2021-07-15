@@ -1,0 +1,32 @@
+<div class="title-with-cta">
+   <div class="">
+     <div class="title-with-row">
+       <div class="title-with-left">
+       {{ module.title }}
+       <span class="blue-subtitle"> {{ module.sub_text }} </span>
+     </div> 
+     <div class="title-with-right">
+        <div class="button-deaign">
+          {% set href = module.link_field.url.href %}
+          {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          {% set rel = [] %}
+          {% if module.link_field.no_follow %}
+          {% do rel.append("nofollow") %}
+          {% endif %}
+          {% if module.link_field.open_in_new_tab %}
+          {% do rel.append("noopener") %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+             {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+             >
+              {{ module.button_text }}
+          </a>
+       </div>
+     </div>
+     </div>
+     
+   </div>
+</div>

@@ -1,0 +1,48 @@
+[ {
+  "id" : "c0c1cabc-82be-230f-e807-5f0dee26ca13",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h1>WE ARE HIGHLY RATED</h1>"
+}, {
+  "id" : "e676e249-5e73-aafa-df46-8f27c92af974",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Highly RATED in the <strong>Hubspot Directory</strong>"
+}, {
+  "id" : "df4c92b1-85e7-b5a4-2d71-f50a76b43561",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Check the HubSpot Directory"
+}, {
+  "id" : "aa58e68e-c09b-d25d-9751-9bd3d6c935c1",
+  "name" : "link_field",
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

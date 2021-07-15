@@ -1,0 +1,131 @@
+
+<section class="we_value_being" id="{{ module.section_id }}">
+    <div class="container">
+        <div class="we_vbeing_title">
+            <h2>
+              {{ module.title }}
+            </h2>
+            <span class="size-sub"> {{ module.sub_text }} </span>
+         </div>
+        <div class="we_vbeing_row">
+          {% for item in module.field_group %}
+            <div class="we_vbeing_column" data-step="{{loop.index}}">
+               <div class="we_vbeing_inner">
+                 <div class="we_vbeing_left animatedParent">
+                {% if item.image_field.src %}
+                {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                {% if item.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+                {% endif %}
+                {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                <img class="animated bounceIn2" src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              <div class="we_vbeing_right">
+                  <h4 class="animated">
+                    {{ item.title }}
+                </h4> 
+                <span class="size-sub animated"> {{ item.sub_text }} </span>
+                 <div class="we_vbeing_text animated">
+                    {{ item.richtext_field }}
+                </div>
+              </div>
+              </div>
+          </div>
+        {% endfor %}
+          
+       </div>
+    </div>
+</section>
+
+
+
+{{ require_js("https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", "footer") }}
+ 
+ {% require_js %}
+    <script defer>  
+      $(document).ready(function(){
+          $('.we_vbeing_row').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            vertical : true,
+            dots: true,
+            arrows: false,
+            customPaging : function(slider, i) {
+            var thumb = jQuery(slider.$slides[i]).data();
+            // return '<a>'+(i+1)+'</a>'; // <-- old
+            return '<a>'+('0'+(i+1)).slice(-2)+'</a>'; // <-- new
+            },
+             responsive: [
+    
+  
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical : false,
+        speed:1200,
+      
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+      
+          });
+        
+        });
+
+      
+    const slider = $(".we_vbeing_row");
+
+
+    slider.on('wheel', (function(e) {
+      console.log(e.originalEvent.deltaY);
+
+      var slideCount = $(this)[0].slick["slideCount"];
+      var currentIndex = $(this).slick("slickCurrentSlide");
+      var totalSildeToShow =  $(this)[0].slick.options["slidesToShow"];
+      
+      console.log(slideCount);
+      console.log(currentIndex);
+      console.log(totalSildeToShow);
+
+      if (e.originalEvent.deltaY < 0) {
+        if (currentIndex === 0)
+          return;
+        e.preventDefault();
+        $(this).slick('slickPrev');
+
+      } else {
+        if (slideCount - totalSildeToShow === currentIndex)
+          return;
+        e.preventDefault();
+        $(this).slick('slickNext')
+      }
+      
+    }));
+
+      
+      
+      
+      
+      
+    
+
+ 
+    
+    </script>
+  {% end_require_js %}
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:bullhorn:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 47340055109,
+  "label" : "Title with CTA",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,24 @@
+<!--
+  templateType: global_partial
+  label: Header no navigation
+-->
+<header class="header header__no-navigation">
+  <div class="header__container">
+
+    {# Logo #}
+    <div class="header__logo">
+      {% module 'header_logo'
+        path='@hubspot/logo',
+        label='Logo',
+        img={
+          'src': get_asset_url('../../images/logo.svg'),
+          'alt': 'Barricade Logo',
+          'width': '196',
+          'height': '42'
+        }
+      %}
+    </div>
+    {# End Logo #}
+
+  </div>
+</header>

@@ -1,0 +1,113 @@
+<section class="hero-image">
+    <div class="container">
+       <div class="hero-column-row">
+          <div class="hero-left">
+             <h1>
+               {{ module.title }}
+            </h1>
+            <div class="hero-subtext">
+              {{ module.sub_text }}
+            </div>
+            <div class="hero-button">
+               <div class="button-deaign">
+                 {% set href = module.button_link.url.href %}
+                 {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                 {% set href = "mailto:" + href %}
+                 {% endif %}
+                 {% set rel = [] %}
+                 {% if module.button_link.no_follow %}
+                 {% do rel.append("nofollow") %}
+                 {% endif %}
+                 {% if module.button_link.open_in_new_tab %}
+                 {% do rel.append("noopener") %}
+                 {% endif %}
+                 <a rel="dns-prefetch" href="{{ href }}"
+                    {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                    >
+                    {{ module.button_text }}
+                 </a>
+              </div>
+            </div>
+         </div>
+         <div class="hero-right">
+            <div class="hero-right-row">
+              {% for item in module.image_group|shuffle  %}
+
+              <div class="hero-left-image" {% if loop.first  %}  {% endif %}>
+                
+                {% if item.image_field.src %}
+                {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                {% if item.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
+                {% endif %}
+                {% set loadingAttr = item.image_field.loading != 'lazy' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                <img loading="lazy" src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ sizeAttrs }} {{ loadingAttr }}>
+                {% endif %}
+            
+                
+             </div>
+          {% endfor %} 
+           </div>
+         </div>
+      </div>
+      
+      <div class="services-hero-row">
+        {% for item in module.services_group %}
+          <div class="services-hero-column efect">
+              <div class="services-icon">
+                {% if item.icon_image.src %}
+                {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}"' %}
+                {% if item.icon_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.icon_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.icon_image.max_width }}px; max-height: {{ item.icon_image.max_height }}px"' %}
+                {% endif %}
+                {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
+                <img loading="lazy" class="color-icon" src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                
+                {% if item.image_icon_white_.src %}
+                {% set sizeAttrs = 'width="{{ item.image_icon_white_.width }}" height="{{ item.image_icon_white_.height }}"' %}
+                {% if item.image_icon_white_.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif item.image_icon_white_.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_icon_white_.max_width }}px; max-height: {{ item.image_icon_white_.max_height }}px"' %}
+                {% endif %}
+                {% set loadingAttr = item.image_icon_white_.loading != 'disabled' ? 'loading="{{ item.image_icon_white_.loading }}"' : '' %}
+                <img loading="lazy" class="white-icon" style="display:none;" src="{{ item.image_icon_white_.src }}" alt="{{ item.image_icon_white_.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+            <div class="services-text">
+                 {{ item.richtext_field }}
+            </div>
+            <div class="services_button">
+              {% set href = item.link_field.url.href %}
+              {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if item.link_field.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if item.link_field.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <a rel="dns-prefetch" href="{{ href }}"
+                 {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                 >
+                  {{ item.button_text }}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+        
+      </div>
+      
+    </div>
+</section>
+
+

@@ -1,0 +1,636 @@
+[ {
+  "id" : "5c8eef30-3920-958e-f426-dfa42ab071c0",
+  "name" : "choice_style",
+  "label" : "Choice Style",
+  "required" : false,
+  "locked" : true,
+  "display" : "select",
+  "choices" : [ [ "style2", "Pricing Table" ], [ "style3", "Pricing Package" ] ],
+  "type" : "choice",
+  "default" : "style2"
+}, {
+  "id" : "13edf5e4-4e99-5bab-b874-8fb42e56957f",
+  "name" : "section_header_",
+  "label" : "Section Header?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "aec5111c-64f5-67e7-122f-70a8f94be6be",
+  "name" : "header",
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "13edf5e4-4e99-5bab-b874-8fb42e56957f",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "richtext",
+  "default" : "<h2>Choose Your Plan</h2>\n<p>Let's find the package that is right for you.</p>"
+}, {
+  "id" : "1ed840a5-daae-c697-88ae-b1e2063eaff8",
+  "name" : "pricing_table",
+  "label" : "Pricing Table",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "5c8eef30-3920-958e-f426-dfa42ab071c0",
+    "controlling_value_regex" : "style2",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "a2fec809-1874-5403-9b63-aada53c5f1a1",
+    "name" : "left_title",
+    "label" : "Left Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Choose Your Plan"
+  }, {
+    "id" : "6055611f-6a56-d314-4438-5dc9fdd22063",
+    "name" : "price_column",
+    "label" : "Price Column",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 3,
+      "sorting_label_field" : "852f5c38-635b-4377-95e4-e15fc01d81a8",
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "852f5c38-635b-4377-95e4-e15fc01d81a8",
+      "name" : "plane",
+      "label" : "Plan",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Plan"
+    }, {
+      "id" : "b147127a-70d8-9e79-2f35-d2a998624079",
+      "name" : "price",
+      "label" : "Price",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "min" : 10,
+      "max" : 100000,
+      "step" : 1,
+      "type" : "number",
+      "default" : 900
+    }, {
+      "id" : "3f4247a6-5a42-cb67-3c27-184de4289d57",
+      "name" : "month",
+      "label" : "Month",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "per month"
+    }, {
+      "id" : "3402895c-ba63-c789-f348-adde1f62ea5c",
+      "name" : "button_text",
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Choose plan"
+    }, {
+      "id" : "1701f31a-1658-ca5f-5a4d-0b2317dbfb13",
+      "name" : "button_link",
+      "label" : "Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "64376919-cbfc-da59-5e4e-33efa19bdc64",
+      "name" : "active_column",
+      "label" : "Activate Column",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "953019f6-d396-84ff-b11b-035bba03179e",
+      "name" : "active_color",
+      "label" : "Active Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "64376919-cbfc-da59-5e4e-33efa19bdc64",
+        "controlling_value_regex" : "true",
+        "operator" : "EQUAL",
+        "access" : null,
+        "hidden_subfields" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : "#ed8074",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "plane" : "Plan",
+      "price" : 900,
+      "month" : "per month",
+      "button_text" : "Choose plan",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "active_column" : false,
+      "active_color" : {
+        "color" : "#ed8074",
+        "opacity" : 100
+      }
+    }, {
+      "plane" : "Plan",
+      "price" : 900,
+      "month" : "per month",
+      "button_text" : "Choose plan",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "active_column" : false,
+      "active_color" : {
+        "color" : "#ed8074",
+        "opacity" : 100
+      }
+    }, {
+      "plane" : "Plan",
+      "price" : 900,
+      "month" : "per month",
+      "button_text" : "Choose plan",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "active_column" : false,
+      "active_color" : {
+        "color" : "#ed8074",
+        "opacity" : 100
+      }
+    } ]
+  }, {
+    "id" : "ea402eee-1bd5-9d60-3d2e-458388547d33",
+    "name" : "button_color",
+    "label" : "Button Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ED8074",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "c65472ea-d277-298d-07c6-cf86c09f9edc",
+    "name" : "button_style_button",
+    "label" : "Border Style Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "dc065583-8dbd-1b27-b3b0-a868af054f03",
+    "name" : "table_rows",
+    "label" : "Table Rows",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 0,
+      "max" : 15,
+      "sorting_label_field" : null,
+      "default" : 5
+    },
+    "children" : [ {
+      "id" : "b9194574-4aaa-6d47-f27b-dc22317951cf",
+      "name" : "title_row",
+      "label" : "Row Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Feature title"
+    }, {
+      "id" : "3a0fd1dc-64d1-7c24-2f42-f0f5997ede3f",
+      "name" : "column_one_check_",
+      "label" : "Column One Check?",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "89ebfb1a-5653-476c-cb54-1bcd4e6c02d0",
+      "name" : "column_two_check_",
+      "label" : "Column Two Check?",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    }, {
+      "id" : "bc93fdd1-9293-550f-ad08-fa4f39822c94",
+      "name" : "column_three_check_",
+      "label" : "Column Three Check?",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : true
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    } ]
+  }, {
+    "id" : "dd812967-b29c-2913-5ba4-a4410bd9d5e4",
+    "name" : "check_mark_color",
+    "label" : "Check Mark Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ED8074",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "left_title" : "Choose Your Plan",
+    "price_column" : [ {
+      "plane" : "Plan",
+      "price" : 900,
+      "month" : "per month",
+      "button_text" : "Choose plan",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "active_column" : false,
+      "active_color" : {
+        "color" : "#ed8074",
+        "opacity" : 100
+      }
+    }, {
+      "plane" : "Plan",
+      "price" : 900,
+      "month" : "per month",
+      "button_text" : "Choose plan",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "active_column" : false,
+      "active_color" : {
+        "color" : "#ed8074",
+        "opacity" : 100
+      }
+    }, {
+      "plane" : "Plan",
+      "price" : 900,
+      "month" : "per month",
+      "button_text" : "Choose plan",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "active_column" : false,
+      "active_color" : {
+        "color" : "#ed8074",
+        "opacity" : 100
+      }
+    } ],
+    "button_color" : {
+      "color" : "#ED8074",
+      "opacity" : 100
+    },
+    "button_style_button" : true,
+    "table_rows" : [ {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    }, {
+      "title_row" : "Feature title",
+      "column_one_check_" : true,
+      "column_two_check_" : true,
+      "column_three_check_" : true
+    } ],
+    "check_mark_color" : {
+      "color" : "#ED8074",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "31ac54ba-34b9-df5b-de6f-0fbf21f9ddf3",
+  "name" : "pricing_package",
+  "label" : "Pricing Package",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 5,
+    "sorting_label_field" : "d15a3eb5-2c62-e0b4-6509-04dc3f8013bb",
+    "default" : 2
+  },
+  "visibility" : {
+    "controlling_field" : "5c8eef30-3920-958e-f426-dfa42ab071c0",
+    "controlling_value_regex" : "style3",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "d15a3eb5-2c62-e0b4-6509-04dc3f8013bb",
+    "name" : "title",
+    "label" : "Plan",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Professional"
+  }, {
+    "id" : "b6bd617a-cbef-3cbb-cd34-f0736ab80e70",
+    "name" : "details",
+    "label" : "Details",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>For individuals that need advanced<br>recording &amp; editing.</p>"
+  }, {
+    "id" : "b02e960a-877d-af94-45d6-e5191e7f1492",
+    "name" : "add_flag_notification_",
+    "label" : "Add Flag Notification?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "fe63afcf-3e31-2db7-17dd-7afcaf0e57be",
+    "name" : "flag_notification_text",
+    "label" : "flag/notification Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "b02e960a-877d-af94-45d6-e5191e7f1492",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Free for student"
+  }, {
+    "id" : "b82f5f86-3f73-59b6-1800-175921d193f2",
+    "name" : "flag_notification_color",
+    "label" : "Flag/Notification Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "b02e960a-877d-af94-45d6-e5191e7f1492",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#F65E5E",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "eb50ac43-1036-63a3-28d9-f6a272338873",
+    "name" : "price",
+    "label" : "Price",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "default" : 9
+  }, {
+    "id" : "077eefdf-949b-7c48-870b-8b5f0eab8ccd",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Start Free Trial"
+  }, {
+    "id" : "e3f72b71-4034-35f0-d716-015b06d16c54",
+    "name" : "button_link",
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Professional",
+    "details" : "<p>For individuals that need advanced<br>recording &amp; editing.</p>",
+    "add_flag_notification_" : false,
+    "flag_notification_text" : "Free for student",
+    "price" : 9,
+    "button_text" : "Start Free Trial",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "flag_notification_color" : {
+      "color" : "#F65E5E",
+      "opacity" : 100
+    }
+  }, {
+    "title" : "Professional",
+    "details" : "<p>For individuals that need advanced<br>recording &amp; editing.</p>",
+    "add_flag_notification_" : false,
+    "flag_notification_text" : "Free for student",
+    "price" : 9,
+    "button_text" : "Start Free Trial",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "flag_notification_color" : {
+      "color" : "#F65E5E",
+      "opacity" : 100
+    }
+  } ]
+}, {
+  "id" : "3158a2fb-9758-3963-607a-eaea7e97a28e",
+  "name" : "button_color",
+  "label" : "Button Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "5c8eef30-3920-958e-f426-dfa42ab071c0",
+    "controlling_value_regex" : "style3",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#ed8074",
+    "opacity" : 100
+  }
+}, {
+  "id" : "bb2763f0-379d-eaae-0c80-2e9eeec3d28e",
+  "name" : "radius",
+  "label" : "Radius",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "5c8eef30-3920-958e-f426-dfa42ab071c0",
+    "controlling_value_regex" : "style3",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "display" : "slider",
+  "min" : 0,
+  "max" : 100,
+  "step" : 1,
+  "type" : "number",
+  "default" : 0
+} ]

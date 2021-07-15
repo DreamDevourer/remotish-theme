@@ -1,0 +1,19 @@
+<div class="space-module">
+    
+</div>
+
+
+
+{% require_css %}
+    <style>
+        #hs_cos_wrapper_{{name}}  .space-module { height:{{ module.desktop_horizontal_space }}px; }
+         
+       @media  (max-width: 991px){
+          #hs_cos_wrapper_{{name}}  .space-module { height:{{ module.tablet_horizontal_space }}px; }
+       }
+        
+       @media  (max-width: 767px){
+             #hs_cos_wrapper_{{name}}  .space-module { height:{{ module.mobile_desktop_space }}px; }
+        }
+    </style>
+{% end_require_css %}

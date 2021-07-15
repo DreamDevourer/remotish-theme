@@ -1,0 +1,36 @@
+<section class="newsletter_listing platformlp-sec">
+   <div class="container">
+     <div class="section-title">
+       <h2>
+         {{ module.title }}
+       </h2>
+       <span class="size-sub">{{ module.sub_text }}</span>
+       <div class="platformlp-subtext">
+          {{ module.richtext_field }}
+       </div>
+     </div> 
+     
+      <div class="newsletter_listing_row">
+        {% set rec_posts = blog_recent_posts(module.blog_field, module.number_of_post ) %}
+        {% for rec_post in rec_posts %}
+          <div class="newsletter_listing_column">
+            <div class="newsletter_left" style="background-image:url('{{ rec_post.featured_image }}')">
+
+            </div>
+            <div class="newsletter_right">
+                 <h3>
+                    {{ rec_post.name|truncate(50) }}
+                 </h3>
+                <div class="bnews-body">
+                   {{ rec_post.post_body|striptags|truncate(120) }}
+                </div>
+              <div class="bnews-readmore">
+                  <a href="{{ rec_post.absolute_url }}">Read More</a>
+              </div>
+            </div>
+        </div>
+     {% endfor %}
+     </div>
+     
+  </div>
+</section>

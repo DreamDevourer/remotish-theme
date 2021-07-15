@@ -1,0 +1,57 @@
+<section class="demand_hubspot_consult">
+   <div class="container">
+     <div class="section-title">
+       <h1>
+         {{ module.title }}
+       </h1>
+       <span class="size-sub">{{ module.sub_text }}</span>
+     </div>
+      <div class="demand_hubspot_row">
+         <div class="demand_hubspot_left">
+             <div class="demand_hubspot_text">
+               {{ module.richtext_field }}
+            </div>
+           <div class="button-deaign demand_hubspot_button">
+              {% set href = module.button_link.url.href %}
+             {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+             {% set href = "mailto:" + href %}
+             {% endif %}
+             {% set rel = [] %}
+             {% if module.button_link.no_follow %}
+             {% do rel.append("nofollow") %}
+             {% endif %}
+             {% if module.button_link.open_in_new_tab %}
+             {% do rel.append("noopener") %}
+             {% endif %}
+             <a href="{{ href }}"
+                {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                >
+                 {{ module.button_text }}
+             </a>
+            </div>
+        </div>
+        <div class="demand_hubspot_right">
+            <div class="demand_hubspot_cta">
+              {% if module.image_field.src %}
+              {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+              {% if module.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif module.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_field.max_width }}px; max-height: {{ module.image_field.max_height }}px"' %}
+              {% endif %}
+              {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+              <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+          <div class="demand_hubspot_title">
+             {{ module.sub_title }}
+          </div>
+           <div class="demand_hubspot_no">
+             
+             ${{ module.number_field }}
+          </div>
+        </div>
+      </div>
+  </div>
+</section>

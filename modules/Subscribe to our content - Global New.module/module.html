@@ -1,0 +1,42 @@
+{% if !blog_author %}
+<section class="blog_hero_new">
+      <div class="container">
+        <div class="blog_hero_row">
+           <div class="blog_hero_left">
+               <h1>
+                 {{ module.title }}
+             </h1>
+             <div class="subblog-caption">
+               {{ module.caption }}
+             </div>
+             <div class="subscribe-text">
+               {{ module.details }}
+             </div>
+              <div class="subscribe-form_new">
+                   {% form
+                      form_to_use="{{ module.form_field.form_id }}"
+                      response_response_type="{{ module.form_field.response_type }}"
+                      response_message="{{ module.form_field.message }}"
+                      response_redirect_id="{{ module.form_field.redirect_id }}"
+                      response_redirect_url="{{module.form_field.redirect_url}}"
+                      gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                    %}
+             </div>
+            
+          </div>
+          <div class="blog_hero_right">
+            {% if module.icon_image.src %}
+            {% set sizeAttrs = 'width="{{ module.icon_image.width }}" height="{{ module.icon_image.height }}"' %}
+            {% if module.icon_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.icon_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.icon_image.max_width }}px; max-height: {{ module.icon_image.max_height }}px"' %}
+            {% endif %}
+            {% set loadingAttr = module.icon_image.loading != 'disabled' ? 'loading="{{ module.icon_image.loading }}"' : '' %}
+            <img src="{{ module.icon_image.src }}" alt="{{ module.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+        </div>
+     </div>
+</section>
+{% endif %}

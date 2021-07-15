@@ -1,0 +1,57 @@
+[ {
+  "id" : "fefdf3e0-da1b-fb78-8f2c-0027060b3089",
+  "name" : "logo",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : true,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/LogoOptimized.jpeg",
+    "alt" : "LogoOptimized",
+    "loading" : "lazy",
+    "width" : 166,
+    "height" : 59,
+    "max_width" : 166,
+    "max_height" : 59
+  }
+}, {
+  "id" : "656c0038-b259-6897-f45a-206aef710b16",
+  "name" : "menu_field",
+  "label" : "Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "menu",
+  "default" : 39005126074
+}, {
+  "id" : "56ae614d-36c5-f05d-dfe7-7b4747bfdd5f",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "LET’S TALK HUBSPOT!"
+}, {
+  "id" : "92925eb5-fe69-525a-2f58-d71297404bd5",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

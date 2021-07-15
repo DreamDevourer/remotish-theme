@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Users:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 47339683396,
+  "label" : "Team Gallery",
+  "is_available_for_new_content" : true
+}

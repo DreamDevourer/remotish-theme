@@ -1,0 +1,100 @@
+[ {
+  "id" : "3719f187-8bef-e837-26ab-871a86fa050e",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Need a Consulting Product?"
+}, {
+  "id" : "de2f6a66-187b-9f2e-b726-b63ddea8d4b0",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book an hour with us now"
+}, {
+  "id" : "faf4c143-22bf-e533-48c4-7373acd84912",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>This is a price module for exhibit the values of your product, a consultation or anything related to it.This is a price module for exhibit the values of your product, a consultation or anything related to it.</p>\n<p>Please fill this section with your benefits and features of this product or call. Please fill this section with your benefits and features of this product or call.Please fill this section with your benefits and features of this product or call.Please fill this section with your benefits and features of this product or call.Please fill this section with your benefits and features of this product or call.</p>"
+}, {
+  "id" : "77b1e3b0-6269-f4ec-6795-883de520b18b",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "PAY AND BOOK YOUR TIME WITH US"
+}, {
+  "id" : "4f8fefa5-783c-c08e-7c89-ca47750a6155",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "4dbf2f7d-84a4-b595-32c8-c366c89af108",
+  "name" : "sub_title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "1 HOUR OF PRODUCT CONSULTING"
+}, {
+  "id" : "2ed272bf-88cb-87e6-5dc0-ad74b7c66e94",
+  "name" : "image_field",
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://www.remotish.agency/hubfs/Base%20(1).svg",
+    "alt" : "Base (1)",
+    "loading" : "lazy",
+    "width" : 173,
+    "height" : 173,
+    "max_width" : 173,
+    "max_height" : 173
+  }
+}, {
+  "id" : "0c48116c-bbc7-d4ea-a2d1-ee75d0148d39",
+  "name" : "number_field",
+  "label" : "Number",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 230
+} ]

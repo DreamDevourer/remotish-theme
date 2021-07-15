@@ -1,0 +1,71 @@
+[ {
+  "id" : "c9a26d54-0449-908d-5720-f93139b98ca7",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Related Posts"
+}, {
+  "id" : "e2eba622-705d-d917-3d58-c4b0d70806d0",
+  "name" : "sub_text",
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Check out other great posts on this topic"
+}, {
+  "id" : "7167c32d-35e5-1434-a990-54f562fbe387",
+  "name" : "button_text",
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read More"
+}, {
+  "id" : "78634675-ab52-32e0-a77f-d6df483cd4ed",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "BLOG"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "c9909ebd-21bf-aa57-bd84-50651d2c00fb",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "default" : 9366243571
+}, {
+  "id" : "78b4c767-9980-c28c-e998-1c571fb02f2e",
+  "name" : "display_no_of_post",
+  "label" : "Display No of  Post",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "display" : "slider",
+  "min" : 1,
+  "step" : 1,
+  "type" : "number",
+  "default" : 6
+} ]

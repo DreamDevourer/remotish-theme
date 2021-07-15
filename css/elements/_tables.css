@@ -1,0 +1,28 @@
+table {
+  border: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+thead th,
+thead td {
+  background-color: #343a40;
+  border-bottom-width: 2px;
+  border-color: #454d55;
+  color: #fff;
+}
+
+thead th {
+  border-bottom: 2px solid #dee2e6;
+  vertical-align: bottom;
+}
+
+tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}

@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Beaming%20Face%20With%20Smiling%20Eyes:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 47339683393,
+  "label" : "Gallery Module",
+  "is_available_for_new_content" : true
+}
