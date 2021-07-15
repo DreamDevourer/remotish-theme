@@ -46,8 +46,6 @@ The theme is now polished, optimized and ready to be used daily. Various bug fix
 
 If you’re interested in contributing to the Remotish Theme, please read enter in contact our access the GitHub Repository.
 
-**[CURRENT NOTE FOR MARKETPLACE: THIS THEME IS CURRENTLY CONFIDENTIAL AND WILL BE PUBLISHED ONLY AFTER THE END OF THE ASSET MARKETPLACE ACCELERATOR PROJECT]**
-
 ## A theme made with love by Remotish Agency
 
 Thanks for downloading Remotish Theme off of the HubSpot Marketplace! We put a lot of work into making it and making it user-friendly. Special thanks to Nicolas Mendes, our Front-end Developer, Kamlesh Kamalyia, our Senior Full-stack Developer, Nicole Pereira, our CEO, Chiara Burns, our Project Manager and you for using our beloved theme!
