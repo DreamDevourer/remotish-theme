@@ -1,6 +1,15 @@
-# Remotish Theme
+<h1 align="center">Remotish Theme</h1>
 
-Remotish Theme is ready for the B2B companies looking for data-driven, high converting and high quality promo services with a great simple clean design
+<p align="center">
+  Remotish Theme is ready for the B2B companies looking for data-driven, high converting and high quality promo services with a great simple clean design
+</p>
+
+<p align="center">
+  <a href="https://github.com/DreamDevourer/remotish-theme/blob/main/STYLEGUIDE.md">Styleguides</a> |
+  <a href=" ">Demo website</a> |
+  <a href="https://github.com/DreamDevourer/remotish-theme/blob/main/CONTRIBUTING.md">Contributing</a> |
+  <a href="https://github.com/DreamDevourer/remotish-theme/blob/main/LICENSE">License</a>
+</p>
 
 <img src="https://github.com/DreamDevourer/remotish-theme/blob/main/images/Demo/Cover.jpg?raw=true"></img>
 <br>
