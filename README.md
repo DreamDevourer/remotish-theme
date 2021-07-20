@@ -48,15 +48,15 @@ This theme was based in the HubSpot CMS Boilerplate's recommended best practices
 
 1 - Make sure you have NPM installed on your OS, commonly Unix OSs like BSDs, Linux distros and MacOS already have NPM installed by default. On MS Windows use scoop or download directly from the source.
 
-2 - After that run "npm install -g @hubspot/cli" to install HubSpot tools globally. You also can install to just the current directory with "npm install @hubspot/cli" but **it's not recommended**.
+2 - After that run ``` npm install -g @hubspot/cli ``` to install HubSpot tools globally. You also can install to just the current directory with "npm install @hubspot/cli" but **it's not recommended**.
 
-3 - Inside Remotish Theme directory run "hs init" and follow the steps.
+3 - Inside Remotish Theme directory run ```hs init``` and follow the steps.
 
-4 - Finally upload the theme to your CMS with "hs upload --account=<name> <src> <dest>" (Example:  hs upload --account=123456789 . "/my themes folder")
+4 - Finally upload the theme to your CMS with ```hs upload --account=<name> <src> <dest>``` (Example: ``` hs upload --account=123456789 . "/my themes folder" ```)
   
-FOR UPDATING/UPGRADING - Use this command to update HubSpot Tools "npm install -g @hubspot/cli@latest"
+FOR UPDATING/UPGRADING - Use this command to update HubSpot Tools ``` npm install -g @hubspot/cli@latest ```
   
-FOR AUTOMATIC UPLOAD TO THE CMS - Watch your local directory and automatically upload changes to your HubSpot account on file saves with "hs watch --account=<name> <src> <dest>". Changes will be live immediately.
+FOR AUTOMATIC UPLOAD TO THE CMS - Watch your local directory and automatically upload changes to your HubSpot account on file saves with ``` hs watch --account=<name> <src> <dest> ```. Changes will be live immediately.
 
 ## Contributing
 
