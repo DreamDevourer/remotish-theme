@@ -43,7 +43,8 @@ All templates can be found [here](https://www.remotish.agency/remotish-theme)
 
 This theme was based in the HubSpot CMS Boilerplate's recommended best practices and code formatting and HubSpot CMS Boilerplate open-source theme.
 
-## GETTING START: Using the theme with the Source Code locally
+## Getting Started
+### Using the theme with the Source Code locally
 
 1 - Make sure you have NPM installed on your OS, commonly Unix OSs like BSDs, Linux distros and MacOS already have NPM installed by default. On MS Windows use scoop or download directly from the source.
 
