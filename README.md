@@ -11,9 +11,9 @@
   <a href="https://github.com/DreamDevourer/remotish-theme/blob/main/LICENSE">License</a>
 </p>
 
-<img src="https://github.com/DreamDevourer/remotish-theme/blob/main/images/Demo/Cover.jpg?raw=true"></img>
+<img src="https://github.com/DreamDevourer/remotish-theme/blob/main/screenshots/Remotish_Thumb.jpg?raw=true"></img>
 <br>
-<img src="https://github.com/DreamDevourer/remotish-theme/blob/main/images/Demo/Thumbnail%20Homepage.jpg?raw=true"></img>
+<img src="https://github.com/DreamDevourer/remotish-theme/blob/main/screenshots/Remotish_Home.jpeg?raw=true"></img>
 <br>
 
 All templates can be found [here](https://www.remotish.agency/remotish-theme)
