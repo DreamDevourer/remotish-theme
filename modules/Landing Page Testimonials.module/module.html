@@ -20,7 +20,7 @@
           {% elif module.field_group.icon.size_type == 'auto_custom_max' %}
           {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.field_group.icon.max_width }}px; max-height: {{ module.field_group.icon.max_height }}px"' %}
           {% endif %}
-          {% set loadingAttr = module.field_group.icon.loading != 'disabled' ? 'loading="{{ module.field_group.icon.loading }}"' : '' %}
+          {% set loadingAttr = module.field_group.icon.loading != 'lazy' ? 'loading="{{ module.field_group.icon.loading }}"' : '' %}
           <img src="{{ module.field_group.icon.src }}" alt="{{ module.field_group.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
           {% endif %}
        </div>

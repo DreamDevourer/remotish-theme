@@ -1,51 +1,4 @@
-{###########################################################################}
-{########################   HubSpot Helper Macros   ########################}
-{###########################################################################}
-
-{#
-
-Table of Contents:
-
-1. REM Converter
-2. Font Field CSS Mapper
-3. Color Field CSS Mapper
-
-#}
-
 {% set macros = true %}
-
-{#-------------------------------------------------------------------------#}
-{#                              REM Converter                              #}
-{#-------------------------------------------------------------------------#}
-{#
-
-Safely and simply use rem values for all sizing and spacing.
-
-Usage:
-
-* Inside CSS block for an element, call macro with value without unit suffix (15 not 15px) or pass in a variable
-
-Example:
-
-.my-selector {
-  {{ rem('20') }}
-  {{ rem('.2') }}
-  {{ rem('10 25 5 50') }}
-  {{ rem(variable_name) }}
-}
-
-Notes:
-
-* Values assume CSS convention. You can use from 1 to 4 values seperated by spaces.
-* If you use more than 4, nothing will be returned.
-* If you use more values than a CSS property can accept, your CSS rule will be invalid.
-
-TODO:
-
-Allow multiple values to be passed in, including variables
-Cut the trailing .0 off of rem if present on values like 1.0rem 2.0rem
-
-#}
 
 {% macro rem(value) %}
 
@@ -71,25 +24,6 @@ Cut the trailing .0 off of rem if present on values like 1.0rem 2.0rem
 
 {% endmacro %}
 
-{#-------------------------------------------------------------------------#}
-{#                         Font Field CSS Mapper                           #}
-{#-------------------------------------------------------------------------#}
-{#
-
-Creation of all CSS rules associated with the font field
-
-Usage:
-
-* Inside CSS block for an element, call macro using the base name for the font field in your fields.json file
-
-Example:
-
-.my-selector {
-  {{ fontField(theme.font_field_name) }}
-}
-
-#}
-
 {% macro fontField(value) %}
 
   {% set fontStyle = value.style %}
@@ -107,25 +41,6 @@ Example:
 
 {% endmacro %}
 
-{#-------------------------------------------------------------------------#}
-{#                         Color Field CSS Mapper                           #}
-{#-------------------------------------------------------------------------#}
-{#
-
-Creation of an rgba value that maps from a color field
-
-Usage:
-
-* Inside CSS block for an element, call macro using the base name for the color field in your fields.json file
-* The macro checks to see if opacity has a set value and uses '1' as a fallback should the parameter be hidden or unset.
-
-Example:
-
-.my-selector {
-  color: {{ color('theme.color_field_name') }}
-}
-
-#}
 
 {% macro color(value) %}
 

@@ -10,45 +10,179 @@
   "type" : "text",
   "default" : "Let’s Talk <br> <span>HubSpot</span>?"
 }, {
-  "id" : "87f25814-1282-76d7-b820-817bf3ca6e20",
-  "name" : "toutube",
-  "label" : "Youtube",
+  "id" : "a2e8decc-b2f2-27f1-80d3-b81c128dda2b",
+  "name" : "enable_social_accounts",
+  "label" : "Enable Social Accounts?",
+  "inline_help_text" : "This option enables by default social account links.",
   "required" : false,
   "locked" : true,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text"
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
 }, {
-  "id" : "ba9d8e27-5f51-f639-799a-685fff4b6d91",
-  "name" : "twitter",
-  "label" : "Twitter",
+  "id" : "4156b61d-537b-dae2-01c1-cdf90e91d460",
+  "name" : "social_links",
+  "label" : "Social Links",
+  "inline_help_text" : "Add here your social accounts links.",
   "required" : false,
   "locked" : true,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text"
-}, {
-  "id" : "74d9cc76-84db-166e-3ccc-3740d3fc20e2",
-  "name" : "instagram",
-  "label" : "Instagram",
-  "required" : false,
-  "locked" : true,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text"
-}, {
-  "id" : "728a4b73-6bd8-1821-dcf4-3935b19074dd",
-  "name" : "linked_in",
-  "label" : "Linked in",
-  "required" : false,
-  "locked" : true,
-  "validation_regex" : "",
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text"
+  "visibility" : {
+    "controlling_field" : "a2e8decc-b2f2-27f1-80d3-b81c128dda2b",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "c28c6c04-d5a2-7a1f-0b3b-4712d66bc941",
+    "name" : "enable_linkedin",
+    "label" : "Enable LinkedIn?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "6ec6f953-9883-72fc-f4b5-ef91f32775aa",
+    "name" : "linkedin",
+    "label" : "LinkedIn Profile",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "2ad08294-aabe-f509-953b-f539469bce8f",
+    "name" : "enable_instagram",
+    "label" : "Enable Instagram?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "9da573fb-2348-c828-d569-7e6891f8f5cf",
+    "name" : "instagram",
+    "label" : "Instagram Account",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "ff9e8cc0-cb31-a2dd-5a5f-43627a6b206a",
+    "name" : "enable_twitter",
+    "label" : "Enable Twitter?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "e928ef22-68aa-4f5f-7604-266cf3b8f151",
+    "name" : "twitter",
+    "label" : "Twitter Profile",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "27cd0b45-0b0e-9907-af02-35a1dfa38c53",
+    "name" : "enable_youtube",
+    "label" : "Enable Youtube?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "a7354570-7509-5960-a14d-bfdd52da0ecb",
+    "name" : "youtube",
+    "label" : "Youtube Channel",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_linkedin" : true,
+    "linkedin" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enable_instagram" : true,
+    "instagram" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enable_twitter" : true,
+    "twitter" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "enable_youtube" : true,
+    "youtube" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
 }, {
   "id" : "8c9c77a2-fea5-2513-1988-5392fd21b69e",
   "name" : "enable_logo",
@@ -174,13 +308,36 @@
     }
   } ]
 }, {
-  "id" : "e089839d-454a-e7df-78e3-73d090760f07",
-  "name" : "address",
-  "label" : "Address",
+  "id" : "2df4d69a-5598-94b1-6e51-fbf3a4de3fc9",
+  "name" : "address_information",
+  "label" : "Address Information",
   "required" : false,
   "locked" : true,
-  "type" : "richtext",
-  "default" : "<ul>\n<li>SAN DIEGO, CA</li>\n<li>PHOENIX, AZ</li>\n<li>CRANBERRY TWP, PA</li>\n<li>CURITIBA, BR</li>\n<li>ROSARITO, MX</li>\n</ul>"
+  "occurrence" : {
+    "min" : 0,
+    "max" : 5,
+    "sorting_label_field" : "522f4c1c-aa80-4a1b-6f44-fab2f79f3700",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "522f4c1c-aa80-4a1b-6f44-fab2f79f3700",
+    "name" : "address",
+    "label" : "Address",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "placeholder" : "SAN DIEGO, CA",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "SAN DIEGO, CA"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "address" : "SAN DIEGO, CA"
+  } ]
 }, {
   "id" : "aff4e022-7fa6-4cfa-c550-4392fa8e5180",
   "name" : "link_field",

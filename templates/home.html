@@ -1,8 +1,8 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Remotish - Home
-  screenshotPath: /Remotish/images/Thumbnail Homepage.jpg
+  label: Remotish Demo - Home
+  screenshotPath: ../images/Thumbnails/Thumbnail Homepage.jpg
 -->
 
 {% extends "./layouts/baseHome.html" %}
@@ -23,99 +23,7 @@
              {% dnd_module
                     path='../modules/hero', 
                     flexbox_positioning="TOP_CENTER"
-   
-
                   %}
-
-                {% module_attribute "image_group" is_json=True %}
-                     
-                      [
-                        {
-                          image_field:{
-                          src: "https://www.remotish.agency/hubfs/Remotish%20Theme/Team%20same%20height%20image/CHIARA.png",
-
-                          }
-                        },
-                       {
-                          image_field:{
-                          src: "https://www.remotish.agency/hubfs/Remotish%20Theme/Team%20same%20height%20image/KAM.png",
-
-                          }
-                        },
-                       {
-                          image_field:{
-                          src: "https://www.remotish.agency/hubfs/Remotish%20Theme/Team%20same%20height%20image/NICK.png",
-
-                          }
-                        },
-                      {
-                          image_field:{
-                          src: "https://www.remotish.agency/hubfs/Remotish%20Theme/Team%20same%20height%20image/FINAL.png",
-
-                          }
-                        }
-                       
-
-                              
-
- 
-                   ]
-  
-               {% end_module_attribute %}
-  
-           
-             {% module_attribute "services_group" is_json=True %}
-                   [ 
-  
-                  {
-                   icon_image : {
-                      src : "{{ get_asset_url('/Remotish Theme/images/module-icons/Icon Speak Color.png') }}"
-  
-                   },
-                   image_icon_white_ : {
-                        src : "{{ get_asset_url('/Remotish Theme/images/module-icons/Icon Speak.png') }}"
-                    },
-                     richtext_field : "<h3>THE THEME POWER</h3>
-                                       <p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>
-                                             ",
-                     button_text : "Read More"
-
-                  },
-                  {
-                   icon_image : {
-                      src : "{{ get_asset_url('/Remotish Theme/images/module-icons/Icon Speak Color.png') }}"
-  
-                   },
-                   image_icon_white_ : {
-                        src : "{{ get_asset_url('/Remotish Theme/images/module-icons/Icon Speak.png') }}"
-                    },
-                     richtext_field : "<h3>RESOURCEFUL</h3>
-                                       <p>We use HubSpot to develop Allstars themes that efficiently generate more revenue through the CMS.</p>
-                                             ",
-                     button_text : "Read More"
-
-                  },
-                   {
-                   icon_image : {
-                      src : "{{ get_asset_url('/Remotish Theme/images/module-icons/Icon Speak Color.png') }}"
-  
-                   },
-                   image_icon_white_ : {
-                        src : "{{ get_asset_url('/Remotish Theme/images/module-icons/Icon Speak.png') }}"
-                    },
-                     richtext_field : "<h3>EASY TO USE</h3>
-                                       <p>This is a powerful theme yet easy to use, you don't need a developer to build your website.</p>
-                                             ",
-                     button_text : "Read More"
-
-                  }
-                 
-  
-  
-                 ]
-                         
-  
-              {% end_module_attribute %}
   
   
               {% end_dnd_module %}
@@ -398,57 +306,6 @@
                     path='../modules/Space Module', 
                     flexbox_positioning="TOP_CENTER"
                     desktop_horizontal_space = "282" 
-   
-
-                  %}
-            {% end_dnd_module %}
-
-      {% end_dnd_section %}
-  
- 
-  
-  
-  
-    {# Keep Connected #}
-     
-          {% dnd_section
-       padding={
-        'top': 0,
-        'bottom':0,
-        'left' : 0,
-        'right' : 0
-    }
-       
-        full_width = true
-      %}
-             {% dnd_module
-                    path='../modules/Keep Connected ', 
-                    flexbox_positioning="TOP_CENTER"
-   
-
-                  %}
-            {% end_dnd_module %}
-
-      {% end_dnd_section %}
-  
-    {# Keep Connected #}
-  
-  
-  
-   {% dnd_section
-       padding={
-        'top': 0,
-        'bottom': 0,
-        'left' : 0,
-        'right' : 0
-    }
-     
-      %}
-             {% dnd_module
-                    path='../modules/Space Module', 
-                    flexbox_positioning="TOP_CENTER"
-                    desktop_horizontal_space = "295"
-                     tablet_horizontal_space = "180"
    
 
                   %}

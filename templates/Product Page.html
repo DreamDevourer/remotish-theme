@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Remotish - Product Page
+  label: Remotish Demo - Product Page
   screenshotPath: ../images/Thumbnails/Thumbnail Consulting Service.jpg
 -->
 {% extends "./layouts/base.html" %}
@@ -46,13 +46,7 @@
          full_width = true
 
           %}
-                {% dnd_module
-                                  path='../modules/Form Module - Consultant Form', 
-                                  flexbox_positioning="TOP_CENTER"
-                                 
-
-
-                                %}
+                {% dnd_module path="/Remotish RevOPS/modules/Form Module", label="Form Module" %}
                 {% end_dnd_module %}
 
 

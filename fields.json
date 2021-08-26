@@ -1,5 +1,4 @@
 [
-
   {
     "label": "Colors",
     "name": "colors",
@@ -127,8 +126,10 @@
   },
   
   {
-    "label": "Background Pattern",
+    "label": "Background Pattern Image",
     "name": "bg_Pattern",
+    "help_text" : "This fields supports image opacity if you are using WebP or PNG.",
+    "inline_help_text": "Here you can add globally a Pattern backrgorund to show on supported modules such as the footer and case studies gallery module, for example.",
     "type": "group",
     "children": [
       {
@@ -138,16 +139,15 @@
         "locked" : false,
         "responsive" : true,
         "resizable" : true,
-        "show_loading" : false,
+        "show_loading" : true,
         "type" : "image",
         "default" : {
-          "size_type" : "auto",
-          "src" : "{{ get_asset_url('/Remotish Theme/images/Pattern/pattern.png') }}",
-          "alt" : "Pattern Background",
-          "loading": "disabled"
+        "size_type" : "auto",
+        "src" : "{{ get_asset_url('/Remotish RevOPS/images/Pattern/pattern.png') }}",
+        "alt" : "Pattern Background",
+        "loading" : "lazy"
         }
       }
-     
     ]
   },
   
@@ -1550,77 +1550,31 @@
                 "name": "color",
                 "type": "color",
                 "default": {
-                  "color": "#F5F5F5",
+                  "color": "#FFFFFF",
                   "opacity": 100
                 }
               }
             ]
           },
-          {
-            "label": "Border top",
-            "name": "border",
-            "type": "group",
-            "children": [
-              {
-                "label": "Style",
-                "name": "style",
-                "type": "choice",
-                "id": "theme.global.footer.border.style",
-                "choices": [
-                  [ "none", "None" ],
-                  [ "solid", "Solid" ],
-                  [ "dotted", "Dotted" ],
-                  [ "dashed", "Dashed" ],
-                  [ "double", "Double" ],
-                  [ "groove", "Groove" ],
-                  [ "ridge", "Ridge" ],
-                  [ "inset", "Inset" ],
-                  [ "outset", "Outset" ]
-                ],
-                "display": "select",
-                "default": "solid"
-              },
-              {
-                "label": "Width",
-                "name": "width",
-                "type": "number",
-                "help_text": "Value is in pixels",
-                "visibility": {
-                  "controlling_field": "theme.global.footer.border.style",
-                  "controlling_value_regex": "none",
-                  "operator": "NOT_EQUAL"
-                },
-                "display": "slider",
-                "max": 100,
-                "min": 1,
-                "step": 1,
-                "default": 1
-              },
-              {
-                "label": "Color",
-                "name": "color",
-                "type": "color",
-                "visibility": {
-                  "controlling_field": "theme.global.footer.border.style",
-                  "controlling_value_regex": "none",
-                  "operator": "NOT_EQUAL",
-                  "hidden_subfields": {
-                    "opacity": true
-                  }
-                },
-                "default": {
-                  "color": "#F0F0F0"
-                }
-              }
-            ]
+            {
+    "label": "Font color",
+    "name": "footer_font_color",
+    "type": "group",
+    "children": [
+      {
+        "label": "Font Color",
+        "name": "colorhex",
+        "type": "color",
+        "visibility": {
+          "hidden_subfields": {
+            "opacity": true
           }
-        ]
+        },
+        "default": {
+          "color": "#AFB5C0"
+        }
+      }]
+            }]
       }
     ]
-  }
-  
-  
-  
- 
-      
-]
+  }   ]

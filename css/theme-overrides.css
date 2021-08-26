@@ -1,41 +1,5 @@
 {% import './tools/_macros.css' %}
 
-/* Table of contents
-
-  1. Variables
-    1a. Containers
-    1b. Breakpoints
-    1c. Colors
-    1d. Typography
-    1e. Borders
-    1f. Corner Radius
-    1g. Lists
-    1h. Horizontal Rule
-    1i. Blockquote
-    1j. Buttons
-    1k. Forms
-    1l. Tables
-    1m. Site Header
-    1n. Site Footer
-  2. Containers / Grid / DnD Areas
-  3. Typography
-  4. Buttons
-  5. Forms
-  6. Tables
-  7. Site Header
-  8. Site Footer
-  9. Blog
-  10. System Pages
-  11. Modules
-
-*/
-
-/* ************************************************************************* */
-/* ****************************  1. Variables   **************************** */
-/* ************************************************************************* */
-
-/* 1a. Containers */
-
 {% set container_width = theme.spacing.content_width ~ 'px' %}
 {% set container_width_narrow = '760px' %}
 {% set dnd_section_padding = theme.spacing.vertical_spacing ~ 'px ' ~ '20px' %}
@@ -50,7 +14,7 @@
 /* 1c. Colors */
 
 {% set primary_color = theme.colors.primary.color %}
-{% set secondary_color = theme.colors.secondary.color %}
+{% set secondary_color = theme.global_colors.secondary_color.colorr %}
 {% set body_color = theme.colors.body_bg.color %}
 {% set lighter_gray = '#f1f1f1' %}
 {% set light_gray = '#e6e6e6' %}
@@ -58,6 +22,8 @@
 {% set dark_gray = '#8a8a8a' %}
 {% set success = '#69a84f' %}
 {% set error = '#cc0201' %}
+
+{% set theme_color =  theme.colors.primary.color  %}
 
 /* 1d. Typography */
 
@@ -93,7 +59,7 @@
 
 /* 1i. Blockquote */
 
-{% set blockquote_border = '7px solid {{ primary_color }}' %}
+{% set blockquote_border = '7px solid {{ theme_color }}' %}
 {% set blockquote_padding = '0.9375rem' %}
 
 /* 1j. Buttons */
@@ -405,7 +371,7 @@ hr {
 button,
 .button {
   {{ button_primary_font.style }};
-  background-color: #ed8074;
+  background-color: {{theme_color}};
   border: {{ button_primary_border }};
   border-radius: {{ button_primary_corner_radius }};
   color: {{ button_primary_font.color }};
@@ -651,7 +617,7 @@ form ul.inputs-list li input + span:before {
 }
 
 form .input ul.invalid.error > li input + span:before {
-  border-color: {{ primary_color }};
+  border-color: {{ theme_color }};
 }
 
 /* Inputs - Select */
@@ -665,7 +631,7 @@ form .input ul.invalid.error > li input + span:before {
 /* Inputs - Datepicker */
 
 .hs-datepicker button.pika-button:hover {
-  background-color: {{ primary_color }} !important;
+  background-color: {{ theme_color }} !important;
 }
 
 .hs-datepicker .is-selected button.pika-button {
@@ -1021,7 +987,7 @@ body .submenu.level-2 > li,
 .header .navigation-primary .submenu.level-3,
 .header ul.lang_list_class {
   background-color: {{ header_bg_color }};
-  border-top-color: {{ primary_color }};
+  border-top-color: {{ theme_color }};
 }
 
 .header .navigation-primary .submenu.level-2 > li.menu-item > a.menu-link,
@@ -1084,7 +1050,7 @@ body .submenu.level-2 > li,
 /* ************************************************************************* */
 
 .footer,.logos_footer_row2section {
-  background-color: {{ footer_bg_color }};
+  background-color: {{ footer_bg_color }} !important;
   
 }
 
@@ -1293,7 +1259,7 @@ body .submenu.level-2 > li,
 /* Icon */
 
 body .icon svg {
-  fill: {{ primary_color }};
+  fill: {{ theme_color }};
   width: 16px;
 }
 
@@ -1306,13 +1272,13 @@ body .social-links__icon {
 
 .blog-post__social-sharing .social-links__icon svg,
 body .social-links__icon svg {
-  fill: {{ primary_color }};
+  fill: {{ theme_color }};
 }
 
 body .social-links__icon:hover,
 body .social-links__icon:focus,
 body .social-links__icon:active {
-  background-color: {{ primary_color }};
+  background-color: {{ theme_color }};
 }
 
 body .social-links__icon:hover svg,
@@ -1329,11 +1295,11 @@ body .statistic__circle {
 
 body .statistic__bar,
 body .statistic__fill {
-  border-color: {{ primary_color }};
+  border-color: {{ theme_color }};
 }
 
 body .statistic__info {
-  color: {{ primary_color }};
+  color: {{ theme_color }};
 }
 
 /* Testimonial slider */
@@ -1343,36 +1309,36 @@ body .tns-nav button {
 }
 
 body .tns-nav .tns-nav-active {
-  background-color: {{ primary_color }};
+  background-color: {{ theme_color }};
 }
 
 .testimonial__module {
-  border-top-color: {{ primary_color }} !important;
+  border-top-color: {{ theme_color }} !important;
 }
 
 .testimonial__module__text:before {
-  background-color: {{ primary_color }} !important;
+  background-color: {{ theme_color }} !important;
 }
 
 /* Card section */
 
 .cards__card.card,
 .card.pricing-card {
-  border-top-color: {{ primary_color }};
+  border-top-color: {{ theme_color }};
 }
 
 .card-section__wrapper .tns-nav .tns-nav-active {
-  background-color: {{ primary_color }} !important;
+  background-color: {{ theme_color }} !important;
 }
 
 /* Latest posts */
 
 .news_listing__featured_image {
-  border-bottom-color: {{ primary_color }} !important;
+  border-bottom-color: {{ theme_color }} !important;
 }
 
 .news_listing__wrapper .tns-nav .tns-nav-active {
-  background-color: {{ primary_color }} !important;
+  background-color: {{ theme_color }} !important;
 }
 
 /* Pricing card */

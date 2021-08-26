@@ -4,7 +4,7 @@
          <div class="header-logo">
              <a rel="dns-prefetch" href="/">
                {% set loadingAttr = module.logo.loading != 'lazy' ? 'loading="{{ module.logo.loading }}"' : '' %}
-               <img loading="lazy" class="mainLogoSite" src="{{ module.logo.src }}" alt="{{ module.logo.alt }}" {{ loadingAttr }}>
+               <img loading="lazy" class="mainLogoSite" src="{{ module.logo.src }}" width="166" height="59" alt="{{ module.logo.alt }}" {{ loadingAttr }}>
              </a>
          </div>
          <div class="menu-main">
@@ -12,6 +12,7 @@
                {% menu id="{{ module.menu_field }}" %}
             </nav>
          </div>
+         {% if module.enable_cta %}
          <div class="header-cta">
              <div class="button-deaign">
                  {% set href = module.button_link.url.href %}
@@ -33,6 +34,7 @@
                  </a>
            </div>
          </div>
+         {% endif %}
        </div>
     </div>
 </header>

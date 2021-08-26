@@ -1,10 +1,10 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Remotish - Landing Page
+  label: Remotish Demo - Landing Page
   screenshotPath: ../images/Thumbnails/Thumbnail Landing Page.jpg
 -->
-{% extends "./layouts/baseLanding.html" %}
+{% extends "./layouts/base.html" %}
 
 {% block body %}
 <main>
@@ -46,23 +46,7 @@
          full_width = true
 
           %}
-                {% dnd_module
-                                  path='../modules/Form Module - Consultant Form', 
-                                  flexbox_positioning="TOP_CENTER",
-                                  title = "Discover HubSpot"
-                                  sub_text = "IS HUBSPOT THE RIGHT TOOL FOR YOUR BUSINESS?"
-                                 richtext_field = "<p>Talk with one of our HubSpot Experts and see if this platform is right for you!</p>
-                                    <ul>
-                                      <li> Perhaps your marketing, sales and service teams need to optimize their time and improve efficiency? </li>
-                                      <li> Maybe you need more organization and insight into your data and communications with prospects and customers? </li> 
-                                      <li> Have you ever thought it could be valuable to have total visibility on all your marketing, sales, service and website activities? </li>
-                                      <li>Do you need to help your small team be mightly with automation? </li> 
-                                   </ul>
-                                 
-                                 "
-
-
-                                %}
+                {% dnd_module path="/Remotish RevOPS/modules/Form Module", label="Form Module" %}
                 {% end_dnd_module %}
 
 

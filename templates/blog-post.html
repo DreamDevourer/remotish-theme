@@ -1,7 +1,7 @@
 <!--
-  templateType: blog
+  templateType: blog_post
   isAvailableForNewContent: true
-  label: Remotish - Blog Article
+  label: Remotish Demo - Blog Article
   screenshotPath: ../images/Thumbnails/Thumbnail Blog Post.jpg
 -->
 {% extends './layouts/base.html' %}
@@ -22,9 +22,9 @@
                <img loading="lazy" src="{{ content.blog_post_author.avatar }}" alt="Picture of {{ content.blog_post_author.display_name }}" {{ loadingAvatar }}>
               </span>
               <div class="blog_postauthor_text">
-                  <a class="author-link" href="{{ group.absolute_url }}/author/{{ content.blog_post_author.slug }}">
+                  <span class="author-link">
                     {{ content.blog_post_author.display_name }}
-                  </a> 
+                  </span> 
                
                
                   <span class="headdate-min">
@@ -73,15 +73,15 @@
         <div class="footer-social">
           <ul>
             
-            <li> <a href="https://twitter.com/intent/tweet?text=I+found+this+interesting+blog+post&url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Remotish%20Theme/Social/Twitter.svg" alt="">  </a> </li>
+            <li> <a href="https://twitter.com/intent/tweet?text=I+found+this+interesting+blog+post&url={{ content.absolute_url }}"> <img src="../images/module-icons/Social-Icons/Twitter-Icon.svg" alt="">  </a> </li>
        
-            <li> <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Remotish%20Theme/Social/LinkedInn.png" alt="">  </a> </li>
+            <li> <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ content.absolute_url }}"> <img src="../images/module-icons/Social-Icons/LinkedInn-Icon.png" alt="">  </a> </li>
             
-            <li> <a href="http://reddit.com/submit?url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Group%201389.png" alt="">  </a> </li>
+            <li> <a href="http://reddit.com/submit?url={{ content.absolute_url }}"> <img src="../images/module-icons/Social-Icons/reddit-Icon.png" alt="">  </a> </li>
             
-            <li> <a href="https://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Group%201387.png" alt="">  </a> </li>
+            <li> <a href="https://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url }}"> <img src="../images/module-icons/Social-Icons/facebook-icon.png" alt="">  </a> </li>
             
-            <li> <a href="https://pinterest.com/pin/create/button/?url={{ content.absolute_url }}"> <img src="https://www.remotish.agency/hubfs/Group%201390.png" alt="">  </a> </li>
+            <li> <a href="https://pinterest.com/pin/create/button/?url={{ content.absolute_url }}"> <img src="../images/module-icons/Social-Icons/pinterest-Icon.png" alt="">  </a> </li>
           </ul>
         </div>
       </div>
@@ -96,7 +96,7 @@
       </div>
       <div class="socialepos_bottom_bottom">
          <span class="spboauthortext-image"><img loading="lazy" src="{{ content.blog_post_author.avatar }}" alt="Picture of {{ content.blog_post_author.display_name }}" {{ loadingAvatar }} ></span>
-         <span class="spboauthortext-author">  <a href="https://www.remotish.agency/hubspot-revops-agency/about-us/{{ content.blog_post_author.slug }}"><strong>{{ content.blog_author.display_name }}</strong></a> <br>  {{ content.blog_post_author.bio }} </span>
+         <span class="spboauthortext-author">  <span><strong>{{ content.blog_author.display_name }}</strong></span> <br>  {{ content.blog_post_author.bio }} </span>
       </div>
       
    

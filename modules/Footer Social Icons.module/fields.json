@@ -1,0 +1,140 @@
+[ {
+  "id" : "12f35c5e-25f6-ab65-3860-49b6a9c20fc0",
+  "name" : "social_links",
+  "label" : "Social Links",
+  "inline_help_text" : "Put here the links of your social profiles.",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "1e1a9191-5e15-bbea-b2e3-3e65321648b2",
+    "name" : "facebook",
+    "label" : "Facebook",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "040924b8-3244-a04d-4987-7a3badcdd918",
+    "name" : "instagram",
+    "label" : "Instagram",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "4dc88add-ad87-b27e-9052-00a896223adc",
+    "name" : "twitter",
+    "label" : "Twitter",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "3a014c09-e63c-1f92-c257-238c6cffd31a",
+    "name" : "linkedin",
+    "label" : "LinkedIn",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "48c4c840-fdd8-194c-4172-e510919cac2a",
+    "name" : "youtube",
+    "label" : "Youtube",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "styles.corner",
+    "name" : "corner",
+    "label" : "Boxes Radius",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "styles.corner.radius",
+      "name" : "radius",
+      "label" : "Radius",
+      "required" : false,
+      "locked" : false,
+      "display" : "slider",
+      "max" : 100,
+      "step" : 1,
+      "suffix" : "px",
+      "type" : "number"
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group"
+  }, {
+    "id" : "styles.alignment",
+    "name" : "alignment",
+    "label" : "Alignment",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "styles.alignment.alignment",
+      "name" : "alignment",
+      "label" : "Alignment",
+      "required" : false,
+      "locked" : false,
+      "alignment_direction" : "HORIZONTAL",
+      "type" : "alignment",
+      "default" : { }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group"
+  }, {
+    "id" : "styles.boxes_padding",
+    "name" : "boxes_padding",
+    "label" : "Boxes spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 30,
+          "units" : "px"
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group"
+} ]

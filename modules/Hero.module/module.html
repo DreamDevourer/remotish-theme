@@ -1,3 +1,48 @@
+{% require_css %}
+<style>
+{% scope_css %}
+   .services-hero-column {
+   
+   {% if module.styles.boxes_bg.bg_color.color %}
+   background-color: {{ module.styles.boxes_bg.bg_color.color }};
+   {% endif %}
+   
+   {% if module.styles.corner.radius %}
+   border-radius:{{ module.styles.corner.radius ~ 'px' }};
+   {% endif %}
+   
+   
+   {% if module.styles.boxes_padding.padding.bottom %}
+   padding-bottom:{{ module.styles.boxes_padding.padding.bottom.value ~ 'px' }};
+   {% endif %}
+   
+   {% if module.styles.boxes_padding.padding.top %}
+   padding-top:{{ module.styles.boxes_padding.padding.top.value ~ 'px' }};
+   {% endif %}
+   
+   
+   {% if module.styles.boxes_padding.padding.left %}
+   padding-left:{{ module.styles.boxes_padding.padding.left.value ~ 'px' }};
+   {% endif %}
+   
+   {% if module.styles.boxes_padding.padding.right %}
+   padding-right:{{ module.styles.boxes_padding.padding.right.value ~ 'px' }};
+   {% endif %}
+   
+   {% if module.styles.boxes_padding.margin.bottom %}
+   margin-bottom:{{ module.styles.boxes_padding.margin.bottom.value ~ 'px' }};
+   {% endif %}
+   
+   {% if module.styles.boxes_padding.margin.top %}
+   margin-top:{{ module.styles.boxes_padding.margin.top.value ~ 'px' }};
+   {% endif %} 
+    
+ } 
+{% end_scope_css %}
+</style>
+{% end_require_css %}
+ 
+
 <section class="hero-image">
     <div class="container">
        <div class="hero-column-row">
@@ -66,7 +111,7 @@
                 {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.icon_image.max_width }}px; max-height: {{ item.icon_image.max_height }}px"' %}
                 {% endif %}
                 {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
-                <img loading="lazy" class="color-icon" src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                <img loading="lazy" class="color-icon" src="{{ item.icon_image.src }}" width="77" height="71" alt="{{ item.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
                 
                 {% if item.image_icon_white_.src %}
@@ -77,7 +122,7 @@
                 {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_icon_white_.max_width }}px; max-height: {{ item.image_icon_white_.max_height }}px"' %}
                 {% endif %}
                 {% set loadingAttr = item.image_icon_white_.loading != 'disabled' ? 'loading="{{ item.image_icon_white_.loading }}"' : '' %}
-                <img loading="lazy" class="white-icon" style="display:none;" src="{{ item.image_icon_white_.src }}" alt="{{ item.image_icon_white_.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                <img loading="lazy" class="white-icon" style="display:none;" src="{{ item.image_icon_white_.src }}" width="77" height="71" alt="{{ item.image_icon_white_.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
               </div>
             <div class="services-text">

@@ -8,7 +8,7 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : "REMOTISH THEME HOME"
+  "default" : "HUBSPOT REVOPS SPECIALISTS"
 }, {
   "id" : "eda84b6c-4b26-1c15-620a-bcd3e932023a",
   "name" : "sub_text",
@@ -16,7 +16,7 @@
   "required" : false,
   "locked" : false,
   "type" : "richtext",
-  "default" : "<p><span>The powerful&nbsp; theme for every website with an easy-to-edit website designed to attract and convert visitors without needing a developer for maintenance.</span></p>"
+  "default" : "<p>Process Strategy + Highly Technical Implementation + <br>Customized Training.</p>"
 }, {
   "id" : "38100a9c-db98-57a4-eae2-2cbdbbcf784d",
   "name" : "button_text",
@@ -69,13 +69,13 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Rec-1.png",
-      "alt" : "Rec-1",
+      "src" : "https://www.remotish.agency/hubfs/Icons/Team%20Members%20Home%20Optimized/WebP/KAM.webp",
+      "alt" : "KAM",
       "loading" : "lazy",
-      "width" : 1356,
-      "height" : 1584,
-      "max_width" : 1356,
-      "max_height" : 1584
+      "width" : 495,
+      "height" : 585,
+      "max_width" : 495,
+      "max_height" : 585
     }
   } ],
   "tab" : "CONTENT",
@@ -84,13 +84,13 @@
   "default" : [ {
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Rec-1.png",
-      "alt" : "Rec-1",
+      "src" : "https://www.remotish.agency/hubfs/Icons/Team%20Members%20Home%20Optimized/WebP/KAM.webp",
+      "alt" : "KAM",
       "loading" : "lazy",
-      "width" : 1356,
-      "height" : 1584,
-      "max_width" : 1356,
-      "max_height" : 1584
+      "width" : 495,
+      "height" : 585,
+      "max_width" : 495,
+      "max_height" : 585
     }
   } ]
 }, {
@@ -117,13 +117,13 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
-      "alt" : "Icon Speak",
+      "src" : "https://www.remotish.agency/hubfs/Group%2015.svg",
+      "alt" : "Group 15",
       "loading" : "lazy",
-      "width" : 90,
-      "height" : 88,
-      "max_width" : 90,
-      "max_height" : 88
+      "width" : 88,
+      "height" : 86,
+      "max_width" : 88,
+      "max_height" : 86
     }
   }, {
     "id" : "80e824b6-8242-90a5-95d9-c7c14cc3fe64",
@@ -152,7 +152,7 @@
     "required" : false,
     "locked" : false,
     "type" : "richtext",
-    "default" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>"
+    "default" : "<h3>SALES OPS</h3>\n<p>We use HubSpot to develop Allstars that efficiently generate more revenue through processes &amp; tools.</p>"
   }, {
     "id" : "ad25bf7b-bfe2-cdf1-533c-8d4c1baf602d",
     "name" : "button_text",
@@ -188,13 +188,13 @@
   "default" : [ {
     "icon_image" : {
       "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
-      "alt" : "Icon Speak",
+      "src" : "https://www.remotish.agency/hubfs/Group%2015.svg",
+      "alt" : "Group 15",
       "loading" : "lazy",
-      "width" : 90,
-      "height" : 88,
-      "max_width" : 90,
-      "max_height" : 88
+      "width" : 88,
+      "height" : 86,
+      "max_width" : 88,
+      "max_height" : 86
     },
     "image_icon_white_" : {
       "size_type" : "auto",
@@ -206,7 +206,7 @@
       "max_width" : 89,
       "max_height" : 88
     },
-    "richtext_field" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>",
+    "richtext_field" : "<h3>SALES OPS</h3>\n<p>We use HubSpot to develop Allstars that efficiently generate more revenue through processes &amp; tools.</p>",
     "button_text" : "Read More",
     "link_field" : {
       "url" : {
@@ -220,13 +220,13 @@
   }, {
     "icon_image" : {
       "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
-      "alt" : "Icon Speak",
+      "src" : "https://www.remotish.agency/hubfs/Group%2015.svg",
+      "alt" : "Group 15",
       "loading" : "lazy",
-      "width" : 90,
-      "height" : 88,
-      "max_width" : 90,
-      "max_height" : 88
+      "width" : 88,
+      "height" : 86,
+      "max_width" : 88,
+      "max_height" : 86
     },
     "image_icon_white_" : {
       "size_type" : "auto",
@@ -238,7 +238,7 @@
       "max_width" : 89,
       "max_height" : 88
     },
-    "richtext_field" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>",
+    "richtext_field" : "<h3>SALES OPS</h3>\n<p>We use HubSpot to develop Allstars that efficiently generate more revenue through processes &amp; tools.</p>",
     "button_text" : "Read More",
     "link_field" : {
       "url" : {
@@ -252,13 +252,13 @@
   }, {
     "icon_image" : {
       "size_type" : "auto",
-      "src" : "https://www.remotish.agency/hubfs/Icon%20Speak.png",
-      "alt" : "Icon Speak",
+      "src" : "https://www.remotish.agency/hubfs/Group%2015.svg",
+      "alt" : "Group 15",
       "loading" : "lazy",
-      "width" : 90,
-      "height" : 88,
-      "max_width" : 90,
-      "max_height" : 88
+      "width" : 88,
+      "height" : 86,
+      "max_width" : 88,
+      "max_height" : 86
     },
     "image_icon_white_" : {
       "size_type" : "auto",
@@ -270,7 +270,7 @@
       "max_width" : 89,
       "max_height" : 88
     },
-    "richtext_field" : "<h3>THE THEME POWER</h3>\n<p>Become a HubSpot power user today and build new beautiful pages in a breeze.</p>",
+    "richtext_field" : "<h3>SALES OPS</h3>\n<p>We use HubSpot to develop Allstars that efficiently generate more revenue through processes &amp; tools.</p>",
     "button_text" : "Read More",
     "link_field" : {
       "url" : {
@@ -282,4 +282,119 @@
       "no_follow" : false
     }
   } ]
+}, {
+  "id" : "styles",
+  "name" : "styles",
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "styles.corner",
+    "name" : "corner",
+    "label" : "Boxes Radius",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "styles.corner.radius",
+      "name" : "radius",
+      "label" : "Radius",
+      "required" : false,
+      "locked" : false,
+      "display" : "slider",
+      "max" : 100,
+      "step" : 1,
+      "suffix" : "px",
+      "type" : "number"
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : { }
+  }, {
+    "id" : "styles.boxes_bg",
+    "name" : "boxes_bg",
+    "label" : "Boxes Background",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "styles.boxes_bg.bg_color",
+      "name" : "bg_color",
+      "label" : "Background color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "bg_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "styles.boxes_padding",
+    "name" : "boxes_padding",
+    "label" : "Boxes spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 30,
+          "units" : "px"
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "corner" : { },
+    "boxes_bg" : {
+      "bg_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    },
+    "boxes_padding" : {
+      "padding" : {
+        "top" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 30,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 30,
+          "units" : "px"
+        }
+      }
+    }
+  }
 } ]

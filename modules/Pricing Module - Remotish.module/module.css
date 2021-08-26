@@ -1,8 +1,1 @@
-#hs_cos_wrapper_widget_1623200198564 .plabe-buttontp.cta-design a, #hs_cos_wrapper_widget_1623200198564 .border-button a {
-    padding: 10px;
-    color: black !important;
-}
-
-#hs_cos_wrapper_widget_1623200198564 .plabe-buttontp.cta-design a:hover, #hs_cos_wrapper_widget_1623200198564 .border-button a:hover {
-  color: white !important;
-}
+#hs_cos_wrapper_widget_1623200198564 > div > div > div.pricing-tableptrow.deskstop-price > div.pricingtable-right > div.pricingtable-column.avtivetable-price > div.plabe-buttontp.cta-design > a { color: black !important;}

@@ -27,6 +27,15 @@
   "type" : "menu",
   "default" : 39005126074
 }, {
+  "id" : "64a5459f-46e2-2635-ed63-464c80ed76a7",
+  "name" : "enable_cta",
+  "label" : "Enable CTA?",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
   "id" : "56ae614d-36c5-f05d-dfe7-7b4747bfdd5f",
   "name" : "button_text",
   "label" : "Button Text",

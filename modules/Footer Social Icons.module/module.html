@@ -1,0 +1,41 @@
+{% require_css %}
+<style>
+  {% scope_css %}
+    {% if module.styles.alignment.alignment %}
+      .sociale-share {text-align: {{ module.styles.alignment.alignment.horizontal_align }}; }
+    {% endif %}
+  
+    {% if module.styles.boxes_padding.padding.bottom %}
+      .folap-language {padding-bottom:{{ module.styles.boxes_padding.padding.bottom.value ~ 'px' }};}
+   {% endif %}
+   {% if module.styles.boxes_padding.padding.top %}
+      .folap-language {padding-top:{{ module.styles.boxes_padding.padding.top.value ~ 'px' }};}
+   {% endif %}
+   {% if module.styles.boxes_padding.padding.left %}
+      .folap-language {padding-left:{{ module.styles.boxes_padding.padding.left.value ~ 'px' }};}
+   {% endif %}
+   {% if module.styles.boxes_padding.padding.right %}
+       .folap-language {padding-right:{{ module.styles.boxes_padding.padding.right.value ~ 'px' }};}
+   {% endif %}
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+<div class="row-fluid">
+  <div class="footer">
+   <div class="container">
+     <div class="span4 widget-span widget-type-cell f-column">
+     {# START Social Icons #}  
+       <div class="folap-language">
+         <ul class="sociale-share" id="responsiveIcons">
+           <li><a href="{{ module.social_links.facebook }}" target="_blank"> <i class="fa fa-facebook-square"></i> </a></li>
+           <li><a href="{{ module.social_links.instagram }}" target="_blank"> <i class="fa fa-instagram"></i> </a></li>
+           <li><a href="{{ module.social_links.twitter }}" target="_blank"> <i class="fa fa-twitter-square"></i> </a></li>  
+           <li><a href="{{ module.social_links.linkedin }}" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+           <li><a href="{{ module.social_links.youtube }}" target="_blank"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+         </ul>
+       </div>
+      {# END Social Icons Start #} 
+     </div>
+    </div>
+  </div>
+</div>

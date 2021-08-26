@@ -1,7 +1,7 @@
 {
-  "label" : "Remotish Theme",
+  "label" : "Remotish RevOPS",
   "preview_path" : "./templates/home.html",
-  "screenshot_path" : "../images/Thumbnails/Thumbnail Homepage.jpg",
+  "screenshot_path" : "./images/Thumbnails/Thumbnail Homepage.jpg",
   "enable_domain_stylesheets" : null,
   "responsive_breakpoints" : [ {
     "name" : "mobile",

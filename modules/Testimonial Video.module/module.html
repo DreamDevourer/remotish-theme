@@ -9,6 +9,7 @@
          <img src="https://www.remotish.agency/hubfs/Polygon%202.png">
         </a>
         {% if module.video_image.src %}
+        {% set loadingAttr = module.video_image.loading != 'lazy' ? 'loading="{{ module.video_image.loading }}"' : '' %}
         <img src="{{ module.video_image.src }}" alt="{{ module.video_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
         {% endif %}
       </span>

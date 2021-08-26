@@ -45,8 +45,8 @@
                        <div class="keep-study-column">
                          <div class="keep-study-inner">
                            <div class="keep-study-image" >
-                             
-                             <img loading="lazy" src="{{ author_post.featured_image }}" alt="" >
+                             {% set loadingAttr = author_post.featured_image.loading != 'lazy' ? 'loading="{{ author_post.featured_image.loading }}"' : '' %}
+                             <img loading="lazy" src="{{ author_post.featured_image }}" alt="featured image" >
 
                            </div>
                            <div class="keep-study-text">

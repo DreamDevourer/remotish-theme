@@ -85,7 +85,7 @@
   }, {
     "id" : "c5aca92f-b3a3-3bb7-3084-9a5e55857e13",
     "name" : "bg_shap",
-    "label" : "BG Shap",
+    "label" : "Background Blob Shape",
     "required" : false,
     "locked" : false,
     "responsive" : true,

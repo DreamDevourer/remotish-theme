@@ -39,14 +39,14 @@
          {% set loadingThree = module.image_three.loading != 'lazy' ? 'loading="{{ module.image_three.loading }}"' : '' %}
         
          <div class="abouthomeimahge_one">
-             <img loading="lazy" src="{{ module.image_one.src }}" {{ loadingOne }}>
+             <img loading="lazy" src="{{ module.image_one.src }}" width="773" height="585" alt="First Image" {{ loadingOne }}>
         </div>
         <div class="abouthomeimahge-right">
            <div class="abouthomeimahge_two">
-           <img loading="lazy" src="{{ module.image_two.src }}" {{ loadingTwo }}>
+           <img loading="lazy" src="{{ module.image_two.src }}" width="386" height="546" alt="Second Image" {{ loadingTwo }}>
         </div> 
         <div class="abouthomeimahge_three">
-           <img loading="lazy" class="makeItRightIMG" src="{{ module.image_three.src }}" {{ loadingThree }}>
+           <img loading="lazy" class="makeItRightIMG" src="{{ module.image_three.src }}" alt="Third Image" width="386" height="310" {{ loadingThree }}>
         </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
                   {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.image_field.max_width }}px; max-height: {{ item.image_field.max_height }}px"' %}
                   {% endif %}
                   {% set loadingAttr = item.image_field.loading != 'lazy' ? 'loading="{{ item.image_field.loading }}"' : '' %}
-                  <img loading="lazy" src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  <img loading="lazy" src="{{ item.image_field.src }}" width="70" height="70" alt="Icon" {{ loadingAttr }} {{ sizeAttrs }}>
                   {% endif %}
                 </span>
                 <h3>

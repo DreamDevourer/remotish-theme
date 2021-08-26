@@ -48,8 +48,8 @@
                <div class="keep-study-inner">
                   <div class="keep-study-image" >
                    
-                   
-                    <img loading="lazy" src="{{ rec_post.featured_image }}" alt="">
+                    {% set loadingAttr = rec_post.featured_image.loading != 'lazy' ? 'loading="{{ rec_post.featured_image.loading }}"' : '' %}
+                    <img loading="lazy" src="{{ rec_post.featured_image }}" alt="featured image" {{ loadingAttr }}>
                  
                   </div>
                  <div class="keep-study-text">

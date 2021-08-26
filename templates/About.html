@@ -1,7 +1,7 @@
 <!--
   templateType: page
   isAvailableForNewContent: true
-  label: Remotish - About Page
+  label: Remotish Demo - About Page
   screenshotPath: ../images/Thumbnails/Thumbnail About Us.jpg
 -->
 {% extends "./layouts/base.html" %}
@@ -143,55 +143,6 @@
                  {% dnd_module
                     path='../modules/The Team', 
                     flexbox_positioning="TOP_CENTER"
-                    team_group = [
-                         {
-                           image_field : {
-                              src : "{{ get_asset_url('/Remotish Theme/images/Local Images/KAM_HIGH_QUALITY 1.png') }}"
-                           
-                           },
-                           title : "KAM",
-                           sub_text : "Backend Developer",
-                           details : "<p>The javascript Wizard inside HubSpot CMS!</p>",
-                           bg_shap : {
-                             src : "https://cdn2.hubspot.net/hubfs/3428648/Remotish%20Theme/Blob%20(1).svg"
-                           
-                           }
-                          
-                          
-                         },
-                         {
-                           image_field : {
-                              src : "{{ get_asset_url('/Remotish Theme/images/Local Images/CHIARA2 2.png') }}"
-                           
-                           },
-                           title : "CHIARA",
-                           sub_text : "Sr. Project Strategist",
-                           details : "<p>A real building site machine!</p>",
-                           bg_shap : {
-                             src : "https://cdn2.hubspot.net/hubfs/3428648/Remotish%20Theme/Blob%20(1).svg"
-                           
-                           }
-                          
-                          
-                         },
-                         {
-                           image_field : {
-                              src : "{{ get_asset_url('/Remotish Theme/images/Local Images/NICK.png') }}"
-                           
-                           },
-                           title : "NICK",
-                           sub_text : "Frontend Developer",
-                           details : "<p>Crazy front-end stuff comming right away!</p>",
-                           bg_shap : {
-                             src : "https://cdn2.hubspot.net/hubfs/3428648/Remotish%20Theme/Blob%20(1).svg"
-                           
-                           }
-                          
-                          
-                         }
-                    
-                    ]
-
                   %}
             {% end_dnd_module %}
 

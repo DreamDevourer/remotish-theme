@@ -10,7 +10,7 @@
              {% elif item.logo_image.size_type == 'auto_custom_max' %}
              {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.logo_image.max_width }}px; max-height: {{ item.logo_image.max_height }}px"' %}
              {% endif %}
-             {% set loadingAttr = item.logo_image.loading != 'disabled' ? 'loading="{{ item.logo_image.loading }}"' : '' %}
+             {% set loadingAttr = item.logo_image.loading != 'lazy' ? 'loading="{{ item.logo_image.loading }}"' : '' %}
              <img loading="lazy" src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
              {% endif %}
         </div>

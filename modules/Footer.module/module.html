@@ -6,15 +6,24 @@
          </h2>
         
       </div>
+     {% if module.enable_logo %}
      <div class="footer-social">
        <ul>
-         <li> <a rel="dns-prefetch" href="{{ module.toutube }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Youtube.jpg" alt="">  </a> </li>
-         <li> <a rel="dns-prefetch" href="{{ module.twitter }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Twitter.jpg" alt="">  </a> </li>
-         <li> <a rel="dns-prefetch" href="{{ module.instagram }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Instagram.jpg" alt="">  </a> </li>
-         <li> <a rel="dns-prefetch" href="{{ module.linked_in }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/LinkedIn.jpg" alt="">  </a> </li>
+         {% if module.social_links.enable_youtube %}
+         <li> <a rel="dns-prefetch" href="{{ module.social_links.youtube }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Youtube.jpg" alt="Youtube Icon">  </a> </li>
+         {% endif %}
+         {% if module.social_links.enable_twitter %}
+         <li> <a rel="dns-prefetch" href="{{ module.social_links.twitter }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Twitter.jpg" alt="Twitter Icon">  </a> </li>
+         {% endif %}
+         {% if module.social_links.enable_instagram %}
+         <li> <a rel="dns-prefetch" href="{{ module.social_links.instagram }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/Instagram.jpg" alt="Instagram Icon">  </a> </li>
+         {% endif %}
+         {% if module.social_links.enable_linkedin %}
+         <li> <a rel="dns-prefetch" href="{{ module.social_links.linked_in }}"> <img loading="lazy" src="https://www.remotish.agency/hubfs/Icons/LinkedIn.jpg" alt="LinkedIn Icon">  </a> </li>
+         {% endif %}
        </ul>
      </div>
-     
+     {% endif %}
      {% if module.enable_logo %}
      <div class="logos_footer_logo">
        {% for item in module.logo_group %}
@@ -27,7 +36,7 @@
           {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.logo_image.max_width }}px; max-height: {{ item.logo_image.max_height }}px"' %}
           {% endif %}
           {% set loadingAttr = item.logo_image.loading != 'lazy' ? 'loading="{{ item.logo_image.loading }}"' : '' %}
-          <a rel="dns-prefetch" href="{{  item.link_field_desktop.url.href }}"><img loading="lazy" src="{{ item.logo_image.src }}" alt="{{ item.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}></a>
+          <a rel="dns-prefetch" href="{{  item.link_field_desktop.url.href }}"><img loading="lazy" src="{{ item.logo_image.src }}" width="220" height="220" alt="{{ item.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}></a>
           {% endif %}
        </div>
        {% endfor %}
@@ -60,7 +69,9 @@
 
         <div class="logos_r2left">
           <span class="f-copyright">©{{year}} REMOTISH AGENCY</span>
-          <span> {{ module.address }} </span>
+          {% for addressItem in module.address_information %}
+          <span class="addressResponsive"> {{ addressItem.address }} </span>
+          {% endfor %}
         </div>
         <div class="privacy-policy">
           {% set href = module.link_field.url.href %}

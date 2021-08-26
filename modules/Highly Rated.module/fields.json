@@ -1,4 +1,13 @@
 [ {
+  "id" : "5dd9e660-e4bf-c699-1b8e-ea526350648d",
+  "name" : "disable_video",
+  "label" : "Disable Video?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
   "id" : "06c7af41-df77-bcc1-4c72-056d28b88726",
   "name" : "video_popup_",
   "label" : "Video Popup?",
