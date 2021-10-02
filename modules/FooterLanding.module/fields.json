@@ -88,6 +88,7 @@
     "required" : false,
     "locked" : false,
     "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
     "type" : "link",
     "default" : {
       "url" : {
@@ -178,6 +179,7 @@
   "required" : false,
   "locked" : true,
   "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
   "type" : "link",
   "default" : {
     "url" : {

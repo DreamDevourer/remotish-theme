@@ -69,9 +69,11 @@
 
         <div class="logos_r2left">
           <span class="f-copyright">©{{year}} REMOTISH AGENCY</span>
+          <div class="addressContainer">
           {% for addressItem in module.address_information %}
           <span class="addressResponsive"> {{ addressItem.address }} </span>
           {% endfor %}
+          </div>
         </div>
         <div class="privacy-policy">
           {% set href = module.link_field.url.href %}
