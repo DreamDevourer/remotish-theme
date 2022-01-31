@@ -1,6 +1,7 @@
 [ {
   "id" : "c0c1cabc-82be-230f-e807-5f0dee26ca13",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -9,6 +10,7 @@
 }, {
   "id" : "e676e249-5e73-aafa-df46-8f27c92af974",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -20,6 +22,7 @@
 }, {
   "id" : "df4c92b1-85e7-b5a4-2d71-f50a76b43561",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : false,
@@ -31,6 +34,7 @@
 }, {
   "id" : "aa58e68e-c09b-d25d-9751-9bd3d6c935c1",
   "name" : "link_field",
+  "display_width" : null,
   "label" : "Link",
   "required" : false,
   "locked" : false,

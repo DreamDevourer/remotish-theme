@@ -1,6 +1,7 @@
 [ {
   "id" : "bb4b335d-f439-922d-98e6-916ee7188d62",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "24ddb329-0948-e617-a47f-b311bd50b257",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "70323885-b66b-3332-f000-830b1360485a",
   "name" : "team_group",
+  "display_width" : null,
   "label" : "Team Group",
   "required" : false,
   "locked" : false,
@@ -35,6 +38,7 @@
   "children" : [ {
     "id" : "3b264fbd-496c-91ed-893f-86bea15f17b6",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -55,6 +59,7 @@
   }, {
     "id" : "fc06e5c6-ef3f-6d3c-7fa0-8f666f3ca87c",
     "name" : "title",
+    "display_width" : null,
     "label" : "Team Name",
     "required" : false,
     "locked" : false,
@@ -66,6 +71,7 @@
   }, {
     "id" : "8436124b-3258-f979-c1f9-a0ebcba7fb44",
     "name" : "sub_text",
+    "display_width" : null,
     "label" : "Team Post",
     "required" : false,
     "locked" : false,
@@ -77,6 +83,7 @@
   }, {
     "id" : "c3817cba-6a76-6b56-c30b-1883009c61b6",
     "name" : "details",
+    "display_width" : null,
     "label" : "Details",
     "required" : false,
     "locked" : false,
@@ -85,6 +92,7 @@
   }, {
     "id" : "c5aca92f-b3a3-3bb7-3084-9a5e55857e13",
     "name" : "bg_shap",
+    "display_width" : null,
     "label" : "Background Blob Shape",
     "required" : false,
     "locked" : false,
@@ -105,6 +113,7 @@
   }, {
     "id" : "dc9e3e87-895b-9ba2-ceae-0ed1124ea6fa",
     "name" : "enable_a_link",
+    "display_width" : null,
     "label" : "Enable a link?",
     "required" : false,
     "locked" : false,
@@ -114,6 +123,7 @@
   }, {
     "id" : "664f5ba7-11ea-b26b-4f7c-b8d232d59f78",
     "name" : "box_link",
+    "display_width" : null,
     "label" : "Box Link",
     "required" : false,
     "locked" : false,

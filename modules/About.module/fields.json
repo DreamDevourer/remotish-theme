@@ -1,6 +1,7 @@
 [ {
   "id" : "6c13a98e-fb82-1acf-3455-f17bc38028f2",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "e8647d95-3bb2-9ec8-41c7-e632bd0b8e63",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "ae29b871-ab34-7413-8b2c-34eaff2d6f9c",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : false,
@@ -34,6 +37,7 @@
 }, {
   "id" : "8e3763a5-8e5e-5414-b0c7-dc929fa05590",
   "name" : "button_link",
+  "display_width" : null,
   "label" : "Button Link",
   "required" : false,
   "locked" : false,
@@ -52,6 +56,7 @@
 }, {
   "id" : "2526f276-93b0-3fe3-ed3c-d371fcb37403",
   "name" : "right_top_text",
+  "display_width" : null,
   "label" : "Right Top Text",
   "required" : false,
   "locked" : false,
@@ -60,6 +65,7 @@
 }, {
   "id" : "76e55171-6520-1e0e-251a-cf4934476977",
   "name" : "image_one",
+  "display_width" : null,
   "label" : "Image One",
   "required" : false,
   "locked" : false,
@@ -79,6 +85,7 @@
 }, {
   "id" : "7381da9d-5e1a-7390-932d-0008a1e493aa",
   "name" : "image_two",
+  "display_width" : null,
   "label" : "Image Two",
   "required" : false,
   "locked" : false,
@@ -98,6 +105,7 @@
 }, {
   "id" : "22b7a0cc-6547-ae42-447c-b27bbee8dddc",
   "name" : "image_three",
+  "display_width" : null,
   "label" : "Image Three",
   "required" : false,
   "locked" : false,
@@ -118,6 +126,7 @@
 }, {
   "id" : "7b9c2547-cc89-cbf4-5273-0397c71c9e19",
   "name" : "about_group",
+  "display_width" : null,
   "label" : "About group",
   "required" : false,
   "locked" : false,
@@ -130,6 +139,7 @@
   "children" : [ {
     "id" : "b2416f31-8130-2177-6b91-565191cddd04",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image Icon",
     "required" : false,
     "locked" : false,
@@ -150,6 +160,7 @@
   }, {
     "id" : "a623f8cf-4cff-d22e-c1ff-35322c147a6c",
     "name" : "title",
+    "display_width" : null,
     "label" : "Title",
     "required" : false,
     "locked" : false,
@@ -161,6 +172,7 @@
   }, {
     "id" : "45ba0c33-21c4-9064-4a74-2f00e36ad608",
     "name" : "richtext_field",
+    "display_width" : null,
     "label" : "Rich text",
     "required" : false,
     "locked" : false,

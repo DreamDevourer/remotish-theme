@@ -1,6 +1,7 @@
 [ {
   "id" : "5c8eef30-3920-958e-f426-dfa42ab071c0",
   "name" : "choice_style",
+  "display_width" : null,
   "label" : "Choice Style",
   "required" : false,
   "locked" : true,
@@ -11,6 +12,7 @@
 }, {
   "id" : "13edf5e4-4e99-5bab-b874-8fb42e56957f",
   "name" : "section_header_",
+  "display_width" : null,
   "label" : "Section Header?",
   "required" : false,
   "locked" : false,
@@ -20,6 +22,7 @@
 }, {
   "id" : "aec5111c-64f5-67e7-122f-70a8f94be6be",
   "name" : "header",
+  "display_width" : null,
   "label" : "Header",
   "required" : false,
   "locked" : false,
@@ -35,6 +38,7 @@
 }, {
   "id" : "1ed840a5-daae-c697-88ae-b1e2063eaff8",
   "name" : "pricing_table",
+  "display_width" : null,
   "label" : "Pricing Table",
   "required" : false,
   "locked" : false,
@@ -48,6 +52,7 @@
   "children" : [ {
     "id" : "a2fec809-1874-5403-9b63-aada53c5f1a1",
     "name" : "left_title",
+    "display_width" : null,
     "label" : "Left Title",
     "required" : false,
     "locked" : false,
@@ -59,6 +64,7 @@
   }, {
     "id" : "6055611f-6a56-d314-4438-5dc9fdd22063",
     "name" : "price_column",
+    "display_width" : null,
     "label" : "Price Column",
     "required" : false,
     "locked" : false,
@@ -71,6 +77,7 @@
     "children" : [ {
       "id" : "852f5c38-635b-4377-95e4-e15fc01d81a8",
       "name" : "plane",
+      "display_width" : null,
       "label" : "Plan",
       "required" : false,
       "locked" : false,
@@ -82,6 +89,7 @@
     }, {
       "id" : "b147127a-70d8-9e79-2f35-d2a998624079",
       "name" : "price",
+      "display_width" : null,
       "label" : "Price",
       "required" : false,
       "locked" : false,
@@ -94,6 +102,7 @@
     }, {
       "id" : "3f4247a6-5a42-cb67-3c27-184de4289d57",
       "name" : "month",
+      "display_width" : null,
       "label" : "Month",
       "required" : false,
       "locked" : false,
@@ -105,6 +114,7 @@
     }, {
       "id" : "3402895c-ba63-c789-f348-adde1f62ea5c",
       "name" : "button_text",
+      "display_width" : null,
       "label" : "Button Text",
       "required" : false,
       "locked" : false,
@@ -116,6 +126,7 @@
     }, {
       "id" : "1701f31a-1658-ca5f-5a4d-0b2317dbfb13",
       "name" : "button_link",
+      "display_width" : null,
       "label" : "Button Link",
       "required" : false,
       "locked" : false,
@@ -134,6 +145,7 @@
     }, {
       "id" : "64376919-cbfc-da59-5e4e-33efa19bdc64",
       "name" : "active_column",
+      "display_width" : null,
       "label" : "Activate Column",
       "required" : false,
       "locked" : false,
@@ -143,6 +155,7 @@
     }, {
       "id" : "953019f6-d396-84ff-b11b-035bba03179e",
       "name" : "active_color",
+      "display_width" : null,
       "label" : "Active Color",
       "required" : false,
       "locked" : false,
@@ -223,6 +236,7 @@
   }, {
     "id" : "ea402eee-1bd5-9d60-3d2e-458388547d33",
     "name" : "button_color",
+    "display_width" : null,
     "label" : "Button Color",
     "required" : false,
     "locked" : false,
@@ -234,6 +248,7 @@
   }, {
     "id" : "c65472ea-d277-298d-07c6-cf86c09f9edc",
     "name" : "button_style_button",
+    "display_width" : null,
     "label" : "Border Style Button",
     "required" : false,
     "locked" : false,
@@ -243,6 +258,7 @@
   }, {
     "id" : "dc065583-8dbd-1b27-b3b0-a868af054f03",
     "name" : "table_rows",
+    "display_width" : null,
     "label" : "Table Rows",
     "required" : false,
     "locked" : false,
@@ -255,6 +271,7 @@
     "children" : [ {
       "id" : "b9194574-4aaa-6d47-f27b-dc22317951cf",
       "name" : "title_row",
+      "display_width" : null,
       "label" : "Row Title",
       "required" : false,
       "locked" : false,
@@ -266,6 +283,7 @@
     }, {
       "id" : "3a0fd1dc-64d1-7c24-2f42-f0f5997ede3f",
       "name" : "column_one_check_",
+      "display_width" : null,
       "label" : "Column One Check?",
       "required" : false,
       "locked" : false,
@@ -275,6 +293,7 @@
     }, {
       "id" : "89ebfb1a-5653-476c-cb54-1bcd4e6c02d0",
       "name" : "column_two_check_",
+      "display_width" : null,
       "label" : "Column Two Check?",
       "required" : false,
       "locked" : false,
@@ -284,6 +303,7 @@
     }, {
       "id" : "bc93fdd1-9293-550f-ad08-fa4f39822c94",
       "name" : "column_three_check_",
+      "display_width" : null,
       "label" : "Column Three Check?",
       "required" : false,
       "locked" : false,
@@ -323,6 +343,7 @@
   }, {
     "id" : "dd812967-b29c-2913-5ba4-a4410bd9d5e4",
     "name" : "check_mark_color",
+    "display_width" : null,
     "label" : "Check Mark Color",
     "required" : false,
     "locked" : false,
@@ -434,6 +455,7 @@
 }, {
   "id" : "31ac54ba-34b9-df5b-de6f-0fbf21f9ddf3",
   "name" : "pricing_package",
+  "display_width" : null,
   "label" : "Pricing Package",
   "required" : false,
   "locked" : false,
@@ -453,6 +475,7 @@
   "children" : [ {
     "id" : "d15a3eb5-2c62-e0b4-6509-04dc3f8013bb",
     "name" : "title",
+    "display_width" : null,
     "label" : "Plan",
     "required" : false,
     "locked" : false,
@@ -464,6 +487,7 @@
   }, {
     "id" : "b6bd617a-cbef-3cbb-cd34-f0736ab80e70",
     "name" : "details",
+    "display_width" : null,
     "label" : "Details",
     "required" : false,
     "locked" : false,
@@ -472,6 +496,7 @@
   }, {
     "id" : "b02e960a-877d-af94-45d6-e5191e7f1492",
     "name" : "add_flag_notification_",
+    "display_width" : null,
     "label" : "Add Flag Notification?",
     "required" : false,
     "locked" : false,
@@ -481,6 +506,7 @@
   }, {
     "id" : "fe63afcf-3e31-2db7-17dd-7afcaf0e57be",
     "name" : "flag_notification_text",
+    "display_width" : null,
     "label" : "flag/notification Text",
     "required" : false,
     "locked" : false,
@@ -499,6 +525,7 @@
   }, {
     "id" : "b82f5f86-3f73-59b6-1800-175921d193f2",
     "name" : "flag_notification_color",
+    "display_width" : null,
     "label" : "Flag/Notification Color",
     "required" : false,
     "locked" : false,
@@ -517,6 +544,7 @@
   }, {
     "id" : "eb50ac43-1036-63a3-28d9-f6a272338873",
     "name" : "price",
+    "display_width" : null,
     "label" : "Price",
     "required" : false,
     "locked" : false,
@@ -527,6 +555,7 @@
   }, {
     "id" : "077eefdf-949b-7c48-870b-8b5f0eab8ccd",
     "name" : "button_text",
+    "display_width" : null,
     "label" : "Button Text",
     "required" : false,
     "locked" : false,
@@ -538,6 +567,7 @@
   }, {
     "id" : "e3f72b71-4034-35f0-d716-015b06d16c54",
     "name" : "button_link",
+    "display_width" : null,
     "label" : "Button Link",
     "required" : false,
     "locked" : false,
@@ -601,6 +631,7 @@
 }, {
   "id" : "3158a2fb-9758-3963-607a-eaea7e97a28e",
   "name" : "button_color",
+  "display_width" : null,
   "label" : "Button Color",
   "required" : false,
   "locked" : false,
@@ -619,6 +650,7 @@
 }, {
   "id" : "bb2763f0-379d-eaae-0c80-2e9eeec3d28e",
   "name" : "radius",
+  "display_width" : null,
   "label" : "Radius",
   "required" : false,
   "locked" : false,

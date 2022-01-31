@@ -1,6 +1,7 @@
 [ {
   "id" : "c9a26d54-0449-908d-5720-f93139b98ca7",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "e2eba622-705d-d917-3d58-c4b0d70806d0",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "24f597ce-b860-e815-b548-bb271060fe10",
   "name" : "team_group",
+  "display_width" : null,
   "label" : "Galley Photos",
   "required" : false,
   "locked" : false,
@@ -35,6 +38,7 @@
   "children" : [ {
     "id" : "570568b1-9933-f4b1-1d08-9f048b168eda",
     "name" : "pet_name",
+    "display_width" : null,
     "label" : "Text?",
     "required" : false,
     "locked" : false,
@@ -46,6 +50,7 @@
   }, {
     "id" : "b04d5607-803f-051e-84f8-73c126b8f4e7",
     "name" : "effect",
+    "display_width" : null,
     "label" : "What's in the pet's mind?",
     "required" : false,
     "locked" : false,
@@ -57,6 +62,7 @@
   }, {
     "id" : "4744de73-6cf9-9beb-2444-cae3e73efe02",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,

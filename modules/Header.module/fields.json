@@ -1,6 +1,7 @@
 [ {
   "id" : "fefdf3e0-da1b-fb78-8f2c-0027060b3089",
   "name" : "logo",
+  "display_width" : null,
   "label" : "Logo",
   "required" : false,
   "locked" : true,
@@ -21,6 +22,7 @@
 }, {
   "id" : "656c0038-b259-6897-f45a-206aef710b16",
   "name" : "menu_field",
+  "display_width" : null,
   "label" : "Menu",
   "required" : false,
   "locked" : true,
@@ -29,6 +31,7 @@
 }, {
   "id" : "64a5459f-46e2-2635-ed63-464c80ed76a7",
   "name" : "enable_cta",
+  "display_width" : null,
   "label" : "Enable CTA?",
   "required" : false,
   "locked" : true,
@@ -38,10 +41,12 @@
 }, {
   "id" : "56ae614d-36c5-f05d-dfe7-7b4747bfdd5f",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : true,
   "validation_regex" : "",
+  "placeholder" : "LET’S TALK HUBSPOT!",
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
@@ -49,6 +54,7 @@
 }, {
   "id" : "92925eb5-fe69-525a-2f58-d71297404bd5",
   "name" : "button_link",
+  "display_width" : null,
   "label" : "Button Link",
   "required" : false,
   "locked" : true,

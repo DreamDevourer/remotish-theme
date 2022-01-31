@@ -1,6 +1,7 @@
 [ {
   "id" : "58315ae5-7eaa-2f41-ee3c-aea05041cf7c",
   "name" : "main_group",
+  "display_width" : null,
   "label" : "Main group",
   "required" : false,
   "locked" : false,
@@ -13,6 +14,7 @@
   "children" : [ {
     "id" : "7c4e2c83-7795-d663-a62d-51fee2c19c9c",
     "name" : "logo_image",
+    "display_width" : null,
     "label" : "Logo Image",
     "required" : false,
     "locked" : false,

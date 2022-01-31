@@ -1,6 +1,7 @@
 [ {
   "id" : "120a075b-353a-e6c8-57f1-21f069573f84",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "ac879d39-bfc2-0f74-2dd7-a77f06ce0a8c",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub text",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "440b8545-182d-9b8a-9f06-3f6de4f7c888",
   "name" : "richtext_field",
+  "display_width" : null,
   "label" : "Rich text",
   "required" : false,
   "locked" : false,
@@ -31,6 +34,7 @@
 }, {
   "id" : "d05d2ed0-2960-2d5c-e10e-3de3f315a513",
   "name" : "profile_name",
+  "display_width" : null,
   "label" : "Profile Name",
   "required" : false,
   "locked" : false,
@@ -42,6 +46,7 @@
 }, {
   "id" : "f7b37045-7f56-491f-3a22-a8013b9f12d0",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Icon Image",
   "required" : false,
   "locked" : false,

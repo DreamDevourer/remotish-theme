@@ -1,6 +1,7 @@
 [ {
   "id" : "d6667e85-1c46-01b7-f90a-e5f6ea49d3e9",
   "name" : "richtext_field",
+  "display_width" : null,
   "label" : "Rich text",
   "required" : false,
   "locked" : false,
@@ -9,6 +10,7 @@
 }, {
   "id" : "869c6e33-15a9-07bc-4d7f-9a3499d2a98b",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Image",
   "required" : false,
   "locked" : false,

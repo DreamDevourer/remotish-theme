@@ -1,6 +1,7 @@
 [ {
   "id" : "95428077-0252-aef4-532d-bf866f7eed81",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "05d74c61-69ab-ac3c-9a35-217853d4f50e",
   "name" : "blog_field",
+  "display_width" : null,
   "label" : "Blog",
   "required" : false,
   "locked" : false,
@@ -20,6 +22,7 @@
 }, {
   "id" : "0bd453b4-1278-cb5e-7f97-a0e04c0fce67",
   "name" : "number_of_post",
+  "display_width" : null,
   "label" : "Number Of Post",
   "required" : false,
   "locked" : false,
@@ -30,6 +33,7 @@
 }, {
   "id" : "39d55244-cdb9-6a07-b93c-1db54e0fa10d",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -41,6 +45,7 @@
 }, {
   "id" : "aa70a1b4-db63-8d3a-faae-26110aa64118",
   "name" : "richtext_field",
+  "display_width" : null,
   "label" : "Rich text",
   "required" : false,
   "locked" : false,

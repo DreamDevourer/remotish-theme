@@ -1,6 +1,7 @@
 [ {
   "id" : "5dd9e660-e4bf-c699-1b8e-ea526350648d",
   "name" : "disable_video",
+  "display_width" : null,
   "label" : "Disable Video?",
   "required" : false,
   "locked" : false,
@@ -10,6 +11,7 @@
 }, {
   "id" : "06c7af41-df77-bcc1-4c72-056d28b88726",
   "name" : "video_popup_",
+  "display_width" : null,
   "label" : "Video Popup?",
   "required" : false,
   "locked" : false,
@@ -19,6 +21,7 @@
 }, {
   "id" : "c9a8dda3-1172-239f-3a5e-d8062f70039e",
   "name" : "video_image",
+  "display_width" : null,
   "label" : "Video Image",
   "required" : false,
   "locked" : false,
@@ -38,6 +41,7 @@
 }, {
   "id" : "2aa3ee9d-abe7-4622-e27a-83d0b4e94660",
   "name" : "video_link",
+  "display_width" : null,
   "label" : "Video link",
   "required" : false,
   "locked" : false,
@@ -49,6 +53,7 @@
 }, {
   "id" : "a8078b73-eb5e-2449-8ba0-89d28a03459c",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -60,6 +65,7 @@
 }, {
   "id" : "cbc2bb0f-6400-e8da-5bf8-063352d696eb",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub text",
   "required" : false,
   "locked" : false,
@@ -71,6 +77,7 @@
 }, {
   "id" : "9a879e8a-7f4e-1c22-b2db-a2a43636398b",
   "name" : "richtext_field",
+  "display_width" : null,
   "label" : "Rich text",
   "required" : false,
   "locked" : false,
@@ -79,6 +86,7 @@
 }, {
   "id" : "f2d68e47-688d-3256-5483-91f7398723e0",
   "name" : "vide_name",
+  "display_width" : null,
   "label" : "Video Name",
   "required" : false,
   "locked" : false,

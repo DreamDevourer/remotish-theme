@@ -1,6 +1,7 @@
 [ {
   "id" : "4f22f904-8206-ef1e-3864-37c229e40b43",
   "name" : "testimonial_title",
+  "display_width" : null,
   "label" : "Testimonial Title",
   "required" : false,
   "locked" : true,
@@ -12,6 +13,7 @@
 }, {
   "id" : "8cc892bc-1116-3f6f-0c99-2347b4bc2895",
   "name" : "testimonial_sub_title",
+  "display_width" : null,
   "label" : "Testimonial Sub Title",
   "required" : false,
   "locked" : true,
@@ -23,6 +25,7 @@
 }, {
   "id" : "207f3ec0-ce9d-4d12-f76a-3fce5a95d04e",
   "name" : "star_image",
+  "display_width" : null,
   "label" : "Star Image",
   "required" : false,
   "locked" : true,
@@ -43,6 +46,7 @@
 }, {
   "id" : "dbfeebd2-ced0-0a3d-da9e-46f912c24341",
   "name" : "testimonial_content",
+  "display_width" : null,
   "label" : "Testimonial Content",
   "required" : false,
   "locked" : true,
@@ -51,6 +55,7 @@
 }, {
   "id" : "704eebc3-2e70-ae7d-5948-3afaddcb17c5",
   "name" : "testimonial_last_title",
+  "display_width" : null,
   "label" : "Testimonial last Title",
   "required" : false,
   "locked" : true,
@@ -62,6 +67,7 @@
 }, {
   "id" : "925fd0eb-0fae-6096-a946-f76fb4b4129d",
   "name" : "video_image",
+  "display_width" : null,
   "label" : "Video Image",
   "required" : false,
   "locked" : true,
@@ -82,6 +88,7 @@
 }, {
   "id" : "63035866-e519-c406-5e38-7864a6a490e4",
   "name" : "video_url",
+  "display_width" : null,
   "label" : "Video URL",
   "required" : false,
   "locked" : true,
@@ -93,6 +100,7 @@
 }, {
   "id" : "c2a99784-29f7-a6d3-0be8-0aeb9a46075f",
   "name" : "background_image",
+  "display_width" : null,
   "label" : "Background Image",
   "required" : false,
   "locked" : true,

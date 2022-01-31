@@ -1,6 +1,7 @@
 [ {
   "id" : "845ea210-04e2-74cc-5e85-53695f1f12fb",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "d2e444a7-2409-30d0-3af5-7ce3f6b0d8e0",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "6092fc03-ce05-5d0f-05e3-9901b7b5e2fa",
   "name" : "richtext_field",
+  "display_width" : null,
   "label" : "Rich text",
   "required" : false,
   "locked" : false,
@@ -31,6 +34,7 @@
 }, {
   "id" : "142f1a8f-c6f7-951a-b780-b3ed5fce1250",
   "name" : "form_title",
+  "display_width" : null,
   "label" : "Form Title",
   "required" : false,
   "locked" : false,
@@ -42,6 +46,7 @@
 }, {
   "id" : "9517fb4a-32ab-77e5-ef6e-997ca08e6da4",
   "name" : "caption_of_form",
+  "display_width" : null,
   "label" : "Caption of Form",
   "required" : false,
   "locked" : false,
@@ -53,6 +58,7 @@
 }, {
   "id" : "32fd3bb9-b51a-98eb-cc4f-a79f793441a1",
   "name" : "form_field",
+  "display_width" : null,
   "label" : "Form",
   "required" : false,
   "locked" : false,

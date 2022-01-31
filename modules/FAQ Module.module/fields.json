@@ -1,6 +1,7 @@
 [ {
   "id" : "87e76555-7287-5fd0-9115-d1607eddfb7c",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "dbd97846-78c0-9c04-f252-83fd979330ba",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "2f7d105d-df63-e8a6-b21d-768f515ba0ad",
   "name" : "faq_group",
+  "display_width" : null,
   "label" : "FAQs",
   "required" : false,
   "locked" : false,
@@ -35,6 +38,7 @@
   "children" : [ {
     "id" : "df5f0f70-c6a5-7d3d-218b-e4b43d24f4b6",
     "name" : "faq_question",
+    "display_width" : null,
     "label" : "FAQ Question",
     "required" : false,
     "locked" : false,
@@ -46,6 +50,7 @@
   }, {
     "id" : "775e756a-23e8-9fba-035b-1068fc5a7e3e",
     "name" : "faq_answer",
+    "display_width" : null,
     "label" : "FAQ Answer",
     "required" : false,
     "locked" : false,

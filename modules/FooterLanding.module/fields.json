@@ -1,6 +1,7 @@
 [ {
   "id" : "6704dad6-50b6-fef9-e8b5-79fcc9ad33e7",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : true,
@@ -12,6 +13,7 @@
 }, {
   "id" : "87f25814-1282-76d7-b820-817bf3ca6e20",
   "name" : "toutube",
+  "display_width" : null,
   "label" : "Youtube",
   "required" : false,
   "locked" : true,
@@ -22,6 +24,7 @@
 }, {
   "id" : "ba9d8e27-5f51-f639-799a-685fff4b6d91",
   "name" : "twitter",
+  "display_width" : null,
   "label" : "Twitter",
   "required" : false,
   "locked" : true,
@@ -32,6 +35,7 @@
 }, {
   "id" : "74d9cc76-84db-166e-3ccc-3740d3fc20e2",
   "name" : "instagram",
+  "display_width" : null,
   "label" : "Instagram",
   "required" : false,
   "locked" : true,
@@ -42,6 +46,7 @@
 }, {
   "id" : "728a4b73-6bd8-1821-dcf4-3935b19074dd",
   "name" : "linked_in",
+  "display_width" : null,
   "label" : "Linked in",
   "required" : false,
   "locked" : true,
@@ -52,6 +57,7 @@
 }, {
   "id" : "1998def3-6eb7-7c4b-d562-ed49ad71e529",
   "name" : "logo_group",
+  "display_width" : null,
   "label" : "Logo group",
   "required" : false,
   "locked" : true,
@@ -64,6 +70,7 @@
   "children" : [ {
     "id" : "87a3f48c-46f7-f249-9d49-5fbb818a7e49",
     "name" : "logo_image",
+    "display_width" : null,
     "label" : "Logo Image",
     "required" : false,
     "locked" : false,
@@ -84,6 +91,7 @@
   }, {
     "id" : "f2ee9d5d-d6ae-01a9-87b1-1a41e9958c03",
     "name" : "link_field_desktop",
+    "display_width" : null,
     "label" : "Link Desktop",
     "required" : false,
     "locked" : false,
@@ -167,6 +175,7 @@
 }, {
   "id" : "e089839d-454a-e7df-78e3-73d090760f07",
   "name" : "address",
+  "display_width" : null,
   "label" : "Address",
   "required" : false,
   "locked" : true,
@@ -175,6 +184,7 @@
 }, {
   "id" : "aff4e022-7fa6-4cfa-c550-4392fa8e5180",
   "name" : "link_field",
+  "display_width" : null,
   "label" : "Privacy Link",
   "required" : false,
   "locked" : true,
@@ -193,6 +203,7 @@
 }, {
   "id" : "50f6e28c-0d37-ae59-e51b-d68d3de3d9cb",
   "name" : "caption",
+  "display_width" : null,
   "label" : "Caption",
   "required" : false,
   "locked" : true,
@@ -204,6 +215,7 @@
 }, {
   "id" : "c1973bec-cab4-039b-407d-5ce306ee1a85",
   "name" : "mobile_logo",
+  "display_width" : null,
   "label" : "Mobile logo",
   "required" : false,
   "locked" : true,

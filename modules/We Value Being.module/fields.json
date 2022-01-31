@@ -1,6 +1,7 @@
 [ {
   "id" : "14390c9a-32dc-f678-d771-7894ce4f0d80",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "3ab80529-ee7f-a75b-1aee-28323d828436",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
 }, {
   "id" : "87840f93-c351-6105-914f-d7e1aec651c4",
   "name" : "field_group",
+  "display_width" : null,
   "label" : "Field group",
   "required" : false,
   "locked" : false,
@@ -35,6 +38,7 @@
   "children" : [ {
     "id" : "5e0744eb-a97b-d86a-5c04-e42fd54cfa54",
     "name" : "title",
+    "display_width" : null,
     "label" : "Title",
     "required" : false,
     "locked" : false,
@@ -46,6 +50,7 @@
   }, {
     "id" : "23c609d0-fa1b-e861-182b-5334f00fe47a",
     "name" : "sub_text",
+    "display_width" : null,
     "label" : "Sub Text",
     "required" : false,
     "locked" : false,
@@ -57,6 +62,7 @@
   }, {
     "id" : "0914d55f-9894-3ac7-fa9a-d7eb5dff29ba",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -77,6 +83,7 @@
   }, {
     "id" : "1cb1a5f1-e7d0-ef4a-630d-807f5904a1cc",
     "name" : "richtext_field",
+    "display_width" : null,
     "label" : "Rich text",
     "required" : false,
     "locked" : false,
@@ -146,6 +153,7 @@
 }, {
   "id" : "5f43452b-2b65-e12b-6fab-2eddaa75f8e4",
   "name" : "section_id",
+  "display_width" : null,
   "label" : "Section Id",
   "required" : false,
   "locked" : false,

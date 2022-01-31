@@ -1,6 +1,7 @@
 [ {
   "id" : "6c2459d7-2be9-dd20-2834-e42c47980fc8",
   "name" : "field_group",
+  "display_width" : null,
   "label" : "Field group",
   "required" : false,
   "locked" : true,
@@ -13,6 +14,7 @@
   "children" : [ {
     "id" : "f33e6c46-17d1-4f49-3831-ed2ac2e7eb94",
     "name" : "tag_name",
+    "display_width" : null,
     "label" : "Tag Name",
     "required" : false,
     "locked" : false,

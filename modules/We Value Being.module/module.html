@@ -41,9 +41,11 @@
 </section>
 
 
-
+{#
 {{ require_js("https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", "footer") }}
- 
+ #}
+
+
  {% require_js %}
     <script defer>  
       $(document).ready(function(){
@@ -57,7 +59,7 @@
             customPaging : function(slider, i) {
             var thumb = jQuery(slider.$slides[i]).data();
             // return '<a>'+(i+1)+'</a>'; // <-- old
-            return '<a>'+('0'+(i+1)).slice(-2)+'</a>'; // <-- new
+            return '<span>'+('0'+(i+1)).slice(-2)+'</span>'; // <-- new
             },
              responsive: [
     

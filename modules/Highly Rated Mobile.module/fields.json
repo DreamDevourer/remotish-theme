@@ -1,6 +1,7 @@
 [ {
   "id" : "c9a8dda3-1172-239f-3a5e-d8062f70039e",
   "name" : "video_image",
+  "display_width" : null,
   "label" : "Video Image",
   "required" : false,
   "locked" : false,
@@ -20,6 +21,7 @@
 }, {
   "id" : "a8078b73-eb5e-2449-8ba0-89d28a03459c",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -31,6 +33,7 @@
 }, {
   "id" : "cbc2bb0f-6400-e8da-5bf8-063352d696eb",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub text",
   "required" : false,
   "locked" : false,
@@ -42,6 +45,7 @@
 }, {
   "id" : "9a879e8a-7f4e-1c22-b2db-a2a43636398b",
   "name" : "richtext_field",
+  "display_width" : null,
   "label" : "Rich text",
   "required" : false,
   "locked" : false,
@@ -50,6 +54,7 @@
 }, {
   "id" : "f2d68e47-688d-3256-5483-91f7398723e0",
   "name" : "vide_name",
+  "display_width" : null,
   "label" : "Video Name",
   "required" : false,
   "locked" : false,

@@ -3,6 +3,11 @@
   "icon" : "fontawesome-5.14.0:Face%20Blowing%20a%20Kiss:SOLID",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 47340054393,
+  "js_assets" : [ {
+    "url" : "https://www.remotish.agency/hubfs/slick.nobutton.js",
+    "autoload" : true,
+    "name" : "slick.nobutton.js"
+  } ],
   "label" : "Valuable Testimonial Module",
   "is_available_for_new_content" : true
 }

@@ -1,6 +1,7 @@
 [ {
   "id" : "2413cde4-6cab-8b28-6138-0ba0b029e65a",
   "name" : "title",
+  "display_width" : null,
   "label" : "Title",
   "required" : false,
   "locked" : false,
@@ -12,6 +13,7 @@
 }, {
   "id" : "eda84b6c-4b26-1c15-620a-bcd3e932023a",
   "name" : "sub_text",
+  "display_width" : null,
   "label" : "Sub Text",
   "required" : false,
   "locked" : false,
@@ -20,6 +22,7 @@
 }, {
   "id" : "38100a9c-db98-57a4-eae2-2cbdbbcf784d",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : false,
@@ -31,6 +34,7 @@
 }, {
   "id" : "8df390c0-257d-7b3b-72d3-29114787fded",
   "name" : "button_link",
+  "display_width" : null,
   "label" : "Button Link",
   "required" : false,
   "locked" : false,
@@ -49,6 +53,7 @@
 }, {
   "id" : "6bbd1abd-2320-0639-f6ba-8494d247de7f",
   "name" : "image_group",
+  "display_width" : null,
   "label" : "image Group",
   "required" : false,
   "locked" : false,
@@ -61,6 +66,7 @@
   "children" : [ {
     "id" : "7017fd31-9993-b03d-c5d4-4a30a5d8254e",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -97,6 +103,7 @@
 }, {
   "id" : "01a55e09-1b03-c834-065c-8502c137ddd6",
   "name" : "services_group",
+  "display_width" : null,
   "label" : "Services Group",
   "required" : false,
   "locked" : false,
@@ -109,6 +116,7 @@
   "children" : [ {
     "id" : "7411ca07-94ab-0bc8-a75f-3e53571b3a3a",
     "name" : "icon_image",
+    "display_width" : null,
     "label" : "Icon Image(Color)",
     "required" : false,
     "locked" : false,
@@ -129,6 +137,7 @@
   }, {
     "id" : "80e824b6-8242-90a5-95d9-c7c14cc3fe64",
     "name" : "image_icon_white_",
+    "display_width" : null,
     "label" : "Hover  Icon (Hover White)",
     "required" : false,
     "locked" : false,
@@ -149,6 +158,7 @@
   }, {
     "id" : "31146c84-ac9b-015b-8228-5c817d57badf",
     "name" : "richtext_field",
+    "display_width" : null,
     "label" : "Rich text",
     "required" : false,
     "locked" : false,
@@ -157,6 +167,7 @@
   }, {
     "id" : "ad25bf7b-bfe2-cdf1-533c-8d4c1baf602d",
     "name" : "button_text",
+    "display_width" : null,
     "label" : "Button Text",
     "required" : false,
     "locked" : false,
@@ -168,6 +179,7 @@
   }, {
     "id" : "730f7761-60cf-14d2-00c6-4cffc9f60b68",
     "name" : "link_field",
+    "display_width" : null,
     "label" : "Link",
     "required" : false,
     "locked" : false,
@@ -287,18 +299,21 @@
 }, {
   "id" : "styles",
   "name" : "styles",
+  "display_width" : null,
   "label" : "Styles",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "styles.corner",
     "name" : "corner",
+    "display_width" : null,
     "label" : "Boxes Radius",
     "required" : false,
     "locked" : false,
     "children" : [ {
       "id" : "styles.corner.radius",
       "name" : "radius",
+      "display_width" : null,
       "label" : "Radius",
       "required" : false,
       "locked" : false,
@@ -315,12 +330,14 @@
   }, {
     "id" : "styles.boxes_bg",
     "name" : "boxes_bg",
+    "display_width" : null,
     "label" : "Boxes Background",
     "required" : false,
     "locked" : false,
     "children" : [ {
       "id" : "styles.boxes_bg.bg_color",
       "name" : "bg_color",
+      "display_width" : null,
       "label" : "Background color",
       "required" : false,
       "locked" : false,
@@ -342,6 +359,7 @@
   }, {
     "id" : "styles.boxes_padding",
     "name" : "boxes_padding",
+    "display_width" : null,
     "label" : "Boxes spacing",
     "required" : false,
     "locked" : false,

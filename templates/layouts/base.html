@@ -14,19 +14,18 @@
     {{ require_css(get_public_template_url("../../css/main.css")) }}
     {{ require_css("https://fonts.googleapis.com/css?family=Mulish:regular|Quicksand:regular,700&display=swap") }}
     {{ require_css(get_asset_url("../../css/theme-overrides.css")) }}
-    {{ require_css(get_asset_url('../../css/Style.css')) }}
+    {{ require_css(get_asset_url('../../css/Style.css'), { async: true }) }}
     {{ standard_header_includes }}
   </head>
   <body>
     <div class="body-wrapper {{ builtin_body_classes }}">
       {% block header %} {% global_partial path="../partials/header.html"  %} {% endblock header %} {% block body %} {% endblock body %} {% block footer %}{% global_partial path="../partials/footer.html"  %} {% endblock footer %}
     </div>
-    {{ standard_footer_includes }}
-  </body>
-  <footer>
-    {% if not site_settings.include_jquery %}
+				
+				{% if not site_settings.include_jquery %}
      {{ require_js("https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js", "head") }}
     {% endif %} 
-    {{ require_js(get_asset_url("../../js/Script.js")) }}
-  </footer>
+    {{ require_js(get_asset_url("../../js/Script.js"), { position: 'footer', defer:true }) }}
+    {{ standard_footer_includes }}
+  </body>
 </html>

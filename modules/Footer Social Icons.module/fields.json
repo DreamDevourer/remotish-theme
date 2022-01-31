@@ -1,6 +1,7 @@
 [ {
   "id" : "12f35c5e-25f6-ab65-3860-49b6a9c20fc0",
   "name" : "social_links",
+  "display_width" : null,
   "label" : "Social Links",
   "inline_help_text" : "Put here the links of your social profiles.",
   "required" : false,
@@ -8,6 +9,7 @@
   "children" : [ {
     "id" : "1e1a9191-5e15-bbea-b2e3-3e65321648b2",
     "name" : "facebook",
+    "display_width" : null,
     "label" : "Facebook",
     "required" : false,
     "locked" : false,
@@ -18,6 +20,7 @@
   }, {
     "id" : "040924b8-3244-a04d-4987-7a3badcdd918",
     "name" : "instagram",
+    "display_width" : null,
     "label" : "Instagram",
     "required" : false,
     "locked" : false,
@@ -28,6 +31,7 @@
   }, {
     "id" : "4dc88add-ad87-b27e-9052-00a896223adc",
     "name" : "twitter",
+    "display_width" : null,
     "label" : "Twitter",
     "required" : false,
     "locked" : false,
@@ -38,6 +42,7 @@
   }, {
     "id" : "3a014c09-e63c-1f92-c257-238c6cffd31a",
     "name" : "linkedin",
+    "display_width" : null,
     "label" : "LinkedIn",
     "required" : false,
     "locked" : false,
@@ -48,6 +53,7 @@
   }, {
     "id" : "48c4c840-fdd8-194c-4172-e510919cac2a",
     "name" : "youtube",
+    "display_width" : null,
     "label" : "Youtube",
     "required" : false,
     "locked" : false,
@@ -63,18 +69,21 @@
 }, {
   "id" : "styles",
   "name" : "styles",
+  "display_width" : null,
   "label" : "Styles",
   "required" : false,
   "locked" : true,
   "children" : [ {
     "id" : "styles.corner",
     "name" : "corner",
+    "display_width" : null,
     "label" : "Boxes Radius",
     "required" : false,
     "locked" : false,
     "children" : [ {
       "id" : "styles.corner.radius",
       "name" : "radius",
+      "display_width" : null,
       "label" : "Radius",
       "required" : false,
       "locked" : false,
@@ -90,12 +99,14 @@
   }, {
     "id" : "styles.alignment",
     "name" : "alignment",
+    "display_width" : null,
     "label" : "Alignment",
     "required" : false,
     "locked" : false,
     "children" : [ {
       "id" : "styles.alignment.alignment",
       "name" : "alignment",
+      "display_width" : null,
       "label" : "Alignment",
       "required" : false,
       "locked" : false,
@@ -109,6 +120,7 @@
   }, {
     "id" : "styles.boxes_padding",
     "name" : "boxes_padding",
+    "display_width" : null,
     "label" : "Boxes spacing",
     "required" : false,
     "locked" : false,
